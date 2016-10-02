@@ -1,0 +1,27 @@
+% % % % % % % % % % % % % % % % % %
+%   Document Variables
+% % % % % % % % % % % % % % % % % %
+
+\newcommand{\thesistitle}[0]{\textrm{A LaTeX template for a UNSW progress report or thesis}}
+\newcommand{\authorname}[0]{\textrm{Your Name}}
+\newcommand{\authorstudentid}[0]{\textrm{3141592}}
+\newcommand{\authordegree}[0]{\textrm{Bachelor of Engineering}}
+\newcommand{\thesismonthyear}[0]{\textrm{November 2014}}
+\newcommand{\supervisorname}[0]{\textrm{Dr Mark Albert Whitty}}
+
+% % % % % % % % % % % % % % % % % %
+%   Figures
+% % % % % % % % % % % % % % % % % %
+\newcommand{\executeiffilenewer}[3]{%
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
+{\pdffilemoddate{#2}}>0%
+{\immediate\write18{#3}}\fi%
+}
+\newcommand{\includesvg}[1]{%
+\executeiffilenewer{#1.svg}{#1.pdf}%
+{inkscape -z -D --file=#1.svg %
+--export-pdf=#1.pdf --export-dpi=600 --export-latex}%
+\input{#1.pdf_tex}%
+}
+
+\newcommand{\vectornorm}[1]{\left|\left|#1\right|\right|}

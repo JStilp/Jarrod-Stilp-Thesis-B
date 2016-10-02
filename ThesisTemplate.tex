@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This file controls your whole document. It has three functions:
+%     1. Include and configure any packages used in the document
+%     2. Define page numbering, structure and bibliography
+%     3. Import/Include all other files
+%
+%  More information is provided in the README.md
+%
+%  Written by M. Imran 2001/06/18
+%  No Copyright for this file. Save your time and enjoy it 
+%  Updated by Ian Craig 2014/10/20 for UNSW Mech Eng Thesis guidelines 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[thesis]{unswthesis}
+
+% % % USE PACKAGES % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\usepackage{usnomencl} % For making a glossary of nomenclature.
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption} % Replaces subfig and subfigure.
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{url}
+\urlstyle{rm}
+\usepackage{booktabs} % From http://goo.gl/2ezu9p to make tables look nicer.
+\usepackage{mathtext}
+\usepackage{multirow}
+\usepackage{fmtcount}
+\usepackage{ctable}
+\usepackage{array}
+\usepackage{epstopdf}
+\usepackage[draft]{listofsymbols} % Added 120605 to add list of symbols
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage{cite}
+\usepackage{theorem}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{latexsym}
+\usepackage{epic}
+\usepackage{setspace}
+\usepackage{mdwlist} % For reducing list vertical spacing. http://goo.gl/nyLux
+\usepackage{pdflscape} % Make landscape pages display rotated in PDFs http://goo.gl/wbg4fy
+\usepackage{algorithm}
+\usepackage{algpseudocode} % To display algorithms nicely. http://goo.gl/6Z93aV
+\usepackage{printlen} % To print variables. http://goo.gl/3ZdAPV
+%\uselengthunit{in} % See above
+%\printlength{\textwidth} % See above
+%\the\textwidth   % \textwidth = 426.79134 pt = 149.99823 mm = 5.90666 in. An alternative method of printing variables.
+% @300dpi --> 1771 px.
+% % For adding Latex Section symbols to the actual headings:
+%\usepackage{titlesec}. 
+%\titleformat{\section}{\normalfont\Large\bfseries}{\S\thesection}{1em}{}
+% % For cyrillic font (naiive i)
+%\usepackage[OT2,OT1]{fontenc} 
+% % % END PACKAGES % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% Setup
+\input{include/format}
+\include{include/commands}
+\graphicspath{{./images/}}  % Image directory
+\begin{document}
+\input{include/symbolslist}
+
+% % % Header Pages
+\input{header/frontpage}
+
+% Set up contents
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setcounter{chapter}{0}
+\setcounter{equation}{0}
+
+% % % Chapters
+\include{body/1_introduction}
+\include{body/2_literaturereview}
+\include{body/3_methodology}
+\include{body/4_results}
+\include{body/5_discussion}
+\include{body/6_conclusion}
+\include{body/7_futurework}
+
+% % % Bibliography
+\addcontentsline{toc}{chapter}{\numberline{}References}
+\bibliographystyle{unsrt}
+% Style nar gives appreviations for author first names, and also unsorted, so numbers are in order of appearance in the text.
+% unsrt only gives ccorrect ordering
+% abbrv only abbreviates authors first names and journal titles.
+% XXX Solve bib problem - titles not shown. Try IEEETrans style file. Style 'nar' doesn't show titles.
+\bibliography{../Bibtex/library} % bibtex (.bib) file location (Mendeley can create this)
+
+% Appendix
+\include{body/A_appendix}
+
+\end{document}

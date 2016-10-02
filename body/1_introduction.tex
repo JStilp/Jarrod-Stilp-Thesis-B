@@ -1,0 +1,126 @@
+% INTRODUCTION CHAPTER LAYOUT
+%
+% 1. Problem Statement: Introduce readers to the topic
+%  What is the "problem"
+%  Brief summary of current solution and why it is inadaquate (if applicable)
+%  Why the research is worth tackling, why a solution would be significant
+%
+% 2. Aim: State overall research aim (try for 1 sentence)
+%  Several developments / stages will be required in any research to produce a final
+%    result, however remember that only the final outcome is the aim, not each stage
+%    i.e. tell the reader what the aim is, not how you are going to achieve it. You
+%    will explain this in more specific chapters.
+%  There should only be 1 aim
+%  The aim should follow as a logical consequence of the problem statement
+%  You should be able to relate to this aim throughout the thesis, particularly conclusion
+%  "Thus ..."
+%
+% 3. Scope: State scope of work
+%  Be very clear what will and will not be covered. Justify why. 
+%  It is okay to have persued only one of multiple accepted approaches due to limited time, 
+%    but justify why you have chosen this approach over another.
+%  If you want sections in this chapter, Aim & Scope can be together
+%
+% 4. Overview of the study: Brief chapter layout & description of work to come
+%  "To achieve this Chapter ..."
+%  Similar to the table of contents, but you are explaining the logical flow of 
+%    your thesis to ensure the reader can see where you are going and why
+%  By the end of this section the reader should understand how the aim will be
+%    achieved.
+%
+% Do NOT include:
+%  - review of literature
+%  - statement of theory
+%  - glossary of terms (although sometimes it is important to define terms when defining
+%      the scope of your work)
+%
+% Most of this info is summarised from the book below. Supervisors may have other preferences,
+% but I found it very helpful. I've only included short summaries in this template but if you
+% are stuck buying a copy is definitely worth it :) http://www.mup.com.au/items/120101
+%  Evans, D., Gruba, P. & Zobel, J., 2011. How to Write a Better Thesis, Melbourne University Press.
+
+% TEST TEST
+
+\chapter{Introduction}
+\label{cha:introduction}
+
+\section{Background}
+\label{sec:intro_background}
+Autonomous robots have for many years been the subject of fiction, mystery and the imagination. 
+
+\subsection{Subsection}
+
+% Figure 1.1 is defined below (Large mechatronics logo). Note figures are placed automatically by LaTeX and will not necessarily be placed before the next text.
+\begin{figure}
+\centering
+\includegraphics{mechatronicslogo2_no_UNSW.png}
+\caption[Short caption for list of figures.]{Full caption for the Mechatronics Logo. Designed by Wei Hua Chen.}
+\label{fig:intro_logo}
+\end{figure}
+
+\begin{figure}[!ht] \centering
+\captionsetup[subfigure]{width=2.5in} % <-- Use this to control text which is poorly spaced under a subfigure. 
+\begin{subfigure}[t]{0.45\textwidth}
+\includegraphics[width=\textwidth]{mechatronicslogo2_no_UNSW.png}
+\caption[Subfigure caption.]{Subfigure caption.}
+\label{fig:intro_subfig1}
+\end{subfigure}
+\begin{subfigure}[t]{0.45\textwidth}
+\includegraphics[width=0.5\textwidth]{mechatronicslogo2_no_UNSW.png}
+\caption[Subfigure caption.]{Subfigure caption.}
+\label{fig:intro_subfig2}
+\end{subfigure}
+\caption[Abbreviated caption.]{Overall figure caption.}
+\label{fig:intro_subfig}
+\end{figure}
+
+Figure \ref{fig:intro_subfig} and subfigure \ref{fig:intro_subfig2} or \subref{fig:intro_subfig2} contains ...
+Table \ref{tab:intro_table_1}. 
+
+Citations: Luce \cite{luce_probabilistic_1958} wrote something important.
+
+% Note: You can add a table of figures to the header pages by uncommenting \listoftables in the frontpages.tex
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ p{3cm}  p{4cm} | p{6.5cm} }
+\hline
+Classification & Cost & Description\\ \hline \hline
+CLEAR & 1 & Good for traversing\\ \hline
+OBSTACLES  & $\infty$ & Definitely not traversable\\ \hline
+UNKNOWN & 4 if distant, $\infty$ if close & Not classified\\ \hline
+EXPENSIVE & In range $[2, 50]$ & Traversable but should be avoided\\ \hline
+\end{tabular}
+\end{center}
+\caption[Example table (short caption).]{Example table.}
+\label{tab:intro_table_1}
+\end{table}
+
+
+
+
+
+\section{Objective}
+The objective of this thesis is to change the world.
+
+
+ 
+ 
+\section{Summary of this Approach}
+
+\subsection{Technical Contributions}
+\begin{itemize}
+	\item Contribution 1
+	\item Contribution 2
+\end{itemize}
+
+
+
+
+\section{Scope and limitations}
+\label{sec:scope}
+The scope of this thesis is restricted ???
+
+\section{Outline}
+Chapter 1 ...
+
