@@ -39,16 +39,70 @@
 % are stuck buying a copy is definitely worth it :) http://www.mup.com.au/items/120101
 %  Evans, D., Gruba, P. & Zobel, J., 2011. How to Write a Better Thesis, Melbourne University Press.
 
-% TEST TEST
-
 \chapter{Introduction}
 \label{cha:introduction}
 
 \section{Background}
 \label{sec:intro_background}
-Autonomous robots have for many years been the subject of fiction, mystery and the imagination. 
 
-\subsection{Subsection}
+Needed:
+-Place in industry
+-Background of diagnosis
+-Requirement and fit in company
+-Existing equiptment
+
+Within the healthcare industry, there is a continuous need for fast and reliable diagnostics of pathogens within patients. Identifying the presence of pathogens responsible for disease in a patient allows the appropriate preventive or corrective action to be taken and represents a crucial step in treating or preventing illness. This thesis was conducted for the benefit of and in collaboration with AusDiagnostics Pty Ltd.\\
+
+Successful diagnostics, within the context of this thesis, can be summarised in three overall stages. Namely these are extraction, amplification and finally analysis. This thesis concerns itself only with extraction. It should be noted that not all pathogen analysis and/or commercial diagnostic processes follow these steps strictly, however the processes and technologies applied by AusDiagnostics follow this procedure. The stages of this procedure may be summarised as follows:
+\begin{enumerate}
+	\item [1. Extraction] To begin the diagnosis, a clinical sample is obtained from the patient. This sample may consist of cerebrospinal fluid, faecal matter, urine or others, depending on the disease to be diagnosed. These samples contain the target DNA or RNA which will later be analysed to determine the presence of the pathogen and hence disease. They also contain however a number of inhibitors to the process of amplification and analysis. Extraction is the process of removing said inhibitors and retaining only the target DNA or RNA. The result is refered to as a clean sample.
+	\item  [2. Amplifcation] Amplification takes the clean sample and by one of many methods increases the overall count of the DNA. This may be with the intention of allowing multiple targets to be detected or to increase the sensitivity of the analysis.
+	\item[3. Analysis] Analysis uses one of many available methods to search for the presence of biomarkers within the amplified clean sample. The presence of the biomarker indicates the result of the diagnosis.
+\end{enumerate}
+
+AusDiagnostics currently supplies customers with the instruments and chemical products required to complete stages two and three (amplification and analysis) of the diagnosis. This requires customers to purchase extraction equipment from alternative suppliers and represents a significant weakness and loss of profit. Research and development conducted by AusDiagnostics has determined that the optimal approach, when considering speed and efficiency, is super-paramagnetic bead based extraction. The beads utilised are of the shell-core variety. The core is composed of an iron oxide, which provides the super paramagnetic properties required for physical manipulation of the beads via a magnetic field. The shell is comprised of silica, which via chemical modification has the propensity to bond DNA and RNA to the bead surface. The techniques developed by researchers at AusDiagnostics utilising the magnetic silica beads have been validated and verified via manual operation. This thesis concerns itself with the automation of the developed extraction process, to produce a commercially viable robotic instrument. This instrument will be referred to as the Gene-Plex Extractor.\\
+
+The extraction process to be automated has a number of notable requirements. These include liquid handling via precise pipetting, including mixing and liquid transfer. Also required is manipulation of the magnetic silica beads to separate the bonded and hence captured target DNA or RNA, along with heating to a specified, constant temperature to act to increase the rate of the chemical processes. The automation of the extraction process will be achieved by integrating the required capabilities into the robot produced by AusDiagnostics to conduct the amplification stage of diagnosis. The instrument, based of the Gene-Plex platform and sold as the High-Plex Processor, is pictured in it's current application in Figure \ref{fig:highplex}. The Gene-Plex platform is essentially a liquid handling robot. The robot carries out the amplification stage by precisely pipetting and transferring liquid mixtures between the tubes and instruments on the deck, using disposable tips. Each individual assay (an analysis conducted to determine the presence and amount of a substance within a volume) utilises an individual layout of components on the robots deck. This makes the platform highly configurable for differing setups.\\
+
+\begin{figure}
+	\centering
+	\includegraphics{highplex.png}
+	\caption[High-Plex Platform.]{The Gene-Plex liquid handling robot platform, as implemented as the High-Plex Processor.}
+	\label{fig:highplex}
+\end{figure} 
+
+\subsection{The Extraction Process}
+\label{subsec:intro_extraction}
+
+In order to allow the aims and scope of the work to be clearly defined, a condensed overview of the extraction process developed by AusDiagnostics is presented.
+
+The extraction process requires that the clinical sample undergoes a number of chemical steps across different locations on the robot. To aid in understanding the liquid handling involved, Figure \ref{fig:decklayout} displays the important sites on the deck. The process will begin with the operator manually loading 24 individual clinical samples into the location labelled ``Clinical Samples". In order to conform to existing products used by customers, it is then required that the chemical processing takes place in the locations labelled ``Samples". In order to transfer the liquid between locations, the robot will pick up 1000$\mu$L tips from the locations marked ``Tips". 
+
+The sample processing locations must accept modules that fit within the standard block size (SBS) format. In these modules, the sample will undergo the following 6 stages in order to extract the target DNA and RNA:
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
+\begin{figure}
+	\centering
+	\includegraphics{decklayout.png}
+	\caption[Extractor deck layout.]{The layout to be used for the Gene-Plex Extractor.}
+	\label{fig:decklayout}
+\end{figure} 
+
+
+
+\section{Aim}
+\label{sec:intro_aim}
+
+\section{Scope}
+\label{sec:intro_scope}
+
+\section{Methodology}
+\label{sec:intro_method}
+
+
+
 
 % Figure 1.1 is defined below (Large mechatronics logo). Note figures are placed automatically by LaTeX and will not necessarily be placed before the next text.
 \begin{figure}
@@ -95,32 +149,3 @@ EXPENSIVE & In range $[2, 50]$ & Traversable but should be avoided\\ \hline
 \caption[Example table (short caption).]{Example table.}
 \label{tab:intro_table_1}
 \end{table}
-
-
-
-
-
-\section{Objective}
-The objective of this thesis is to change the world.
-
-
- 
- 
-\section{Summary of this Approach}
-
-\subsection{Technical Contributions}
-\begin{itemize}
-	\item Contribution 1
-	\item Contribution 2
-\end{itemize}
-
-
-
-
-\section{Scope and limitations}
-\label{sec:scope}
-The scope of this thesis is restricted ???
-
-\section{Outline}
-Chapter 1 ...
-

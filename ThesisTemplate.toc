@@ -1,0 +1,17 @@
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Abstract}{ii}{Doc-Start}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Certificate of Originality}{iii}{chapter*.1}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{iv}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The Extraction Process}{5}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Aim}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Scope}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Methodology}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Review}{8}{chapter.2}
+\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}Results}{10}{chapter.4}
+\contentsline {chapter}{\numberline {5}Discussion}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{12}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{13}{chapter.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{14}{chapter.7}
+\contentsline {chapter}{\numberline {A}Raw Results}{15}{appendix.A}
