@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  2 OCT 2016 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  2 OCT 2016 18:58
 entering extended mode
-**./ThesisTemplate.tex
-(ThesisTemplate.tex
+**"./z3460979 Thesis B.tex"
+("z3460979 Thesis B.tex"
 LaTeX2e <2016/03/31> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 (unswthesis.cls
@@ -600,10 +600,10 @@ Package: printlen 2009/09/03 v1.1a print lengths with units
 LaTeX Warning: Unused global option(s):
     [thesis].
 
-(ThesisTemplate.aux (body/1_introduction.aux) (body/2_literaturereview.aux)
-(body/3_methodology.aux) (body/4_results.aux) (body/5_discussion.aux)
+("z3460979 Thesis B.aux" (body/1_introduction.aux) (body/2_literaturereview.aux
+) (body/3_methodology.aux) (body/4_results.aux) (body/5_discussion.aux)
 (body/6_conclusion.aux) (body/7_futurework.aux) (body/A_appendix.aux))
-\openout1 = `ThesisTemplate.aux'.
+\openout1 = `"z3460979 Thesis B.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -654,16 +654,16 @@ LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
 
-(ThesisTemplate.out) (ThesisTemplate.out)
+("z3460979 Thesis B.out") ("z3460979 Thesis B.out")
 \@outlinefile=\write3
-\openout3 = `ThesisTemplate.out'.
+\openout3 = `"z3460979 Thesis B.out"'.
 
  (include/symbolslist.tex
 \@sym=\write4
-\openout4 = `ThesisTemplate.sym'.
+\openout4 = `"z3460979 Thesis B.sym"'.
 
 \@sub=\write5
-\openout5 = `ThesisTemplate.sub'.
+\openout5 = `"z3460979 Thesis B.sub"'.
 
 )
 (header/frontpage.tex [1
@@ -702,7 +702,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--82
 
 ] [4
 
-] (ThesisTemplate.toc
+] ("z3460979 Thesis B.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -727,12 +727,12 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ])
 \tf@toc=\write6
-\openout6 = `ThesisTemplate.toc'.
+\openout6 = `"z3460979 Thesis B.toc"'.
 
  [6]
-(ThesisTemplate.lof)
+("z3460979 Thesis B.lof")
 \tf@lof=\write7
-\openout7 = `ThesisTemplate.lof'.
+\openout7 = `"z3460979 Thesis B.lof"'.
 
  [7
 
@@ -766,7 +766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<./images/highplex.png, id=139, 600.74437pt x 483.8075pt>
+<./images/highplex.png, id=141, 600.74437pt x 483.8075pt>
 File: ./images/highplex.png Graphic file (type png)
 
 <use ./images/highplex.png>
@@ -779,67 +779,82 @@ Overfull \hbox (202.40433pt too wide) in paragraph at lines 69--70
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
 [3] [4 <./images/highplex.png>]
-<./images/decklayout.png, id=152, 1048.66782pt x 590.95781pt>
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+[5] [6] <./images/decklayout.png, id=170, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
-Package pdftex.def Info: ./images/decklayout.png used on input line 83.
+Package pdftex.def Info: ./images/decklayout.png used on input line 92.
 (pdftex.def)             Requested size: 1048.66527pt x 590.95636pt.
 
-Overfull \hbox (650.32669pt too wide) in paragraph at lines 83--84
+Overfull \hbox (650.32669pt too wide) in paragraph at lines 92--93
  [][] 
  []
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
-<./images/mechatronicslogo2_no_UNSW.png, id=153, 273.4215pt x 48.6618pt>
+<./images/cassette.png, id=171, 306.64563pt x 263.98625pt>
+File: ./images/cassette.png Graphic file (type png)
+
+<use ./images/cassette.png>
+Package pdftex.def Info: ./images/cassette.png used on input line 99.
+(pdftex.def)             Requested size: 306.64487pt x 263.9856pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+
+<./images/mechatronicslogo2_no_UNSW.png, id=172, 273.4215pt x 48.6618pt>
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 105.
+ine 120.
 (pdftex.def)             Requested size: 273.4208pt x 48.66167pt.
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 113.
+ine 128.
 (pdftex.def)             Requested size: 179.25113pt x 31.90303pt.
 
-Overfull \hbox (0.71193pt too wide) in paragraph at lines 114--114
+Overfull \hbox (0.71193pt too wide) in paragraph at lines 129--129
 [] [] 
  []
 
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 118.
+ine 133.
 (pdftex.def)             Requested size: 89.62556pt x 15.95076pt.
 
-Overfull \hbox (0.71193pt too wide) in paragraph at lines 119--119
+Overfull \hbox (0.71193pt too wide) in paragraph at lines 134--134
 [] [] 
  []
 
 
-LaTeX Warning: Citation `luce_probabilistic_1958' on page 5 undefined on input 
-line 129.
+LaTeX Warning: Citation `luce_probabilistic_1958' on page 7 undefined on input 
+line 144.
 
 
-Overfull \hbox (22.1736pt too wide) in paragraph at lines 135--143
+Overfull \hbox (22.1736pt too wide) in paragraph at lines 150--158
  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [5] [6 <./images/decklayout.png>] [7 <./images/mechatronicslogo2_no_UNSW.png>
-]
+) [7] [8 <./images/decklayout.png>] [9 <./images/cassette.png> <./images/mechat
+ronicslogo2_no_UNSW.png>] [10]
 \openout2 = `body/2_literaturereview.aux'.
 
  (body/2_literaturereview.tex
 Chapter 2.
-) [8
+) [11
 
 
 
@@ -848,7 +863,7 @@ Chapter 2.
 
  (body/3_methodology.tex
 Chapter 3.
-) [9
+) [12
 
 
 
@@ -857,7 +872,7 @@ Chapter 3.
 
  (body/4_results.tex
 Chapter 4.
-) [10
+) [13
 
 
 
@@ -866,7 +881,7 @@ Chapter 4.
 
  (body/5_discussion.tex
 Chapter 5.
-) [11
+) [14
 
 
 
@@ -875,7 +890,7 @@ Chapter 5.
 
  (body/6_conclusion.tex
 Chapter 6.
-) [12
+) [15
 
 
 
@@ -884,43 +899,38 @@ Chapter 6.
 
  (body/7_futurework.tex
 Chapter 7.
-) [13
+) [16
 
-
-
-] (ThesisTemplate.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [14
 
 
 ]
+No file "z3460979 Thesis B".bbl.
 \openout2 = `body/A_appendix.aux'.
 
- (body/A_appendix.tex
+(body/A_appendix.tex
 Appendix A.
-) [15
+) [17
+
 
 
 ]
 \@syc=\write8
-\openout8 = `ThesisTemplate.syc'.
+\openout8 = `"z3460979 Thesis B.syc"'.
 
- (ThesisTemplate.sym)
+ ("z3460979 Thesis B.sym")
 \@suc=\write9
-\openout9 = `ThesisTemplate.suc'.
+\openout9 = `"z3460979 Thesis B.suc"'.
 
- (ThesisTemplate.sub)
+ ("z3460979 Thesis B.sub")
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
- (ThesisTemplate.aux
-(body/1_introduction.aux) (body/2_literaturereview.aux) (body/3_methodology.aux
-) (body/4_results.aux) (body/5_discussion.aux) (body/6_conclusion.aux)
-(body/7_futurework.aux) (body/A_appendix.aux))
+
+("z3460979 Thesis B.aux" (body/1_introduction.aux) (body/2_literaturereview.aux
+) (body/3_methodology.aux) (body/4_results.aux) (body/5_discussion.aux)
+(body/6_conclusion.aux) (body/7_futurework.aux) (body/A_appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
-Package rerunfilecheck Info: File `ThesisTemplate.out' has not changed.
+Package rerunfilecheck Info: File `"z3460979 Thesis B".out' has not changed.
 (rerunfilecheck)             Checksum: 8E4CC2690E749A614FBB35E4DD11B6F7;886.
 
 
@@ -931,22 +941,22 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10402 strings out of 493335
- 153950 string characters out of 3139237
- 269570 words of memory out of 3000000
- 13573 multiletter control sequences out of 15000+200000
+ 10413 strings out of 493335
+ 154163 string characters out of 3139237
+ 269711 words of memory out of 3000000
+ 13578 multiletter control sequences out of 15000+200000
  12533 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,79p,1296b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,79p,1301b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb>
-Output written on ThesisTemplate.pdf (22 pages, 2100976 bytes).
+Output written on "z3460979 Thesis B.pdf" (24 pages, 2607707 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

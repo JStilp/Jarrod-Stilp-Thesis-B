@@ -74,13 +74,17 @@ The extraction process to be automated has a number of notable requirements. The
 \subsection{The Extraction Process}
 \label{subsec:intro_extraction}
 
-In order to allow the aims and scope of the work to be clearly defined, a condensed overview of the extraction process developed by AusDiagnostics is presented.
+In order to allow the aims and scope of the work to be clearly defined, a condensed overview of the extraction process developed by AusDiagnostics is presented. It should be noted that unless explicitly stated, all operations are to be automated.\\
 
-The extraction process requires that the clinical sample undergoes a number of chemical steps across different locations on the robot. To aid in understanding the liquid handling involved, Figure \ref{fig:decklayout} displays the important sites on the deck. The process will begin with the operator manually loading 24 individual clinical samples into the location labelled ``Clinical Samples". In order to conform to existing products used by customers, it is then required that the chemical processing takes place in the locations labelled ``Samples". In order to transfer the liquid between locations, the robot will pick up 1000$\mu$L tips from the locations marked ``Tips". 
+The extraction process requires that the clinical sample undergoes a number of chemical steps across different locations on the robot. To aid in understanding the liquid handling involved, Figure \ref{fig:decklayout} displays the important sites on the deck. The process will begin with the operator manually loading 24 individual clinical samples into the location labelled ``Clinical Samples". In order to conform to existing products used by customers, it is then required that the chemical processing takes place in the locations labelled ``Samples". In order to transfer the liquid between locations, the robot will pick up 1000$\mu$L tips from the locations marked ``Tips".\\
 
-The sample processing locations must accept modules that fit within the standard block size (SBS) format. In these modules, the sample will undergo the following 6 stages in order to extract the target DNA and RNA:
+The sample processing locations must accept modules that fit within the standard block size (SBS) format. These blocks are required to each accept 8 cassettes, one for each sample (pictured in Figure \ref{fig:cassette}). Each cassette includes 6 tubes, which will be the site of a particular chemical reaction in order to extract the target DNA and RNA:
 \begin{enumerate}
-	\item 
+	\item 500$\mu$L of clinical sample is pipetted into tube location 2, as marked in Figure \ref{fig:cassette}. Within this tube as supplied by AusDiagnostics, there will already be 10$\mu$L of magnetic bead mixture along with 440$\mu$L of lysis buffer. The lysis buffer will destroy the cell walls, releasing the target DNA or RNA to be bound to the magnetic silica beads. This process is required to take place at 60$\deg$C in order to increase the rate of reaction Due to the low volume of liquid in this step, it is to be completed in one of the 1mL low profile tubes. This aids with liquid handling precision.
+	\item The target DNA or RNA is now bound to the beads, which are suspended in the waste liquid (supernatant). In order to capture only the bead suspension, the entire liquid mixture is aspirated via pipette tip and subsequently move to the location marked ``Waste Separation". In this location, a magnetic field is to be applied to capture the magnetic silica beads within the pipette tip. While captured, the supernatant must then be expelled into a waste container in this location. The tip now contains only the magnetic beads with bound targets.
+	\item Despite the supernatant having been expelled, there will still be a significant amount of waste retained on the bead surface. To remove this and clean the beads, a sequence of 3 wash steps must then occur in tube locations 1, 5 and 6. To achieve this, the beads are first re-suspended in the tube, which contains 800$\mu$L of a particular wash buffer. The suspension must then be mixed via pipetting in order to to ensure the bead surface is properly exposed. The entire liquid mixture is then aspirated once again and transferred to the waste location, where via the same means as step 2, the waste liquid is disposed of while the beads are retained. This process is repeated 3 times in the tubes noted above to ensure no waste matter clings to the bead surface.
+	\item With the beads now clean and still bound to the target, the mixture is transferred to location 3 of the cassette. The elution buffer is used to break the bond between the target DNA and RNA and the magnetic silica beads. This process is also required to be completed at 60$deg$C to reduce the time required. Following this step, the target DNA or RNA of interest is now contained within the elution buffer, along with the magnetic silica beads which are now waste.
+	\item The final step is to capture only the target DNA or RNA within the elution buffer, leaving behind the magnetic beads. This is required to take place in tube location 4. This is a low volume reaction, containing only 100$\mu$L of elution buffer and is therefore completed in the final small profile tube. The pipette must then aspirate this mixture, following bead removal, and contain only the elution buffer and target mixture required for amplification in stage 2 of the assay.
 \end{enumerate}
 
 \begin{figure}
@@ -90,6 +94,12 @@ The sample processing locations must accept modules that fit within the standard
 	\label{fig:decklayout}
 \end{figure} 
 
+\begin{figure}
+	\centering
+	\includegraphics{cassette.png}
+	\caption[Extraction cassette tubes.]{The tube format to be used as the site of the sample processing.}
+	\label{fig:cassette}
+\end{figure} 
 
 
 \section{Aim}
