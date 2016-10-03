@@ -1,0 +1,18 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: z3460979 Thesis B.aux
+A level-1 auxiliary file: body/1_introduction.aux
+A level-1 auxiliary file: body/2_literaturereview.aux
+A level-1 auxiliary file: body/3_methodology.aux
+A level-1 auxiliary file: body/4_results.aux
+A level-1 auxiliary file: body/5_discussion.aux
+A level-1 auxiliary file: body/6_conclusion.aux
+A level-1 auxiliary file: body/7_futurework.aux
+The style file: unsrt.bst
+I couldn't open database file ../Bibtex/library.bib
+---line 31 of file z3460979 Thesis B.aux
+ : \bibdata{../Bibtex/library
+ :                           }
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: body/A_appendix.aux
+I found no database files---while reading file z3460979 Thesis B.aux
+Warning--I didn't find a database entry for "luce_probabilistic_1958"
+(There were 2 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  2 OCT 2016 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  3 OCT 2016 10:44
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
@@ -47,6 +47,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \NomItmMrg=\skip50
 \NomLblSep=\skip51
 \UnitLabelWdth=\skip52
+)
+("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\was\gensymb.sty"
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
@@ -605,20 +608,32 @@ LaTeX Warning: Unused global option(s):
 (body/6_conclusion.aux) (body/7_futurework.aux) (body/A_appendix.aux))
 \openout1 = `"z3460979 Thesis B.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Info: Redefining \celsius on input line 64.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 64.
+
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 64.
+Package gensymb Info: Using \Omega for \ohm on input line 64.
+
+Package gensymb Warning: Not defining \micro.
+
 
 ("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -641,7 +656,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 63.
+Package hyperref Info: Link coloring OFF on input line 64.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -650,9 +665,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
 ("z3460979 Thesis B.out") ("z3460979 Thesis B.out")
 \@outlinefile=\write3
@@ -789,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[5] [6] <./images/decklayout.png, id=170, 1048.66782pt x 590.95781pt>
+[5] [6] <./images/decklayout.png, id=171, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
@@ -802,7 +817,7 @@ Overfull \hbox (650.32669pt too wide) in paragraph at lines 92--93
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
-<./images/cassette.png, id=171, 306.64563pt x 263.98625pt>
+<./images/cassette.png, id=172, 306.64563pt x 263.98625pt>
 File: ./images/cassette.png Graphic file (type png)
 
 <use ./images/cassette.png>
@@ -811,42 +826,49 @@ Package pdftex.def Info: ./images/cassette.png used on input line 99.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 
-<./images/mechatronicslogo2_no_UNSW.png, id=172, 273.4215pt x 48.6618pt>
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+<./images/mechatronicslogo2_no_UNSW.png, id=173, 273.4215pt x 48.6618pt>
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 120.
+ine 122.
 (pdftex.def)             Requested size: 273.4208pt x 48.66167pt.
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 128.
+ine 130.
 (pdftex.def)             Requested size: 179.25113pt x 31.90303pt.
 
-Overfull \hbox (0.71193pt too wide) in paragraph at lines 129--129
+Overfull \hbox (0.71193pt too wide) in paragraph at lines 131--131
 [] [] 
  []
 
 File: ./images/mechatronicslogo2_no_UNSW.png Graphic file (type png)
 <use ./images/mechatronicslogo2_no_UNSW.png>
 Package pdftex.def Info: ./images/mechatronicslogo2_no_UNSW.png used on input l
-ine 133.
+ine 135.
 (pdftex.def)             Requested size: 89.62556pt x 15.95076pt.
 
-Overfull \hbox (0.71193pt too wide) in paragraph at lines 134--134
+Overfull \hbox (0.71193pt too wide) in paragraph at lines 136--136
 [] [] 
  []
 
 
 LaTeX Warning: Citation `luce_probabilistic_1958' on page 7 undefined on input 
-line 144.
+line 146.
 
 
-Overfull \hbox (22.1736pt too wide) in paragraph at lines 150--158
+Overfull \hbox (22.1736pt too wide) in paragraph at lines 152--160
  [] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [7] [8 <./images/decklayout.png>] [9 <./images/cassette.png> <./images/mechat
 ronicslogo2_no_UNSW.png>] [10]
@@ -903,14 +925,19 @@ Chapter 7.
 
 
 
-]
-No file "z3460979 Thesis B".bbl.
-\openout2 = `body/A_appendix.aux'.
+] ("z3460979 Thesis B.bbl"
 
-(body/A_appendix.tex
-Appendix A.
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
 ) [17
 
+
+]
+\openout2 = `body/A_appendix.aux'.
+
+ (body/A_appendix.tex
+Appendix A.
+) [18
 
 
 ]
@@ -922,14 +949,14 @@ Appendix A.
 \openout9 = `"z3460979 Thesis B.suc"'.
 
  ("z3460979 Thesis B.sub")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 ("z3460979 Thesis B.aux" (body/1_introduction.aux) (body/2_literaturereview.aux
 ) (body/3_methodology.aux) (body/4_results.aux) (body/5_discussion.aux)
 (body/6_conclusion.aux) (body/7_futurework.aux) (body/A_appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `"z3460979 Thesis B".out' has not changed.
 (rerunfilecheck)             Checksum: 8E4CC2690E749A614FBB35E4DD11B6F7;886.
 
@@ -941,10 +968,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10413 strings out of 493335
- 154163 string characters out of 3139237
- 269711 words of memory out of 3000000
- 13578 multiletter control sequences out of 15000+200000
+ 10462 strings out of 493335
+ 154882 string characters out of 3139237
+ 270909 words of memory out of 3000000
+ 13619 multiletter control sequences out of 15000+200000
  12533 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,79p,1301b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -953,10 +980,11 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb>
-Output written on "z3460979 Thesis B.pdf" (24 pages, 2607707 bytes).
+public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb>
+Output written on "z3460979 Thesis B.pdf" (25 pages, 2614883 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
