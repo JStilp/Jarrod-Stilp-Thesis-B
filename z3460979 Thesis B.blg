@@ -7,12 +7,37 @@ A level-1 auxiliary file: body/5_discussion.aux
 A level-1 auxiliary file: body/6_conclusion.aux
 A level-1 auxiliary file: body/7_futurework.aux
 The style file: unsrt.bst
-I couldn't open database file ../Bibtex/library.bib
----line 31 of file z3460979 Thesis B.aux
- : \bibdata{../Bibtex/library
- :                           }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: body/A_appendix.aux
-I found no database files---while reading file z3460979 Thesis B.aux
+Database file #1: References.bib
+Warning--I'm ignoring 14405884's extra "journal" field
+--line 7 of file References.bib
+Warning--I'm ignoring 15156909's extra "journal" field
+--line 37 of file References.bib
+Warning--I'm ignoring 2563996's extra "title" field
+--line 53 of file References.bib
+Warning--I'm ignoring 6464884's extra "year" field
+--line 87 of file References.bib
+Warning--I'm ignoring 1704922's extra "year" field
+--line 126 of file References.bib
+Warning--I'm ignoring 7238517's extra "year" field
+--line 137 of file References.bib
+Warning--I'm ignoring 20070113880's extra "year" field
+--line 163 of file References.bib
+Warning--I'm ignoring 10650397's extra "journal" field
+--line 199 of file References.bib
+Warning--I'm ignoring 9774403's extra "journal" field
+--line 240 of file References.bib
+Warning--I'm ignoring 8667402's extra "journal" field
+--line 256 of file References.bib
 Warning--I didn't find a database entry for "luce_probabilistic_1958"
-(There were 2 error messages)
+Warning--empty booktitle in 12436620
+Warning--empty journal in 6464884
+Warning--empty booktitle in 2006289990179
+Warning--empty booktitle in 20144600208116
+Warning--empty journal in 7238517
+Warning--empty journal in 20070113880
+Warning--empty journal in 1704922
+Warning--empty booktitle in 11303490
+Warning--empty booktitle in 12096602
+Warning--empty author in 2006189852255
+(There were 21 warnings)

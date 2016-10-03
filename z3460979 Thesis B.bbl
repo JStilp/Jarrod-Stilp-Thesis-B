@@ -1,3 +1,121 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{14405884}
+Honghua Liao.
+\newblock Simulations research on smith predictive adaptive fuzzy-pid compound
+  controller in the temperature control system of microchip level pcr
+  instrument.
+\newblock {\em Applied Mechanics and Materials}, 373-375:1324 -- 31, 2013//.
+
+\bibitem{2563996}
+Rym Kefi, Bertrand Mafart, Jean~Louis Spadoni, Alain Stevanovitch, and Eliane
+  Beraud-Colomb.
+\newblock Real-time polymerase chain reaction (pcr) for the study of ancient
+  dna.
+\newblock {\em Comptes Rendus - Palevol}, 2(2):125 -- 132, 2003.
+
+\bibitem{15156909}
+J.E. Edwards and D.W. Otterson.
+\newblock Tech talk: (5) temperature measurement basics.
+\newblock {\em Measurement and Control}, 47(9):276 -- 82, 2014/11/.
+
+\bibitem{12436620}
+Jing Huang, Zhangwei Chen, and Kewei Hu.
+\newblock Fea for steady-state thermal performance of pcr thermal-cycler based
+  on thermoelectric cooler.
+\newblock volume vol.2, pages 1097 -- 100, Piscataway, NJ, USA, 2011//.
+\newblock steady state thermal performance;PCR thermal cycler;thermoelectric
+  cooler;polymerase chain reaction;PCR technology;DNA sequence;periodic
+  heating;cooling;finite element model;multistage TEC;ANSYS Workbench 12.0;TEC
+  XLT2389 and;.
+
+\bibitem{20160801988967}
+R.~Shirafkan, M.M. Abdevand, M.~Ghanbari, O.~Shoaei, and M.J. Yazdanpanah.
+\newblock Design and implementation of a nonlinear controller for thermal
+  cycler with application to dna amplification.
+\newblock {\em Transactions of the Institute of Measurement and Control},
+  38(3):293 -- 304, 2016.
+
+\bibitem{6464884}
+John~R. Widomski, Adrian Fawcett, Douglas~E. Olsen, Richard~W. Noreiks,
+  Charles~M. Wittmer, Paul~M. Hetherington, John~G. Atwood, and Keith~S.
+  Ferrara.
+\newblock Thermal cycler for pcr.
+\newblock 11654239(20070113880), 2007/05/24.
+
+\bibitem{2006289990179}
+Bijan Karimpourian and Jafar Mahmoudi.
+\newblock Some important considerations in heatsink design.
+\newblock volume 2005, pages 406 -- 413, Berlin, Germany, 2005.
+
+\bibitem{20144600208116}
+B.~Baudouy.
+\newblock Heat transfer and cooling techniques at low temperature.
+\newblock pages 329 -- 352, Erice, Italy, 2014.
+
+\bibitem{7238517}
+Fenton Williams, Albert~Carmelo Mossa, Lisa~May Goven, Timothy~M. Woudenberg,
+  Richard Leath, Marcel Margulies, John~Girdner Atwood, Clive Miles, and
+  Robert~P. Ragusa.
+\newblock Thermal cycler for automatic performance of the polymerase chain
+  reaction with close temperature control.
+\newblock 10691186(7238517), 2007/07/03.
+
+\bibitem{20070113880}
+John~R. Widomski, Adrian Fawcett, Douglas~E. Olsen, Richard~W. Noreiks,
+  Charles~M. Wittmer, Paul~M. Hetherington, John~G. Atwood, and Keith~S.
+  Ferrara.
+\newblock Thermal cycler for pcr.
+\newblock 11654239(20070113880), 2007/05/24.
+
+\bibitem{1704922}
+Carl~T. Wittwer.
+\newblock System and methods for monitoring pcr processes.
+\newblock 05020549.1(1704922), 2006/09/27.
+
+\bibitem{20130415930883}
+Luis~E. Vilchiz-Bravo, Arturo Pacheco-Vega, and Brent~E. Handy.
+\newblock Sensor placement in temperature-based control strategies to improve
+  baseline stability in tian-calvet microcalorimeters.
+\newblock {\em Journal of Thermal Analysis and Calorimetry}, 111(1):857 -- 867,
+  2013.
+
+\bibitem{OLAFSSON1997}
+P.~OLAFSSON, R.~SANDSTROM, and {\AA}~KARLSSON.
+\newblock Comparison of experimental, calculated and observed values for
+  electrical and thermal conductivity of aluminium alloys.
+\newblock {\em Journal of Materials Science}, 32(16):4383--4390, 1997.
+
+\bibitem{11303490}
+A.~Balraj, A.~Patvardhan, V.~Renuka~Devi, R.~Aiswarya, and V.~Prasen.
+\newblock Embedded temperature monitoring and control unit.
+\newblock pages 293 -- 7, Piscataway, NJ, USA, 2010//.
+
+\bibitem{10650397}
+P.~Welander.
+\newblock Challenges of temperature sensing.
+\newblock {\em Control Engineering}, 55(12):41 -- 2, 2008/12/.
+
+\bibitem{12096602}
+A.~Cellatoglu and K.~Balasubramanian.
+\newblock Assessment of the dynamic performance of process control systems: A
+  case study with temperature controller.
+\newblock volume vol.4, pages 19 -- 23, Piscataway, NJ, USA, 2011//.
+
+\bibitem{2006189852255}
+Rare earth magnets: Making the world a better, faster, safer place.
+\newblock {\em Industrial Heating}, 73(4):28 --, 2006.
+
+\bibitem{9774403}
+S.S. Shevkoplyas, A.C. Siegel, R.M. Westervelt, M.G. Prentiss, and G.M.
+  Whitesides.
+\newblock The force acting on a superparamagnetic bead due to an applied
+  magnetic field.
+\newblock {\em Lab on a Chip}, 7(10):1294 -- 302, 2007/10/.
+
+\bibitem{8667402}
+C.~Mikkelsen and H.~Bruus.
+\newblock Microfluidic capturing-dynamics of paramagnetic bead suspensions.
+\newblock {\em Lab on a Chip}, 5(11):1293 -- 7, 2005/11/.
 
 \end{thebibliography}
