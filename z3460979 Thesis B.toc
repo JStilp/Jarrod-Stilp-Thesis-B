@@ -6,12 +6,15 @@
 \contentsline {subsection}{\numberline {1.1.1}The Extraction Process}{5}{subsection.1.1.1}
 \contentsline {section}{\numberline {1.2}Aim}{7}{section.1.2}
 \contentsline {section}{\numberline {1.3}Scope}{7}{section.1.3}
-\contentsline {section}{\numberline {1.4}Methodology}{7}{section.1.4}
-\contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}
-\contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.3}
-\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}
-\contentsline {chapter}{\numberline {5}Discussion}{14}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{15}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{16}{chapter.7}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{17}{chapter.7}
-\contentsline {chapter}{\numberline {A}Raw Results}{18}{appendix.A}
+\contentsline {subsection}{\numberline {1.3.1}Mechanical}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Electronic}{10}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Software}{11}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Methodology}{12}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Review}{14}{chapter.2}
+\contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}Results}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5}Discussion}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{18}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{19}{chapter.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{20}{chapter.7}
+\contentsline {chapter}{\numberline {A}Raw Results}{21}{appendix.A}

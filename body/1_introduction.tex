@@ -109,6 +109,34 @@ This work aims to develop and integrate into the Gene-Plex Robot Platform the ha
 
 \section{Scope}
 \label{sec:intro_scope}
+The features required by the Gene-Plex Extractor, over those already part of the Gene-Plex Processor, can be grouped into 3 overall categories. These are detailed below, including clear definition of their inclusion or exclusion from the scope of this work.\\
+
+\subsection{Mechanical}
+\label{sec:intro_mechanical}
+The summary of the extraction process to be implemented, given in Section \ref{subsec:intro_extraction}, revealed a number of missing mechanical components when compared to the description of the Gene-Plex Processor given in Section \ref{sec:intro_background}. 
+
+\begin{enumerate}
+	\item [SBS Reaction Module] As was noted in Section \ref{subsec:intro_extraction}, the extraction process is to take place within cassettes consisting of 6 tubes. These must be located in the 3 SBS deck locations as marked in Figure \ref{fig:decklayout}, with each SBS location accepting 8 cassettes. The design of the module which will accept these cassettes is within the scope of this thesis and will form a large component of the design work undertaken.
+
+	\item [Heating Element] In order to create a commercially viable product, it has been stipulated that the tubes within each cassette where the the lysis buffers and elution buffers are held (tubes 2 and 4), a temperature of 60$\degree$C must be maintained for the duration of processing. This is a core requirement of the extraction process and is included in the scope of this project.
+
+	\item [Magnetic Separation] The Gene-Plex Extractor can be seen to require magnetic manipulation of the silica beads in two different locations. In order to allow the extracted DNA or RNA to be captured after separation from the beads in tube 4, the beads must be retained in the tube while the liquid is aspirated by the pipette. Secondly, the magnetic beads must be captured within the pipette tip during the expulsion of the waste supernatant after all wash steps are completed. The magnetic separation required in both of these processes is defined to be within the scope of this work. 
+
+	\item [Waste Disposal] Following the wash steps and the subsequent separation of the magnetic beads and the bound DNA or RNA from the wash buffer, the supernatant must be hygienically disposed of. This waste disposal method is required in order to ensure that no contamination occurs between the clinical samples being processed. It is also crucial to ensure that no contact can occur between the operator and the biological matter which is a by product of the extraction process. The development of this waste disposal hardware is included in the scope of this work.
+	
+\end{enumerate}
+
+\subsection{Electronic}
+\label{sec:intro_electronics}
+In order to account for the newly integrated capabilities in the Gene-Plex Extractor, some modifications to the Gene-Plex Processor electronics are required. Due to the temperature control requirements of the extraction process, an electronics board capable of communicating with the robot software and driving the heating elements appropriately is required. This however is not included in the scope of this work for a number of reasons. One of the components of the Gene-Plex processor is a device called the MTX Cycler. This device controls the temperature of the already extracted sample (during stage 2, amplification) precisely between set temperatures to enable PCR (Polymerase Chain Reaction) to occur and hence amplify the sample. The MTX Cycler controls the temperature of liquid volumes significantly smaller than those involved in extraction and in a different form factor, making it unsuitable for this application. It does however provide the necessary electronics and interfaces required to drive any standard form of heating element used here. Further to this, the electronic board used to control the MTX Cycler is currently being integrated into a newly developed control board for the Gene-Plex Platform by AusDiagnostics engineers. This new board will also be capable of driving the heating elements selected for this application. Therefore, due to the redundancy of work on this component of the Gene-Plex Extractor and due to a suitable requirement existing, the development of the required electronic is not within the scope of this work.
+
+\subsection{Software}
+\label{sec:intro_software}
+In order to enable the Gene-Plex Platforms controlling software to utilize the newly integrated capabilities, two main components of software must be created:
+\begin{enumerate}
+	\item[Temperature Controller] In order to control the heating elements to maintain a stable and accurate 60$\degree$C for the lysis and elution stages, a temperature controller must be implemented. This temperature controller must be designed according to the temperature response of the heated hardware using appropriate methods and implemented as a controller in software. This element of the Gene-Plex Extractor's requirements will also form a core part of this work and is included within the project scope.
+	\item [Routine Addition] A was briefly noted in Section \ref{sec:intro_background}, the Gene-Plex Platform is highly adaptable in its ability to perform assays requiring differing liquid handling operations. The platform achieves this by utilizing a number of library routines which may be called upon the assay requiring a particular movement, such as expelling liquid, moving to a certain robot position etc. While the vast majority of these library routines will be directly effective within the Gene-Plex Extractor, due to the newly integrated capabilities further routines will be required. These will include routines for the mixing of liquids in the cassette tubes, magnetic separation and a table of definitions which specifies the locations of each of the tubes and pieces of deck hardware. These software additions are not included within the scope of this work and will be implemented by software engineers at AusDiagnostics.
+\end{enumerate}
 
 
 \section{Methodology}
