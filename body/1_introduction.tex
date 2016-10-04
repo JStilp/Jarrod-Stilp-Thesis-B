@@ -62,14 +62,15 @@ Successful diagnostics, within the context of this thesis, can be summarised in 
 
 AusDiagnostics currently supplies customers with the instruments and chemical products required to complete stages two and three (amplification and analysis) of the diagnosis. This requires customers to purchase extraction equipment from alternative suppliers and represents a significant weakness and loss of profit. Research and development conducted by AusDiagnostics has determined that the optimal approach, when considering speed and efficiency, is super-paramagnetic bead based extraction. The beads utilised are of the shell-core variety. The core is composed of an iron oxide, which provides the super paramagnetic properties required for physical manipulation of the beads via a magnetic field. The shell is comprised of silica, which via chemical modification has the propensity to bond DNA and RNA to the bead surface. The techniques developed by researchers at AusDiagnostics utilising the magnetic silica beads have been validated and verified via manual operation. This thesis concerns itself with the automation of the developed extraction process, to produce a commercially viable robotic instrument. This instrument will be referred to as the Gene-Plex Extractor.\\
 
-The extraction process to be automated has a number of notable requirements. These include liquid handling via precise pipetting, including mixing and liquid transfer. Also required is manipulation of the magnetic silica beads to separate the bonded and hence captured target DNA or RNA, along with heating to a specified, constant temperature to act to increase the rate of the chemical processes. The automation of the extraction process will be achieved by integrating the required capabilities into the robot produced by AusDiagnostics to conduct the amplification stage of diagnosis. The instrument, based of the Gene-Plex platform and sold as the High-Plex Processor, is pictured in it's current application in Figure \ref{fig:highplex}. The Gene-Plex platform is essentially a liquid handling robot. The robot carries out the amplification stage by precisely pipetting and transferring liquid mixtures between the tubes and instruments on the deck, using disposable tips. Each individual assay (an analysis conducted to determine the presence and amount of a substance within a volume) utilises an individual layout of components on the robots deck. This makes the platform highly configurable for differing setups.\\
+The extraction process to be automated has a number of notable requirements. These include liquid handling via precise pipetting, including mixing and liquid transfer. Also required is manipulation of the magnetic silica beads to separate the bonded and hence captured target DNA or RNA, along with heating to a specified, constant temperature to act to increase the rate of the chemical processes. The automation of the extraction process will be achieved by integrating the required capabilities into the robot produced by AusDiagnostics to conduct the amplification stage of diagnosis. The instrument, based of the Gene-Plex platform and sold as the High-Plex Processor, is pictured in it's current application in Figure \ref{fig:highplex}. The Gene-Plex platform is essentially a liquid handling robot. The robot carries out the amplification stage by precisely pipetting and transferring liquid mixtures between the tubes and instruments on the deck, using disposable tips. Each individual assay (an analysis conducted to determine the presence and amount of a substance within a volume) utilises an individual layout of components on the robots deck. This makes the platform highly configurable for differing setups.
 
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
-	\includegraphics{highplex.png}
+	\includegraphics[width = \textwidth]{highplex.png}
 	\caption[High-Plex Platform.]{The Gene-Plex liquid handling robot platform, as implemented as the High-Plex Processor.}
 	\label{fig:highplex}
 \end{figure} 
+\FloatBarrier
 
 \subsection{The Extraction Process}
 \label{subsec:intro_extraction}
@@ -77,6 +78,14 @@ The extraction process to be automated has a number of notable requirements. The
 In order to allow the aim and scope of the work to be clearly defined, a condensed overview of the extraction process developed by AusDiagnostics is presented. It should be noted that unless explicitly stated, all operations are to be automated.\\
 
 The extraction process requires that the clinical sample undergoes a number of chemical steps across different locations on the robot. To aid in understanding the liquid handling involved, Figure \ref{fig:decklayout} displays the important sites on the deck. The process will begin with the operator manually loading 24 individual clinical samples into the location labelled ``Clinical Samples". In order to conform to existing products used by customers, it is then required that the chemical processing takes place in the locations labelled ``Samples". In order to transfer the liquid between locations, the robot will pick up 1000$\mu$L tips from the locations marked ``Tips".\\
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{decklayout.png}
+	\caption[Extractor deck layout.]{The layout to be used for the Gene-Plex Extractor.}
+	\label{fig:decklayout}
+\end{figure} 
+\FloatBarrier
 
 The sample processing locations must accept modules that fit within the standard block size (SBS) format. These blocks are required to each accept 8 cassettes, one for each sample (pictured in Figure \ref{fig:cassette}). Each cassette includes 6 tubes, which will be the site of a particular chemical reaction in order to extract the target DNA and RNA:
 \begin{enumerate}
@@ -87,29 +96,22 @@ The sample processing locations must accept modules that fit within the standard
 	\item The final step is to capture only the target DNA or RNA within the elution buffer, leaving behind the magnetic beads. This is required to take place in tube location 4. This is a low volume reaction, containing only 100$\mu$L of elution buffer and is therefore completed in the final small profile tube. The pipette must then aspirate this mixture, following bead removal, and contain only the elution buffer and target mixture required for amplification in stage 2 of the assay.
 \end{enumerate}
 
-\begin{figure}
-	\centering
-	\includegraphics{decklayout.png}
-	\caption[Extractor deck layout.]{The layout to be used for the Gene-Plex Extractor.}
-	\label{fig:decklayout}
-\end{figure} 
-
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\includegraphics{cassette.png}
 	\caption[Extraction cassette tubes.]{The tube format to be used as the site of the sample processing.}
 	\label{fig:cassette}
 \end{figure} 
-
+\FloatBarrier
 
 \section{Aim}
 \label{sec:intro_aim}
 %May bee to summarise what is missing from the robot before stating the aim
-This work aims to develop and integrate into the Gene-Plex Robot Platform the hardware necessary for carrying out the described chemical processes, the required magnetic manipulations and the controller necessary to maintain the stipulated constant 60$\degree$C temperature.\\
+This work aims to develop and integrate into the Gene-Plex Robot Platform the hardware necessary for carrying out the described chemical processes, the required magnetic manipulations and the controller necessary to maintain the stipulated constant 60$\degree$C temperature.
 
 \section{Scope}
 \label{sec:intro_scope}
-The features required by the Gene-Plex Extractor, over those already part of the Gene-Plex Processor, can be grouped into 3 overall categories. These are detailed below, including clear definition of their inclusion or exclusion from the scope of this work.\\
+The features required by the Gene-Plex Extractor, over those already part of the Gene-Plex Processor, can be grouped into 3 overall categories. These are detailed below, including clear definition of their inclusion or exclusion from the scope of this work.
 
 \subsection{Mechanical}
 \label{sec:intro_mechanical}
@@ -142,49 +144,49 @@ In order to enable the Gene-Plex Platforms controlling software to utilize the n
 \section{Methodology}
 \label{sec:intro_method}
 
-
-% Figure 1.1 is defined below (Large mechatronics logo). Note figures are placed automatically by LaTeX and will not necessarily be placed before the next text.
-\begin{figure}
-\centering
-\includegraphics{mechatronicslogo2_no_UNSW.png}
-\caption[Short caption for list of figures.]{Full caption for the Mechatronics Logo. Designed by Wei Hua Chen.}
-\label{fig:intro_logo}
-\end{figure}
-
-\begin{figure}[!ht] \centering
-\captionsetup[subfigure]{width=2.5in} % <-- Use this to control text which is poorly spaced under a subfigure. 
-\begin{subfigure}[t]{0.45\textwidth}
-\includegraphics[width=\textwidth]{mechatronicslogo2_no_UNSW.png}
-\caption[Subfigure caption.]{Subfigure caption.}
-\label{fig:intro_subfig1}
-\end{subfigure}
-\begin{subfigure}[t]{0.45\textwidth}
-\includegraphics[width=0.5\textwidth]{mechatronicslogo2_no_UNSW.png}
-\caption[Subfigure caption.]{Subfigure caption.}
-\label{fig:intro_subfig2}
-\end{subfigure}
-\caption[Abbreviated caption.]{Overall figure caption.}
-\label{fig:intro_subfig}
-\end{figure}
-
-Figure \ref{fig:intro_subfig} and subfigure \ref{fig:intro_subfig2} or \subref{fig:intro_subfig2} contains ...
-Table \ref{tab:intro_table_1}. 
-
-Citations: Luce \cite{luce_probabilistic_1958} wrote something important.
-
-% Note: You can add a table of figures to the header pages by uncommenting \listoftables in the frontpages.tex
-
-\begin{table}[h!]
-\begin{center}
-\begin{tabular}{ p{3cm}  p{4cm} | p{6.5cm} }
-\hline
-Classification & Cost & Description\\ \hline \hline
-CLEAR & 1 & Good for traversing\\ \hline
-OBSTACLES  & $\infty$ & Definitely not traversable\\ \hline
-UNKNOWN & 4 if distant, $\infty$ if close & Not classified\\ \hline
-EXPENSIVE & In range $[2, 50]$ & Traversable but should be avoided\\ \hline
-\end{tabular}
-\end{center}
-\caption[Example table (short caption).]{Example table.}
-\label{tab:intro_table_1}
-\end{table}
+%\textit{
+%% Figure 1.1 is defined below (Large mechatronics logo). Note figures are placed automatically by LaTeX and will not necessarily be placed before the next text.
+%\begin{figure}
+%\centering
+%\includegraphics{mechatronicslogo2_no_UNSW.png}
+%\caption[Short caption for list of figures.]{Full caption for the Mechatronics Logo. Designed by Wei Hua Chen.}
+%\label{fig:intro_logo}
+%\end{figure}
+%
+%\begin{figure}[!ht] \centering
+%\captionsetup[subfigure]{width=2.5in} % <-- Use this to control text which is poorly spaced under a subfigure. 
+%\begin{subfigure}[t]{0.45\textwidth}
+%\includegraphics[width=\textwidth]{mechatronicslogo2_no_UNSW.png}
+%\caption[Subfigure caption.]{Subfigure caption.}
+%\label{fig:intro_subfig1}
+%\end{subfigure}
+%\begin{subfigure}[t]{0.45\textwidth}
+%\includegraphics[width=0.5\textwidth]{mechatronicslogo2_no_UNSW.png}
+%\caption[Subfigure caption.]{Subfigure caption.}
+%\label{fig:intro_subfig2}
+%\end{subfigure}
+%\caption[Abbreviated caption.]{Overall figure caption.}
+%\label{fig:intro_subfig}
+%\end{figure}
+%
+%Figure \ref{fig:intro_subfig} and subfigure \ref{fig:intro_subfig2} or \subref{fig:intro_subfig2} contains ...
+%Table \ref{tab:intro_table_1}. 
+%
+%Citations: Luce \cite{luce_probabilistic_1958} wrote something important.
+%
+%% Note: You can add a table of figures to the header pages by uncommenting \listoftables in the frontpages.tex
+%
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{ p{3cm}  p{4cm} | p{6.5cm} }
+%\hline
+%Classification & Cost & Description\\ \hline \hline
+%CLEAR & 1 & Good for traversing\\ \hline
+%OBSTACLES  & $\infty$ & Definitely not traversable\\ \hline
+%UNKNOWN & 4 if distant, $\infty$ if close & Not classified\\ \hline
+%EXPENSIVE & In range $[2, 50]$ & Traversable but should be avoided\\ \hline
+%\end{tabular}
+%\end{center}
+%\caption[Example table (short caption).]{Example table.}
+%\label{tab:intro_table_1}
+%\end{table}}

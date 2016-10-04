@@ -29,7 +29,8 @@ Warning--I'm ignoring 9774403's extra "journal" field
 --line 240 of file References.bib
 Warning--I'm ignoring 8667402's extra "journal" field
 --line 256 of file References.bib
-Warning--I didn't find a database entry for "luce_probabilistic_1958"
+Warning--entry type for "Ferrotec" isn't style-file defined
+--line 274 of file References.bib
 Warning--empty booktitle in 12436620
 Warning--empty journal in 6464884
 Warning--empty booktitle in 2006289990179
