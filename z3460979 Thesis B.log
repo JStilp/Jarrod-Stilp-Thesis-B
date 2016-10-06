@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  4 OCT 2016 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  6 OCT 2016 22:07
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
@@ -780,7 +780,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[2] <./images/highplex.png, id=189, 600.74437pt x 483.8075pt>
+[2] <./images/highplex.png, id=249, 600.74437pt x 483.8075pt>
 File: ./images/highplex.png Graphic file (type png)
 
 <use ./images/highplex.png>
@@ -799,7 +799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 [4 <./images/highplex.png>]
-<./images/decklayout.png, id=202, 1048.66782pt x 590.95781pt>
+<./images/decklayout.png, id=262, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
@@ -808,7 +808,7 @@ Package pdftex.def Info: ./images/decklayout.png used on input line 84.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
  [5 <./images/decklayout.png>] [6]
-<./images/cassette.png, id=221, 306.64563pt x 263.98625pt>
+<./images/cassette.png, id=281, 306.64563pt x 263.98625pt>
 File: ./images/cassette.png Graphic file (type png)
 
 <use ./images/cassette.png>
@@ -836,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<./images/tec.jpg, id=264, 252.945pt x 126.4725pt>
+<./images/tec.jpg, id=324, 252.945pt x 126.4725pt>
 File: ./images/tec.jpg Graphic file (type jpg)
  <use ./images/tec.jpg>
 Package pdftex.def Info: ./images/tec.jpg used on input line 14.
@@ -850,27 +850,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 [14 <./images/tec.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 [15] [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
 [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
@@ -888,16 +888,21 @@ Chapter 3.
 
  (body/4_results.tex
 Chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 ) [26
 
 
 
-]
+] [27]
 \openout2 = `body/5_discussion.aux'.
 
  (body/5_discussion.tex
 Chapter 5.
-) [27
+) [28
 
 
 
@@ -906,7 +911,7 @@ Chapter 5.
 
  (body/6_conclusion.tex
 Chapter 6.
-) [28
+) [29
 
 
 
@@ -915,19 +920,19 @@ Chapter 6.
 
  (body/7_futurework.tex
 Chapter 7.
-) [29
+) [30
 
 
 
-] ("z3460979 Thesis B.bbl" [30
+] ("z3460979 Thesis B.bbl" [31
 
 
-] [31]) [32]
+] [32]) [33]
 \openout2 = `body/A_appendix.aux'.
 
  (body/A_appendix.tex
 Appendix A.
-) [33
+) [34
 
 
 ]
@@ -948,17 +953,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
 Package rerunfilecheck Info: File `"z3460979 Thesis B".out' has not changed.
-(rerunfilecheck)             Checksum: 2A5FD548E68ECCA45BCF8D9C7E5E3AFF;1518.
+(rerunfilecheck)             Checksum: 8E199BC45D8B58170AC274CA7A6CB729;2318.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10536 strings out of 493335
- 155724 string characters out of 3139237
+ 10561 strings out of 493335
+ 156099 string characters out of 3139237
  271492 words of memory out of 3000000
- 13641 multiletter control sequences out of 15000+200000
+ 13653 multiletter control sequences out of 15000+200000
  12880 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,53p,2520b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -971,9 +976,9 @@ public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on "z3460979 Thesis B.pdf" (40 pages, 2745027 bytes).
+Output written on "z3460979 Thesis B.pdf" (41 pages, 2754089 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
