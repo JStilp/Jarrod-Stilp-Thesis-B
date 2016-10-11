@@ -9,38 +9,37 @@
 \BOOKMARK [2][-]{subsection.1.3.1}{Mechanical}{section.1.3}% 9
 \BOOKMARK [2][-]{subsection.1.3.2}{Electronic}{section.1.3}% 10
 \BOOKMARK [2][-]{subsection.1.3.3}{Software}{section.1.3}% 11
-\BOOKMARK [1][-]{section.1.4}{Methodology}{chapter.1}% 12
-\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Heating}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.2}{Cooling}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Controllability}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.4}{Temperature Sensors}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.5}{Temperature Sensing}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.6}{Controller Design}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.7}{Magnetic Separation}{chapter.2}% 20
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Processor Module}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.1.1}{Hardware}{section.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.1.2}{Temperature Controller}{section.3.1}% 24
-\BOOKMARK [2][-]{subsection.3.1.3}{Magnetic Separation}{section.3.1}% 25
-\BOOKMARK [1][-]{section.3.2}{Magnetic Separation Station}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.2.1}{Magnetic Separation}{section.3.2}% 27
-\BOOKMARK [2][-]{subsection.3.2.2}{Waste Disposal}{section.3.2}% 28
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Processor Module Hardware}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.1.1}{Requirements}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.2}{Design}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.3}{Simulation}{section.4.1}% 33
-\BOOKMARK [1][-]{section.4.2}{Temperature Controller}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.2.1}{Requirements}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.2}{Design}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.3}{Simulation}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{Processor Module}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.3.1}{Validation}{section.4.3}% 39
-\BOOKMARK [2][-]{subsection.4.3.2}{Verification}{section.4.3}% 40
-\BOOKMARK [1][-]{section.4.4}{Magnetic Separation Station}{chapter.4}% 41
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 42
-\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 43
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 44
-\BOOKMARK [0][-]{chapter.7}{References}{}% 45
-\BOOKMARK [0][-]{appendix.A}{Raw Results}{}% 46
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Heating}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Cooling}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Controllability}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Temperature Sensors}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Temperature Sensing}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{Controller Design}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.7}{Magnetic Separation}{chapter.2}% 19
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Processor Module}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.1.1}{Hardware}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.2}{Temperature Controller}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.3}{Magnetic Separation}{section.3.1}% 24
+\BOOKMARK [1][-]{section.3.2}{Magnetic Separation Station}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Magnetic Separation}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.2}{Waste Disposal}{section.3.2}% 27
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Processor Module Hardware}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{Requirements}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.2}{Design}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.3}{Simulation}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Temperature Controller}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{Requirements}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{Design}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.3}{Simulation}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{Processor Module}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.3.1}{Validation}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.2}{Verification}{section.4.3}% 39
+\BOOKMARK [1][-]{section.4.4}{Magnetic Separation Station}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 41
+\BOOKMARK [0][-]{chapter.6}{Conclusions}{}% 42
+\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 43
+\BOOKMARK [0][-]{chapter.7}{References}{}% 44
+\BOOKMARK [0][-]{appendix.A}{Raw Results}{}% 45

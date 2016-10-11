@@ -39,11 +39,84 @@ With the scope of the work now defined, the manner in which the required results
 
 \subsection{Hardware}
 
-The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained 
+The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained in Section \ref{lit_controlability}, Controllability. The work in this sections will also include the selection of an appropriate heat pumping device. In order to ensure the requirements of the hardware elements are met, the design process is applied as follows:
+\begin{enumerate}
+	\item Generation of concepts related to thermally isolating the heated and non-heated regions of the block. This includes a focus on the manufacturability of the resulting components.
+	\item Investigation into and selection of an appropriate heating method.
+	\item Full CAD design of hardware including provisions to accommodate the required tubes.
+	\item Utilization of 3D printing to test the fit of the cassette tubes in the block design.
+	\item CFD simulation to verify the performance of the selected heating element and the thermal stability of the final design. 
+\end{enumerate}
 
 \subsection{Temperature Controller}
 
+This work will output a software temperature controller capable meeting the liquid heating requirements of the chemical reaction as detailed in Section \ref{subsec:intro_extraction}, The Extraction Process. The following method is followed to ensure the desired output is obtained:
+\begin{enumerate}
+	\item Assembly of the fully manufactured Processor Module.
+	\item Utilize sensors in the locations given in below to gather data of the temperature at relevant points over time:
+	\begin{itemize}
+		\item The temperature at the centre of the block will be taken as this sensor data is what will be used ass feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
+		\item The temperature of the heatsink will be plotted to monitor the temperature differential created across the module if TEC's are selected as the heat pump device.
+		\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
+		\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
+	\end{itemize}
+	\item An Arduino will be used as an interface device to connect to MATLAB, which will be used as a data logger and analysis tool. The real time data will be displayed along with stored for future use.
+	\item The software and electronics used to control the MTX Cycler (see Section \ref{sec:intro_scope}) will be modified to provide a step input to the system.
+	\item The response of the system to the step input will then be logged and the temperature response of the block center will be used to identify the modules plant function via MATLAB.
+	\item A Simulink simulation will then be created to validate the estimated system parameters produce an output which matches the response obtained experimentally.
+	\item A discrete controller will then be designed via the direct method.
+	\item The designed controllers ability to drive the system to a steady state of 60$\degree$C with then be validated via Simulink simulation.
+	\item  The validated controller will then be implemented via the MTX Cycler software with any required modifications.
+\end{enumerate}
+
+\subsubsection{Experimental Verification}
+
+In order to verify the performance of the resulting controller, the following experimental verification will be conducted. The experiment will determine the ability of the controller to meet the steady state error, disturbance rejection, response time, overshoot and stability requirements when controlling temperature in the module. The method is as follows:
+
+\begin{enumerate}
+	\item Assemble 4 complete Processor Modules
+	\item Using an Arduino as an interface and MATLAB as the data logger and analyser, measure the temperature in the tubes shown in Figure \ref{fig:measuredtubes} for the duration of the experiment.This distribution will allow the performance at the extremes of the device to be determined.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width = \textwidth]{measuredtubes.png}
+		\caption[Temperature Measured Tubes.]{Tube locations to be measured during temperature control verifications experiment. Non-Heated tubes are coloured green, heated tubes are coloured red, measured tubes are outlined in blue.}
+		\label{fig:measuredtubes}
+	\end{figure} 
+	\FloatBarrier
+	\item Begin data logging and live plotting.
+	\item Set the reference input to the controller to 60$\degree$C.
+	\item Collect data for a total of 30 minutes to capture the long term steady state performance of the module (to allow any slow heat transfers to be observed) along with the transient response.
+	\item Repeat the experiment for all four assembled modules. This allows for the controllers ability to reject disturbances caused by the differing of the plant properties to be determined as is caused by the slight differences in assembly.
+	\item Repeat experiment in differing environmental conditions. The experiment should  be conducted in rooms at temperatures of 18$\degree$C, 22$\degree$C and 26$\degree$C. This allows for the disturbance rejection of the controller to be assessed where the disturbance is due to altered environmental conditions.
+	\item Use the collected data to assess the consistency of the heating profile and the temperature stabilisation across the tubes of the module. These results will be used to make conclusions regarding the designed controller along with the thermal characteristics of the hardware. It should be noted that the worst case response will be used to draw conclusions regarding performance to ensure all samples fall within the requirements.
+\end{enumerate}
+
 \subsection{Magnetic Separation}
+
+As the final stage of the extraction process is the removal of the clean sample from the waste beads, the success of extraction depends on the complete and reliable separation in tube number 4. To ensure this is achieved, the following design process and experimental verification will be conducted:
+\begin{enumerate}
+	\item An investigation will be conducted into the various possible methods of magnetic separation in this application, taking into account the recommendations to use ND-Fe-B magnet compositions as found in the reviewed literature.
+	\item 3D Printed test jigs will be created to test the effectiveness of the most suitable configurations via manual inspection.
+	\item With a preferred design selected, the a test module will be 3D printed including the magnetic arrangement. This test module will be assembled on the robot deck and verified experimentaly via the method described below.
+\end{enumerate}
+
+\subsubsection{Experimental Verification}
+
+To allow a confident conclusion to be made regarding the effectiveness of the magnetic separation within the Processor Module to be made, the following experiment will be conducted. This experiment will replicate the setup used by the robot and its processes to ensure the result is representative of the true scenario.
+
+\begin{enumerate}
+	\item Place test module with magnetic separation on Gene-Plex Extractor deck within one of the SBS spaces.
+	\item Place a 5mL tube on the robot deck to collect the experiment output.
+	\item Place a full set of 8 cassettes in the test module with 100$\mu$L of filtered water and 10$\mu$L of magnetic beads in tube 3. The water will simulate the elution buffer. Both volumes are equal to that used in the final process.
+	\item Instruct the robot to aspirate the mixture in tube 3 and expel it into tube 4, the location of the magnetic separation.
+	\item Wait for 5 seconds for separation to take place. It should be noted that this waiting period is a design variable and may be adjusted and this experiment repeated to determine the optimal wait time.
+	\item Aspirate the separated liquid at a distance of 1mm from the tube bottom. This distance once again may be adjusted, however is a sound starting point for experimentation.
+	\item Expel the liquid from the tip into the 5mL tube on the deck.
+	\item Repeat this separation procedure for all 8 cassettes.
+	\item Refill all cassettes with equal volumes of water and beads, as was defined in step 3.
+	\item Repeat the separation for a total of 3 modules to equal the total volume of liquid which will be processed by the Gene-Plex Extractor during the processing of all 24 samples.
+	\item Place the 5mL tube with extracted contents adjacent to a large ND-Fe-B magnet to draw any beads to the tube wall. Examine the tube contents for any sign of magnetic beads. The presence of a bead within the tube indicated a failed separation within tube 4. Such a result may lead to severe complications in step 2 (amplification), such as the failed diagnosis of a patient. Therefore, for a successful verification, it is required that no beads are present.
+\end{enumerate}
 
 \section{Magnetic Separation Station}
 
