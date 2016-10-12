@@ -25,23 +25,24 @@
 \contentsline {subsection}{\numberline {3.1.3}Magnetic Separation}{30}{subsection.3.1.3}
 \contentsline {subsubsection}{Experimental Verification}{31}{section*.11}
 \contentsline {section}{\numberline {3.2}Magnetic Separation Station}{32}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Magnetic Separation}{32}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Waste Disposal}{32}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Results}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Processor Module Hardware}{34}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Requirements}{34}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Design}{34}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Simulation}{34}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Temperature Controller}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Requirements}{34}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Design}{34}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Simulation}{34}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Processor Module}{34}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Validation}{34}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Verification}{34}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Magnetic Separation Station}{34}{section.4.4}
-\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{36}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{37}{chapter.7}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{38}{chapter.7}
-\contentsline {chapter}{\numberline {A}Raw Results}{41}{appendix.A}
+\contentsline {subsubsection}{Experimental Verification}{33}{section*.12}
+\contentsline {subsection}{\numberline {3.2.1}Magnetic Separation}{34}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Waste Disposal}{34}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Results}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Processor Module Hardware}{36}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requirements}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Design}{36}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Simulation}{36}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Temperature Controller}{36}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Requirements}{36}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Design}{36}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Simulation}{36}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Processor Module}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Validation}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Verification}{36}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Magnetic Separation Station}{36}{section.4.4}
+\contentsline {chapter}{\numberline {5}Discussion}{37}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{38}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{39}{chapter.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{40}{chapter.7}
+\contentsline {chapter}{\numberline {A}Raw Results}{43}{appendix.A}

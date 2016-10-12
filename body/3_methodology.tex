@@ -55,14 +55,15 @@ This work will output a software temperature controller capable meeting the liqu
 	\item Assembly of the fully manufactured Processor Module.
 	\item Utilize sensors in the locations given in below to gather data of the temperature at relevant points over time:
 	\begin{itemize}
-		\item The temperature at the centre of the block will be taken as this sensor data is what will be used ass feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
+		\item The temperature at the centre of the block will be taken as this sensor data is what will be used as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
 		\item The temperature of the heatsink will be plotted to monitor the temperature differential created across the module if TEC's are selected as the heat pump device.
 		\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
 		\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
 	\end{itemize}
 	\item An Arduino will be used as an interface device to connect to MATLAB, which will be used as a data logger and analysis tool. The real time data will be displayed along with stored for future use.
 	\item The software and electronics used to control the MTX Cycler (see Section \ref{sec:intro_scope}) will be modified to provide a step input to the system.
-	\item The response of the system to the step input will then be logged and the temperature response of the block center will be used to identify the modules plant function via MATLAB.
+	%ADD DETAILS FOR CONTROLLER DESIGN HERE
+	\item The response of the system to the step input will then be logged and the temperature response of the block centre will be used to identify the modules plant function via MATLAB.
 	\item A Simulink simulation will then be created to validate the estimated system parameters produce an output which matches the response obtained experimentally.
 	\item A discrete controller will then be designed via the direct method.
 	\item The designed controllers ability to drive the system to a steady state of 60$\degree$C with then be validated via Simulink simulation.
@@ -119,6 +120,33 @@ To allow a confident conclusion to be made regarding the effectiveness of the ma
 \end{enumerate}
 
 \section{Magnetic Separation Station}
+
+The magnetic separation station is a standalone module on the robot deck which will fulfil two requirements of the extraction process. Firstly, the station will provide the means of separating the waste liquid from the magnetic beads and captured DNA/RNA, as necessary after step 2 (refer to Section \ref{subsec:intro_extraction}) of the extraction process. Following the successful separation of the supernatant, the separation station will provide a means of hygienically disposing of the associated biological waste. The work will be completed via the following methodology:
+
+\begin{enumerate}
+	\item An investigation will be carried out to determine the most suitable magnetic arrangement for providing reliable separation. Similar to the treatment of the magnetic separation capabilities within the Processor Module, the investigation will focus on those employing the ND-Fe-B composition.
+	\item The selected configuration will then be implemented as a design concept and a CAD model generated. This detailed design will also account for a number of secondary requirements. These include maintaining a minimum distance between the pipette tip and the Separation Station at all points to remove the possibility of cross contamination occuring through liquid transfer.
+	\item The detailed design will then be prototyped using 3D printing to allow experimental verification.
+	\item The prototype Separation Station will then be assembled on the Gene-Plex Extractor deck along with the necessary tubes to perform magnetic separation via the experimental procedure detailed below.
+\end{enumerate}
+
+\subsubsection{Experimental Verification}
+
+In order to verify the required performance is achieved by the designed Magnetic Separation Station, the following experiment will be performed.
+
+\begin{enumerate}
+	\item The prototyped Magnetic Separation Station will be fully assembled and positioned on the deck of the Gene-Plex Extractor.
+	\item 3 cassettes and therefore 24 tubes will be positoned on the deck with 640$\mu$L of water and 10$\mu$L of magnetic silica beads in each. These volumes are equal to those used in the extraction process and this will be repeated 24 times, once for each of the 24 samples. Therefore, this setup matches the volumes to be processed by the implemented extractor.
+	\item The robot will then be setup to aspirate the liquid mixture from one of the tubes.
+	\item The pipette will then be positioned within the magnetic separation station and lowered to full depth. 
+	%NOTE THAT A DIAGRAM OF THIS WOULD BE GOOD to show positions
+	\item The pipette tip will then be raised and lowered with the full liquid height passing along the magnetic arrangment a total of 2 times.
+	%DETERMINE THESE DISTANCES AND PUT IN DIAGRAM
+	\item With the beads now separated from the liquid and captured on the pipette wall, the water will be ejected into the waste disposal system. For this experiment, the waste disposal will be replaced by a small glass container that may be used to collect and analyse the ejected liquid.
+	\item This procedure will then be repeated for all 24 ``samples".
+	\item The contents of the waste container will then be subjected to a magnetic field to collect any beads which were not correctly separated by the process. The presence of any bead within the waste liquid indicated a failed separation.
+	%ADD PERCENTAGE TOLERANCES OR VOLUMES 
+\end{enumerate}
 
 \subsection{Magnetic Separation}
 
