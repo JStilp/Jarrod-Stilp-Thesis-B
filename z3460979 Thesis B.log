@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  12 OCT 2016 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  13 OCT 2016 21:10
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
@@ -879,7 +879,12 @@ Package pdftex.def Info: ./images/measuredtubes.png used on input line 82.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
  [28] [29 <./images/measuredtubes.png>]
-[30] [31] [32] [33]) [34]
+[30] [31] [32] [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+) [35]
 \openout2 = `body/4_results.aux'.
 
  (body/4_results.tex
@@ -889,16 +894,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) [35
+) [36
 
 
 
-] [36]
+] [37]
 \openout2 = `body/5_discussion.aux'.
 
  (body/5_discussion.tex
 Chapter 5.
-) [37
+) [38
 
 
 
@@ -907,7 +912,7 @@ Chapter 5.
 
  (body/6_conclusion.tex
 Chapter 6.
-) [38
+) [39
 
 
 
@@ -916,19 +921,19 @@ Chapter 6.
 
  (body/7_futurework.tex
 Chapter 7.
-) [39
+) [40
 
 
 
-] ("z3460979 Thesis B.bbl" [40
+] ("z3460979 Thesis B.bbl" [41
 
 
-] [41]) [42]
+] [42]) [43]
 \openout2 = `body/A_appendix.aux'.
 
  (body/A_appendix.tex
 Appendix A.
-) [43
+) [44
 
 
 ]
@@ -956,8 +961,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10637 strings out of 493334
- 156286 string characters out of 3139252
+ 10639 strings out of 493334
+ 156300 string characters out of 3139252
  271556 words of memory out of 3000000
  13662 multiletter control sequences out of 15000+200000
  12880 words of font info for 49 fonts, out of 3000000 for 9000
@@ -972,9 +977,9 @@ public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on "z3460979 Thesis B.pdf" (51 pages, 2830295 bytes).
+Output written on "z3460979 Thesis B.pdf" (52 pages, 2833082 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
 
