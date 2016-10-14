@@ -50,25 +50,31 @@ The hardware component of the Processor Module design is concerned with ensuring
 
 \subsection{Temperature Controller}
 
-This work will output a software temperature controller capable meeting the liquid heating requirements of the chemical reaction as detailed in Section \ref{subsec:intro_extraction}, The Extraction Process. The following method is followed to ensure the desired output is obtained:
-\begin{enumerate}
-	\item Assembly of the fully manufactured Processor Module.
-	\item Utilize sensors in the locations given in below to gather data of the temperature at relevant points over time:
-	\begin{itemize}
-		\item The temperature at the centre of the block will be taken as this sensor data is what will be used as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
-		\item The temperature of the heatsink will be plotted to monitor the temperature differential created across the module if TEC's are selected as the heat pump device.
-		\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
-		\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
-	\end{itemize}
-	\item An Arduino will be used as an interface device to connect to MATLAB, which will be used as a data logger and analysis tool. The real time data will be displayed along with stored for future use.
-	\item The software and electronics used to control the MTX Cycler (see Section \ref{sec:intro_scope}) will be modified to provide a step input to the system.
-	%ADD DETAILS FOR CONTROLLER DESIGN HERE
-	\item The response of the system to the step input will then be logged and the temperature response of the block centre will be used to identify the modules plant function via MATLAB.
-	\item A Simulink simulation will then be created to validate the estimated system parameters produce an output which matches the response obtained experimentally.
-	\item A discrete controller will then be designed via the direct method.
-	\item The designed controllers ability to drive the system to a steady state of 60$\degree$C with then be validated via Simulink simulation.
-	\item  The validated controller will then be implemented via the MTX Cycler software with any required modifications.
-\end{enumerate}
+This work will result in the finalisation of a software temperature controller capable meeting the liquid heating requirements of the chemical reaction as detailed in Section \ref{subsec:intro_extraction}, The Extraction Process.
+
+In order to enable controller design to be commenced, the first step will be to assemble the completed Processor Module. Due to the complex dynamics of the heat transfer between the heating device and the liquid, a mathematical modelling method is not used. Instead, the system will be identified via the step input response plant identification method. To obtain the required response data, sensors will be placed strategically on the Processor Module to monitor and record key temperatures:
+\begin{itemize}
+	\item The temperature at the centre of the block will be taken as this sensor data will be utilized as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
+	\item The temperature of the heatsink will be plotted to monitor the temperature differential created across the module.
+	\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
+	\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
+\end{itemize}
+
+To utilize this data for experimental plant identification, an Arduino will be used as an interface between the sensor electronics and MATLAB. This will enable the real-time monitoring and plotting of the data along with storage and subsequent analysis.
+
+With the hardware now setup, the Processor Module will then be excited by a step input. The input will be provided by the same means as the final Processor Module will be driven. As was detailed in Section \ref{sec:intro_scope}, Scope, the companies MTX Cycler electronics driver board will be utilized. The software controlling this board will therefore be modified to provide a constant step input to the Processor Module. The step input will be applied and the response data logged until a steady state has been achieved.
+
+%COntinue to detail process including math behind controller design
+
+%	\item An Arduino will be used as an interface device to connect to MATLAB, which will be used as a data logger and analysis tool. The real time data will be displayed along with stored for future use.
+%	\item The software and electronics used to control the MTX Cycler (see Section \ref{sec:intro_scope}) will be modified to provide a step input to the system.
+%	%ADD DETAILS FOR CONTROLLER DESIGN HERE
+%	\item The response of the system to the step input will then be logged and the temperature response of the block centre will be used to identify the modules plant function via MATLAB.
+%	\item A Simulink simulation will then be created to validate the estimated system parameters produce an output which matches the response obtained experimentally.
+%	\item A discrete controller will then be designed via the direct method.
+%	\item The designed controllers ability to drive the system to a steady state of 60$\degree$C with then be validated via Simulink simulation.
+%	\item  The validated controller will then be implemented via the MTX Cycler software with any required modifications.
+
 
 \subsubsection{Experimental Verification}
 
