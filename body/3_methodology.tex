@@ -60,9 +60,27 @@ In order to enable controller design to be commenced, the first step will be to 
 	\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
 \end{itemize}
 
-To utilize this data for experimental plant identification, an Arduino will be used as an interface between the sensor electronics and MATLAB. This will enable the real-time monitoring and plotting of the data along with storage and subsequent analysis.
+To utilize this data for experimental plant identification, an Arduino will be used as an interface between the sensor electronics and MATLAB. This will enable the real-time monitoring and plotting of the data along with storage and subsequent analysis through the Arduino's Analogue input ports.\\
 
-With the hardware now setup, the Processor Module will then be excited by a step input. The input will be provided by the same means as the final Processor Module will be driven. As was detailed in Section \ref{sec:intro_scope}, Scope, the companies MTX Cycler electronics driver board will be utilized. The software controlling this board will therefore be modified to provide a constant step input to the Processor Module. The step input will be applied and the response data logged until a steady state has been achieved.
+With the hardware now setup, the Processor Module will then be excited by a step input. The input will be provided by the same controlling electronics used in the final Processor Module. As was detailed in Section \ref{sec:intro_scope}, Scope, the companies MTX Cycler electronics driver board will be utilized. The software controlling this board will therefore be modified to provide a constant step input to the Processor Module. The step input will be applied and the response data logged until a steady state has been achieved.\\
+
+This data will have been logged in the MATLAB workspace in real-time, during the experiment. Prior to analysis however, the data will be pre-processed to remove any unnecessary features. For example, the data will be seroed so that the response data begins at time $t = 0$ and so that the response begins at $0\degree$C. This will remove any effects of the varying room temperature at which the experiment may occur and ease the fitting of curves to the collected data.\\
+
+To complete the plant analysis process using the pre-processed data, the MATLAB PID Tuner tool will be used. This tool provides a GUI for specifying a set of response data, the step input provided. This information is then used to interactively fit an appropriate function to the plants response data. The tool offers a number of plant structures to allow the correct plant to be identified. These range from a simple "One Pole" plant to a discrete time system.\\
+
+As a result of this process, the transfer function which represents the plant of the Processor Module will be known. This plant will be in the continuous time domain and is represented by:
+
+$$G_p(S)$$
+
+Before utilizing the identified plant for controller design, it will be verified via simulation in Simulink. The validation will be conducted by providing the plant an identical step input as was done experimentally and verifying that the responses match. The Simulink layout used to conduct this simulated verification is shown below in Figure \ref{fig:openloopplant}.\\
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{openloopplant.png}
+	\caption[Open loop plant valiation Simulink Model.]{The Simulink model layout used to validate via simulation the identified plant for the Processor Module.}
+	\label{fig:openloopplant}
+\end{figure} 
+\FloatBarrier
 
 %COntinue to detail process including math behind controller design
 
