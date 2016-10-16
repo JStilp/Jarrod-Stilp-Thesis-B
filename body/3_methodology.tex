@@ -1,35 +1,3 @@
-% The layout of your thesis is fairly flexible, so don't feel you need to follow the chapters
-% in this template. It's a good idea to talk through your structure with friends and your 
-% supervisor to check it is logical and flows to someone with little understanding of the content.
-%
-% Here is a brief outline of the structure of each chapter:
-%  1. Introduction
-%      - First paragraph should link this chapter to the previous chapter(s) and overall progress
-%      - Follow this by stating the aim and function of this chapter (what does it add to your 
-%        overall argument?). Make sure the reader knows what they should get out of it.
-%      - Provide an overview of how you'll do that (perhaps what each section adds to the argument)
-%  2. Body
-%      - This is mostly up to you. Before you start writing make sure you WRITE DOWN what the main
-%        content points and arguments are. Structure your sections in a logical way around these.
-%      - Feel free to begin with a "Fundamentals" section, or weave this into the start of 
-%        individual sections to provide (necessary) technical background to the areas you work in
-%  3. Conclusion
-%      - Don't just summarise what you did, state the significance and implications of what you found.
-%      - Only state conclusions which can be made from this chapter alone. Leave the overall argument
-%        and main conclusions for the Discussion and Conclusion chapters.
-%
-% A couple of tips:
-%  - I always found it helpful to start with a few levels of dot-points (OneNote, Google Docs, Word)
-%    to get the content down. Then you can easily see where it is lacking, and you can rearrange it
-%    quickly to get a better structure and flow. Remember the reader understands a LOT less about this
-%    than you do, so good explanations are important!
-%  - Don't be afraid to start writing. Even if you think it will be garbage. Even if you're not
-%    completely sure what to say. Just start. The action of writing it out will clarify your argument
-%    in your own mind and help you with development. You also get to see where there is room for 
-%    improvement in your argument. I wrote most of my chapters 3 times and each time it became a lot 
-%    more logical and I was a lot happier with it. While I spent a more time writing, it saved me a 
-%    lot of time procrastinating and wondering how to write it perfectly first time.
-
 \chapter{Methodology}
 \label{cha:methodology}
 
@@ -38,6 +6,8 @@ With the scope of the work now defined, the manner in which the required results
 \section{Processor Module}
 
 \subsection{Hardware}
+
+%NOTE : need to atleast mention use of autodesk CFD and rough method
 
 The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained in Section \ref{lit_controlability}, Controllability. The work in this sections will also include the selection of an appropriate heat pumping device. In order to ensure the requirements of the hardware elements are met, the design process is applied as follows:
 \begin{enumerate}
@@ -82,19 +52,123 @@ Before utilizing the identified plant for controller design, it will be verified
 \end{figure} 
 \FloatBarrier
 
-With the transfer function representing the Processor Module now known, the process of controller design may be commenced. The method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications is PID control. This method has not been selected however due the benefits of competing controller design in the z-domain with discrete time.
+With the transfer function representing the Processor Module now known, the process of controller design may be commenced. The method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications is PID control. This method has not been selected however due the benefits of competing controller design in the z-domain with discrete time. By completing the design entirely in the z-domain, there is no need to convert the resulting controller from the s domain, allowing the controller to be directly implemented.\\
 
-%COntinue to detail process including math behind controller design
+The direct analytical method uses the principle that if the output that is required along with the input applied is known the intermediate transfer function may be determined. This is represented by Equation \ref{eq_direct}, where $C(z)$ is the required output, $U(z)$ is the applied input and $F(z)$ is the intermediate transfer function.
 
-%	\item An Arduino will be used as an interface device to connect to MATLAB, which will be used as a data logger and analysis tool. The real time data will be displayed along with stored for future use.
-%	\item The software and electronics used to control the MTX Cycler (see Section \ref{sec:intro_scope}) will be modified to provide a step input to the system.
-%	%ADD DETAILS FOR CONTROLLER DESIGN HERE
-%	\item The response of the system to the step input will then be logged and the temperature response of the block centre will be used to identify the modules plant function via MATLAB.
-%	\item A Simulink simulation will then be created to validate the estimated system parameters produce an output which matches the response obtained experimentally.
-%	\item A discrete controller will then be designed via the direct method.
-%	\item The designed controllers ability to drive the system to a steady state of 60$\degree$C with then be validated via Simulink simulation.
-%	\item  The validated controller will then be implemented via the MTX Cycler software with any required modifications.
+\begin{equation}
+\label{eq_direct}
+C(z) = F(z)U(z)
+\end{equation}
 
+The method of feedback used for the controller is a unity feedback signal. Data provided by the utilized sensor will be processed to give a feedback signal with unity gain, to ensure any features of the raw signal are removed. For the unity feedback system picture in Figure \ref{fig:unityfeedback}, $F(z)$ is given as \cite{UNSW}:
+
+\begin{equation}
+F(z) = \frac{G_c(z)G_p(z)}{1+G_c(z)G_p(z)}
+\end{equation}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{unityfeedback.png}
+	\caption[Unity feedback system.]{The block diagram for a unity feedback system. \cite{UNSW}}
+	\label{fig:unityfeedback}
+\end{figure} 
+\FloatBarrier
+
+Due to the plant identification completed earlier, the continuous time form of the system plant is known. Using MATLAB, this may be converted to a discrete time transfer function, with the appropriate sampling time selected. Therefore, $G_p(z)$ is known.\\
+
+Rearranging for the controller of interest, $G_c(z)$ gives:
+\begin{equation}
+\label{eq_controller}
+G_c(z) = \frac{F(z)}{G_p(z)[1-F(z)]}
+\end{equation}
+
+By equation \ref{eq_controller}, the direct method requires only that $F(z)$ be determined to realise the controller. To complete the formation of $F(z)$ and hence $G_c(z)$, the method below will be utilized. This method, as detailed by J. Katupitiya \cite{UNSW}, provides a number of steps to ensure the resulting controller performs as required.\\
+
+\subsubsection{Controller Performance}
+
+To define the response time of the controller, the pole locations are set. To do so, the desired time constant of the system, $\tau$ is set and the s domain pole is found by:
+
+\begin{equation}
+s = -\frac{1}{\tau}
+\end{equation}
+
+This s domain pole is then transferred to the z domain via:
+
+\begin{equation}
+z = e^{sT}
+\end{equation}
+
+Where T is the sample time of the controller. The resulting pole is then placed as a pole of $F(z)$.\\
+
+It is also important to control the steady state error of the controller. To do this, the DC gain of the system is set to 1, resulting in the output equalling the input at steady state. By setting the following, this can be achieved:
+
+\begin{equation}
+F(z)|_{z=1} = F(1) = 1
+\end{equation}
+
+\subsubsection{Pole Zero Cancellation}
+
+It must be ensured that a pole or zero cancellation does not occur in the unstable region of the Z-Plane, in order to ensure that this cancelled pole does not become a component of the formed characteristic equation. If a controller component cancels an unstable plant pole or zero in this scenario, it will influence the system so that it becomes unstable. These constraints will be dealt with via two stability constraints:\\
+
+\textbf{Stability Constraint 1}\\
+Stability constraint 1 addresses the instability that may occur if a pole of the plant $G_p(z)$ is cancelled by a zero of $G_c(z)$. Firstly, all poles of $G_c(z)$ are tested for instability, where any pole $z = p_0$ is unstable if :
+
+\begin{equation}
+\label{eq_unstablepole}
+|p_0| > 1
+\end{equation}
+
+If any pole is found to satisfy Equation \ref{eq_unstablepole}, it is unstable and must be added as a zero of $[1 - F(z)]$. This addition removed the unstable pole and ensures the controller is not able to create the unstable cancellation.\\
+
+\textbf{Stability Constraint 2}
+
+Stability Constraint 2 deals with the case that an unstable zero exists in the plant transfer function. Therefore, it prevents a pole of the controller from cancelling this zero in the unstable region. A zero of the controller $G_c(z)$, $(z = z_0$ may be tested for instability by checking if it satisfies Equation \ref{eq_unstablezero}:
+
+\begin{equation}
+\label{eq_unstablezero}
+|z_0| > 1
+\end{equation}
+
+Any zero satisfying this equation can be identified as unstable and dealt with by including it as a zero of $F(z)$.\\
+
+\textbf{Causality Constraint}
+
+The causality constraint ensures that the designed controller is either proper or strictly proper. That is, that it only uses current or past terms in the calculation of controller effort and no futuristic terms. This is achieved by ensuring the pole-zero deficiency of the plant (i.e. its delay) is either that same as or less than that of $F(z)$. The pole-zero deficiency of he plant is the order of the denominator minus the order of the numerator, denoted as:
+
+\begin{equation}
+\label{eq_plantdef}
+D[ G_p(z) ] = n
+\end{equation}
+
+The pole zero deficiency of $F(z)$ is given as:
+
+\begin{equation}
+\label{eq_fdef}
+D[ F(z) ] = m
+\end{equation}
+
+If $m = n$, the controller is strictly proper. If $m > n$, the controller is proper. However, if $m < n$, then the controller is improper (will require futuristic terms) and the causality constraint is not satisfied. In this situation, the order of the denominator of $F(z)$ must be increased until the controller is at least strictly proper.\\
+
+\textbf{Controller Difference Function}
+
+Using the $F(z)$ found using the previous steps, the controller transfer function, $G_c(z)$ can then be calculated. This transfer function is converted into a function of the variable $Z^{-1}$, which is commonly known as the Digital Signal Processing (DSP) format. This allows the transfer function to be directly written as a difference function involving multiple error and controller effort terms with varying time delays. This difference function is the realised discrete controller.\\
+
+\textbf{Simulated Validation}
+
+In order to validate the design of the controller prior to implementation, the design will be simulated via Simulink to validate its response to the desired reference input. The block diagram shown in Figure \ref{fig:controllervalidation} will be used to conduct the validation and record the resulting data. The response recorded will be assessed against the controller requirements.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{controllervalidation.png}
+	\caption[Controller valiation Simulink Model.]{The Simulink model layout used to validate via simulation the designed controller for the Processor Module.}
+	\label{fig:controllervalidation}
+\end{figure} 
+\FloatBarrier
+
+Following the successful validation of the temperature controller, it will be implemented via software currently driving the MTX cycler, along with any required modifications.
+
+%UP TO HERE
 
 \subsubsection{Experimental Verification}
 

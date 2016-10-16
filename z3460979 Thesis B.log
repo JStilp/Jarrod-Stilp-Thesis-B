@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  15 OCT 2016 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  16 OCT 2016 17:13
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
@@ -767,7 +767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[2] <./images/highplex.png, id=287, 600.74437pt x 483.8075pt>
+[2] <./images/highplex.png, id=291, 600.74437pt x 483.8075pt>
 File: ./images/highplex.png Graphic file (type png)
 
 <use ./images/highplex.png>
@@ -786,7 +786,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 [4 <./images/highplex.png>]
-<./images/decklayout.png, id=300, 1048.66782pt x 590.95781pt>
+<./images/decklayout.png, id=304, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
@@ -795,7 +795,7 @@ Package pdftex.def Info: ./images/decklayout.png used on input line 84.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
  [5 <./images/decklayout.png>] [6]
-<./images/cassette.png, id=319, 306.64563pt x 263.98625pt>
+<./images/cassette.png, id=323, 306.64563pt x 263.98625pt>
 File: ./images/cassette.png Graphic file (type png)
 
 <use ./images/cassette.png>
@@ -823,7 +823,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<./images/tec.jpg, id=362, 252.945pt x 126.4725pt>
+<./images/tec.jpg, id=366, 252.945pt x 126.4725pt>
 File: ./images/tec.jpg Graphic file (type jpg)
  <use ./images/tec.jpg>
 Package pdftex.def Info: ./images/tec.jpg used on input line 14.
@@ -871,60 +871,129 @@ Chapter 3.
 
 
 ] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 [27]
-Overfull \hbox (2.71097pt too wide) in paragraph at lines 67--68
+Overfull \hbox (2.71097pt too wide) in paragraph at lines 37--38
 \OT1/cmr/m/n/12 dur-ing the ex-per-i-ment. Prior to anal-y-sis how-ever, the da
 ta will be pre-processed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-<./images/openloopplant.png, id=516, 558.96329pt x 120.0736pt>
+<./images/openloopplant.png, id=520, 558.96329pt x 120.0736pt>
 File: ./images/openloopplant.png Graphic file (type png)
 
 <use ./images/openloopplant.png>
-Package pdftex.def Info: ./images/openloopplant.png used on input line 79.
+Package pdftex.def Info: ./images/openloopplant.png used on input line 49.
 (pdftex.def)             Requested size: 398.33858pt x 85.57162pt.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
- [29 <./images/openloopplant.png>]
-<./images/measuredtubes.png, id=525, 712.91344pt x 535.2497pt>
-File: ./images/measuredtubes.png Graphic file (type png)
 
-<use ./images/measuredtubes.png>
-Package pdftex.def Info: ./images/measuredtubes.png used on input line 108.
-(pdftex.def)             Requested size: 398.33858pt x 299.06807pt.
-Missing character: There is no Â in font cmr12!
-Missing character: There is no ˆ in font cmr12!
- [30 <./images/measuredtubes.png>] [31]
-[32] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-) [36] [37]
+[29 <./images/openloopplant.png>]
+<./images/unityfeedback.png, id=531, 303.00703pt x 50.81485pt>
+File: ./images/unityfeedback.png Graphic file (type png)
+
+<use ./images/unityfeedback.png>
+Package pdftex.def Info: ./images/unityfeedback.png used on input line 72.
+(pdftex.def)             Requested size: 398.33858pt x 66.80286pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[30 <./images/unityfeedback.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Overfull \hbox (0.56978pt too wide) in paragraph at lines 137--138
+[]\OT1/cmr/m/n/12 The causal-ity con-straint en-sures that the de-signed con-tr
+oller is ei-ther proper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+[33] <./images/controllervalidation.png, id=569, 565.73859pt x 142.65797pt>
+File: ./images/controllervalidation.png Graphic file (type png)
+
+<use ./images/controllervalidation.png>
+Package pdftex.def Info: ./images/controllervalidation.png used on input line 1
+63.
+(pdftex.def)             Requested size: 398.33858pt x 100.44762pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+ [34 <./images/controllervalidation.png>] <./images/measuredtubes.png, id=576, 
+712.91344pt x 535.2497pt>
+File: ./images/measuredtubes.png Graphic file (type png)
+
+<use ./images/measuredtubes.png>
+Package pdftex.def Info: ./images/measuredtubes.png used on input line 182.
+(pdftex.def)             Requested size: 398.33858pt x 299.06807pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+ [35 <./images/measuredtubes.png>] [36]
+[37] [38] [39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+) [41] [42]
 \openout2 = `body/4_results.aux'.
 
  (body/4_results.tex
@@ -934,16 +1003,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) [38
+) [43
 
 
 
-] [39]
+] [44]
 \openout2 = `body/5_discussion.aux'.
 
  (body/5_discussion.tex
 Chapter 5.
-) [40
+) [45
 
 
 
@@ -952,7 +1021,7 @@ Chapter 5.
 
  (body/6_conclusion.tex
 Chapter 6.
-) [41
+) [46
 
 
 
@@ -961,19 +1030,19 @@ Chapter 6.
 
  (body/7_futurework.tex
 Chapter 7.
-) [42
+) [47
 
 
 
-] ("z3460979 Thesis B.bbl" [43
+] ("z3460979 Thesis B.bbl" [48
 
 
-] [44]) [45]
+] [49]) [50]
 \openout2 = `body/A_appendix.aux'.
 
  (body/A_appendix.tex
 Appendix A.
-) [46
+) [51
 
 
 ]
@@ -1001,10 +1070,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10639 strings out of 493334
- 156427 string characters out of 3139252
- 271629 words of memory out of 3000000
- 13667 multiletter control sequences out of 15000+200000
+ 10678 strings out of 493334
+ 157116 string characters out of 3139252
+ 272101 words of memory out of 3000000
+ 13684 multiletter control sequences out of 15000+200000
  12880 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,53p,2520b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1014,12 +1083,12 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
-pfb>
-Output written on "z3460979 Thesis B.pdf" (54 pages, 2853535 bytes).
+sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "z3460979 Thesis B.pdf" (59 pages, 2906577 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 177 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 
