@@ -130,4 +130,12 @@ Associate Professor~Jay Katupitiya.
 Sorenson Engineering.
 \newblock Personal Communication.
 
+\bibitem{mmto}
+MMT Observatory.
+\newblock Fits and tolerances, 2015.
+
+\bibitem{Ferroteclife}
+Ferrotec Corporation.
+\newblock {Thermoelectric Module} basics, 2015.
+
 \end{thebibliography}

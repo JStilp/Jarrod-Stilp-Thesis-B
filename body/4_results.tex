@@ -47,13 +47,53 @@ Concept A features a groove machined into a solid billet of Aluminium, forming a
 
 Concept B furthered the ideal behind Concept A by improving on some of its flaws, namely the transfer of heat. This was achieved by including further machining operations on the bottom face of the block. Therefore, the groove depth could be through the thickness of the block, apart from the small connecting regions on the outer edges of each groove. This simple change allowed the connecting area of material to be reduced to only 10\% of that of Concept A. Despite these improvements, the extra operations still require that small sections be machined at the same 30mm depth with the 3mm tool bit. Avoiding this is possible by performing machining operations on all four faces as opposed to only the top and bottom, however this will still carry added cost. Further to this, the homogeneous material and solid connection would allow for a more rapid heat transfer than was desirable. While aluminium is required for the Thermal Region due to its high level of heat transfer, this will result in large energy losses to the Carrier. It was therefore decided that the insulation should also make use of a thermally insulation material along with the physical separation used in the concepts to date.\\
 
-Concept C moved in the direction of manufacturing the block from two separate materials and hence components. In Figure \ref{fig:splitconcepts}, Part C, the carrier is now seen to be of a different material, while the separating and insulating spacers are coloured in red. This allows the spacers to be manufactured from a highly insulating material, such as ethylene propylene as recommended by Williams et al. This concept provides excellent thermal insulation between the Thermal Region and the Carrier. The use of multiple parts however introduces another risk. The correct placement of the tubes in the Thermal Region is essential in ensuring the cassette tubes walls contact the heated block and hence the liquid is heated as required. One of the purposes of the carrier is to ensure the tubes are correctly located and positioned. With the carrier now manufactured from two separate parts and the Region being separate again, the alignment of all three parts has a considerable degree of flexibility. Therefore, ensuring all components are properly aligned and the tube contact occurs depends heavily on the fastening used and the assembly process itself. While possible to design an assembly method and fastening system that would locate the three components accurately, it was decided that this should be a feature of the design itself.
+Concept C moved in the direction of manufacturing the block from two separate materials and hence components. In Figure \ref{fig:splitconcepts}, Part C, the carrier is now seen to be of a different material, while the separating and insulating spacers are coloured in red. This allows the spacers to be manufactured from a highly insulating material, such as ethylene propylene as recommended by Williams et al. This concept provides excellent thermal insulation between the Thermal Region and the Carrier. The use of multiple parts however introduces another risk. The correct placement of the tubes in the Thermal Region is essential in ensuring the cassette tubes walls contact the heated block and hence the liquid is heated as required. One of the purposes of the carrier is to ensure the tubes are correctly located and positioned. With the carrier now manufactured from two separate parts and the Region being separate again, the alignment of all three parts has a considerable degree of flexibility. Therefore, ensuring all components are properly aligned and the tube contact occurs depends heavily on the fastening used and the assembly process itself. While possible to design an assembly method and fastening system that would locate the three components accurately, it was decided that this should be a feature of the design itself.\\
+
+Concept D addressed these issues by using a single piece Carrier manufactured from a thermally insulating material. This was then designed so that the aluminium Thermal Region would sit directly inside a space machined from it. The use of this space meant that tolerances could be used to directly control the alignment of the Carrier and the Thermal Region and hence create a reliable tube fit to ensure consistent heating. In order to control the variation among the manufactured parts, the tolerance was set as a locational clearance fit. This fit provides a tight fit for locating the two parts, however under no circumstances allows interference and hence allows easy assembly and disassembly for servicing \cite{mmto}. The details of this fit are given in Table \ref{tab:fit}.
 
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ p{4.2cm} |  p{4.2cm} | p{4.2cm} }
+\hline
+Fit Classification & Minimum Clearance & Maximum Clearance\\ \hline \hline
+Locational Clearance & 0.1mm & 0.2mm\\ \hline
+\end{tabular}
+\end{center}
+\caption[Fit Tolerance Details.]{Details of Locational Clearance Fit.}
+\label{tab:fit}
+\end{table}
+
+Due to the high degree of positional accuracy achieved by the fit described above, the design was able to be further simplified. Whether a TEC or resistive heaters were chosen, a heat sink was required on the bottom side of the device to fulfil the requirements of controller either heating device. This heat sink must be located on the bottom of the Thermal Region to extract thermal energy. Therefore, it may be used to "clamp" the single piece carrier and secure it in position. In this arrangement, the locational clearance fit locates the components in the X and Y directions, while the clamping force provided by securing the Thermal Region to the heat sink with the Carrier in between secures the Z direction movement. This allows a further reduction in hardware fasteners which not only increases manufacturability, but also reduces heat transfer due to conductive transfers that are created by fasteners such as bolts.
 
 \subsubsection{Heater Selection}
 
-In order to achieve the heating requirements of the extraction process, two main heating devices were considered, as were explored in Chapter \ref{cha:literaturereview}, Literature Review. These were the solid state TEC and the resistive heat strip.
+In order to achieve the heating requirements of the extraction process, two main heating devices were considered, as were explored in Chapter \ref{cha:literaturereview}, Literature Review. These were the solid state TEC and the resistive heat strip.\\
+
+After consideration of the properties of each device, the TEC was selected as the heating device to be used. While the resistive heating elements are cost effective, easily installed, possess a long service life and can generate large quantities of thermal energy, the TEC has a number of significant advantages. The TEC modules are a solid state device and hence provide a highly reliable means of thermal management. The devices, provided they are installed correctly, may last for up to 200,000 hours of use \cite{Ferroteclife}. This figure is supplied by Ferrotec, the supplier of TEC's used by AusDiagnostics, and is stated to be an accepted industry standard MTBF (Mean Time Between Failures). Along with this high level of reliability, these modules are capable of provide precise temperature control to within $\pm$ 0.1$\degree$C. This advantage is paired with their simple power supply requirements, being able to be controlled via PWM (Pulse Width Modulation) directly from a DC power source. The TEC devices available are also capable of outputting significant amounts of thermal energy, with single state devices able to transfer up to 6 $W/cm^2$ of device surface area \cite{Ferroteclife}. By far the greatest advantage however, is the ability of the TEC to pump heat in either direction to enable both heating or cooling of the target component with the same installing. As was described in Chapter \ref{cha:literaturereview}, Literature Review, this is controlled simply by inverting the direction in which current is applied to the terminals of the TEC. This has large significance for the control of the system temperature, as the controller can actively drive the temperature in the necessary direction to drive the error to 0, as opposed to relying purely on passive methods or even fan based cooling.\\
+
+With the device to be used now selected, the power requirements of the TEC needed to be determined. In order to ensure the selected TEC would be capable of driving the temperature of the Thermal Region to 60$\degree$C, the thermal transfers of the system needed to be understood. As the Thermal Region reaches is target temperature, losses will begin to occur at a greater rate to its surroundings due to the increasing temperature differential. The power of this energy transfer must be at the very least matched by the power output of the TEC to maintain a stable temperature, or exceeded to drive the temperature change at an acceptable rate. To determine these variables, a number of design parameters are required:
+\begin{enumerate}
+	\item [$T_h$] This is the maximum hot side temperature of the TEC module. For this application, the module will need to drive the Thermal Region to 60$\degree$C and therefore this temperature is selected. However, it is recommended that for large thermal loads, or those were the path of heat transfer is greater than 25mm, that this variable be increased by 5$\degree$C. This application involves both of these conditions and therefore:
+	$$T_h = 65\degree C$$
+	\item[$T_c$] This variable is determined by the minimum expected ambient temperature in which the device will work within along with the capacity of the applied heat sink. If the system operates with a small thermal load and adequate heat sinking, then the following equations is applied:
+	\begin{equation}
+	T_c = T_{ambient} - 5\degree C
+	\end{equation}
+	However, for a system with a large thermal load and a small level of heat sinking, the following is substituted:
+	\begin{equation}
+	\label{eq_tc}
+	T_c = T_{ambient} - 15\degree C
+	\end{equation}
+	With the device matching the conditions of a large thermal load with small heat sinking, Equation \ref{eq_tc} is applied. Given that the Gene-Plex Extractor will operate within enclosed indoor facilities, 20$\degree$C was selected as the minimum expected ambient temperature. Therefore,
+	$$ T_c = 20 - 15$$
+	$$ T_c = 5\degree C $$
+\end{enumerate}
+
+%CONtinue with calculation by hand
+
+
+\subsubsection{CFD Simulation}
 
 \subsection{Temperature Controller}
 
