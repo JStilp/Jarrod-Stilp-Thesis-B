@@ -90,6 +90,63 @@ With the device to be used now selected, the power requirements of the TEC neede
 	$$ T_c = 5\degree C $$
 \end{enumerate}
 
+In order to calculate the thermal load which the TEC's must displace to drive a temperature change, the various thermal transfers of the system must be estimated. These loads may be split into active and passive loads:
+\begin{equation}
+\label{eq_thermalload}
+Q = Q_{active} + Q_{passive}
+\end{equation}
+
+\begin{enumerate}
+	\item [Active] These loads are due to the power dissipated by the device as part of the electrical components. In the case of the Processor Module, this load is negligible due to the significant separation between the electronics and the thermally controlled elements:
+	$$Q_{active} = I^2R = 0 $$ 
+	\item[Passive] These loads are those due to heat transfers within the device and to its surroundings. These consist of radiation, convection and conduction:
+	\begin{equation}
+	\label{eq_passive}
+	Q_{passive} = Q_{radiation} + Q_{convection} + Q_{conduction}
+	\end{equation}
+	
+	Radiative thermal transfers are found using:
+	\begin{equation}
+	\label{eq_rad}
+	Q_{radiation} = F\epsilon\sigma A(T_h^4 - T_c^4)
+	\end{equation} 	
+	where,\\
+	F = Shape Factor = 1 (assume worst case scenario)\\
+	$\epsilon$ = Emmisivity = 1 (assume worst case scenario)\\
+	$\sigma$ = Stefan-Boltzman Constant = $5.667\times10^{-8} W/m^2K^4$\\
+	A = Surface Area $(m^2)$\\
+	$T_h$ = Maximum TEC hot side temperature (K)\\
+	$T_c$ =  Minimum TEC cold side temperature (K)\\
+	
+	Convective thermal transfers are found using:
+	\begin{equation}
+	\label{eq_cov}
+	Q_{convection} = hA(T_h - T_c)
+	\end{equation} 	
+	where,\\
+	h = Convective heat transfer coefficient = 21.7 $W/m^2$ $\degree$C\\
+	$\epsilon$ = Emmisivity = 1 (assume worst case scenario)\\
+	$\sigma$ = Stefan-Boltzman Constant = $5.667\times10^{-8} W/m^2K^4$\\
+	A = Surface Area $(m^2)$\\
+	$T_h$ = Maximum TEC hot side temperature (K)\\
+	$T_c$ = Minimum TEC cold side temperature (K)\\
+
+	Conductive thermal transfers are found using:
+	\begin{equation}
+	\label{eq_cond}
+	Q_{conductive} = \frac{KW}{L}(T_h - T_c)
+	\end{equation} 	
+	where,\\
+	K = Thermal Conductivity of material ($W/m$ $\degree$C)\\
+	W = Cross sectional area of material ($m^2$)\\
+	L = Length of thermal transfer path (m)\\
+
+	
+	
+	
+	 
+\end{enumerate}
+
 %CONtinue with calculation by hand
 
 
