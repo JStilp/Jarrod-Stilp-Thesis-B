@@ -140,16 +140,31 @@ Q = Q_{active} + Q_{passive}
 	K = Thermal Conductivity of material ($W/m$ $\degree$C)\\
 	W = Cross sectional area of material ($m^2$)\\
 	L = Length of thermal transfer path (m)\\
-
-	%TEST
-	
-	
-	
 	 
 \end{enumerate}
 
-%CONtinue with calculation by hand
+Using these equations, the thermal load of the Thermal Region was determined to be:
+$$ Q \approx 47 W $$
 
+This figure was determined using the equations discussed via a MATLAB script. For this estimation, some simplifications were made. This includes neglecting the effects of radiative loads due to their low weighting in this result. Furthermore, only the significant bodies and thermal transfers in the assembly were modelled. The purpose of obtaining this estimate was to guide a good starting point for TEC selection. Comprehensive CFD was completed as a later step, as detailed below, and therefore a high level of accuracy was not necessary in this calculation.\\ %THE The full MATLAB script used to calculate this figure is included in Appendix XXXX. %NEED to include this or remove it.
+
+Using this figure and comparing the available TEC modules available from suppliers, it was decided that this power requirement could be most effectively met by utilizing 3 TEC's, each with a 16W capacity. This divide matches closely with the available module power outputs when considering the area to which they will be mounted, as achieving this output from a single device would result in a module that exceeds the area available for mounting.\\
+`	
+The maximum temperature differential expected in this application is $\Delta T = T_h - T_c = 60\degree$C. This is comfortably within the 72$\degree$C $\Delta$T limit of a single stage TEC. Therefore, single-stage modules will be used.\\
+
+The modules selected for use were the Ferrotec 9500/035/085 B. The device has dimensions 15.1mm (W) $\times$ 29.8mm (L) $\times$ 3.94mm (H). It's performance values are summarised in Table \ref{tab:TECspec}. This module can be seen to exceed the thermal power requirement by a comfortable margin of 4 Watts.
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ p{3.15cm} |  p{3.15cm} | p{3.15cm} | p{3.15cm } }
+			\hline
+			I Max & V Max & $\Delta$T Max & $Q_c$ Max\\ \hline \hline
+			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
+		\end{tabular}
+	\end{center}
+	\caption[Ferrotec 9500/035/085 B Performance Specifications.]{Ferrotec 9500/035/085 B Performance Specifications.}
+	\label{tab:TECspec}
+\end{table}
 
 \subsubsection{CFD Simulation}
 
