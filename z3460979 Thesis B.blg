@@ -37,6 +37,12 @@ Warning--entry type for "mmto" isn't style-file defined
 --line 296 of file References.bib
 Warning--entry type for "Ferroteclife" isn't style-file defined
 --line 304 of file References.bib
+Warning--entry type for "Ferroteceff" isn't style-file defined
+--line 320 of file References.bib
+Illegal end of database file---line 326 of file References.bib
+ : }
+ :  
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in 12436620
 Warning--empty journal in 6464884
 Warning--empty booktitle in 2006289990179
@@ -47,4 +53,4 @@ Warning--empty journal in 1704922
 Warning--empty booktitle in 11303490
 Warning--empty booktitle in 12096602
 Warning--empty author in 2006189852255
-(There were 24 warnings)
+(There was 1 error message)

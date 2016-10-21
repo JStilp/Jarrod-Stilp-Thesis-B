@@ -1,4 +1,4 @@
-\chapter{Results}
+\chapter{Results and Discussion}
 \label{cha:results}
 % This chapter should display the results of your experiments. It should be entirely
 % factual, so leave the discussion you draw from it for the Discussion chapter.
@@ -50,7 +50,6 @@ Concept B furthered the ideal behind Concept A by improving on some of its flaws
 Concept C moved in the direction of manufacturing the block from two separate materials and hence components. In Figure \ref{fig:splitconcepts}, Part C, the carrier is now seen to be of a different material, while the separating and insulating spacers are coloured in red. This allows the spacers to be manufactured from a highly insulating material, such as ethylene propylene as recommended by Williams et al. This concept provides excellent thermal insulation between the Thermal Region and the Carrier. The use of multiple parts however introduces another risk. The correct placement of the tubes in the Thermal Region is essential in ensuring the cassette tubes walls contact the heated block and hence the liquid is heated as required. One of the purposes of the carrier is to ensure the tubes are correctly located and positioned. With the carrier now manufactured from two separate parts and the Region being separate again, the alignment of all three parts has a considerable degree of flexibility. Therefore, ensuring all components are properly aligned and the tube contact occurs depends heavily on the fastening used and the assembly process itself. While possible to design an assembly method and fastening system that would locate the three components accurately, it was decided that this should be a feature of the design itself.\\
 
 Concept D addressed these issues by using a single piece Carrier manufactured from a thermally insulating material. This was then designed so that the aluminium Thermal Region would sit directly inside a space machined from it. The use of this space meant that tolerances could be used to directly control the alignment of the Carrier and the Thermal Region and hence create a reliable tube fit to ensure consistent heating. In order to control the variation among the manufactured parts, the tolerance was set as a locational clearance fit. This fit provides a tight fit for locating the two parts, however under no circumstances allows interference and hence allows easy assembly and disassembly for servicing \cite{mmto}. The details of this fit are given in Table \ref{tab:fit}.
-
 
 \begin{table}[h!]
 \begin{center}
@@ -149,10 +148,10 @@ $$ Q \approx 47 W $$
 This figure was determined using the equations discussed via a MATLAB script. For this estimation, some simplifications were made. This includes neglecting the effects of radiative loads due to their low weighting in this result. Furthermore, only the significant bodies and thermal transfers in the assembly were modelled. The purpose of obtaining this estimate was to guide a good starting point for TEC selection. Comprehensive CFD was completed as a later step, as detailed below, and therefore a high level of accuracy was not necessary in this calculation.\\ %THE The full MATLAB script used to calculate this figure is included in Appendix XXXX. %NEED to include this or remove it.
 
 Using this figure and comparing the available TEC modules available from suppliers, it was decided that this power requirement could be most effectively met by utilizing 3 TEC's, each with a 16W capacity. This divide matches closely with the available module power outputs when considering the area to which they will be mounted, as achieving this output from a single device would result in a module that exceeds the area available for mounting.\\
-`	
+	
 The maximum temperature differential expected in this application is $\Delta T = T_h - T_c = 60\degree$C. This is comfortably within the 72$\degree$C $\Delta$T limit of a single stage TEC. Therefore, single-stage modules will be used.\\
 
-The modules selected for use were the Ferrotec 9500/035/085 B. The device has dimensions 15.1mm (W) $\times$ 29.8mm (L) $\times$ 3.94mm (H). It's performance values are summarised in Table \ref{tab:TECspec}. This module can be seen to exceed the thermal power requirement by a comfortable margin of 4 Watts.
+The modules selected for use were the Ferrotec 9500-035-085 B. The device has dimensions 15.1mm (W) $\times$ 29.8mm (L) $\times$ 3.94mm (H). It's performance values are summarised in Table \ref{tab:TECspec}. This module can be seen to exceed the thermal power requirement by a comfortable margin of 4 Watts.
 
 \begin{table}[h!]
 	\begin{center}
@@ -162,11 +161,113 @@ The modules selected for use were the Ferrotec 9500/035/085 B. The device has di
 			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
 		\end{tabular}
 	\end{center}
-	\caption[Ferrotec 9500/035/085 B Performance Specifications.]{Ferrotec 9500/035/085 B Performance Specifications.}
+	\caption[Ferrotec 9500-035-085 B Performance Specifications.]{Ferrotec 9500-035-085 B Performance Specifications.}
 	\label{tab:TECspec}
 \end{table}
 
-\subsubsection{CFD Simulation}
+\subsubsection{CFD Simulation - Initial Design}
+
+With the TEC modules selected, the module's design was completed in Autodesk Inventor Professional to enable CFD Simulation to be completed. This first stage of CFD was used gauge the first design iterations ability to heat the Thermal Region to the desired set temperature.\\
+
+To ensure the efficient usage of computing resources, the design was simplified appropriated with the following changes made:
+\begin{itemize}
+	\item Removal of all corner fillets and chamfers.
+	\item Removal of interferences between components, such as where foam insulators will be compressed.
+	\item Detailed TEC module component replaced with simplified rectangular prism.
+	\item Bolted connection and associated holes removed.
+	\item Circuit board removed.
+\end{itemize}
+
+These simplifications allowed for the model to be meshed with a total of XXXX elements. The mesh obtained is shown in Figure XXXX.\\ %ELEMENT COUNT.
+%MESH
+
+While the specifics of the CFD setup are not presented, it is noted that the Chimney approach was used for the boundary condition setup. This setup is applied to the body of air surrounding the model, as shown in Figure XXXX. This body of air then has two boundary conditions applied. The first is a 25$\degree$C temperature boundary condition on the bottom face. This is then completed with two 0 kPa boundary conditions on the top and bottom faces. For details on the modelling of the TEC modules within Autodesk CFD Simulation, please refer to Appendix \ref{cha:app_TEC_CFD}\\ %FIG Of boundary conditions
+%Note the similation type and settings used if important
+
+With this setup, the results of the simulation are shown in Figure XXXX below. The convergence plot of this simulation is provided in Appendix \ref{cha:CFDconverg}.
+%FIG of CFD result of 3 TEC
+
+Figure XXX shows a cut plane in the X, Y and Z plane across the Thermal Region. Figure XXX plots the temperature profile across these three sections for numerical comparison.\\
+%CUTS across thermal region in X Y and Z directions. also plot of temp data change
+
+With the mechanical design validated, the performance of the TEC modules was then validated. The critical values indicating TEC performance ar provided in Table \ref{tab:TECperf}:
+%TABLE needs to be filled with TEC performance data. May also want to show this data from CFD in a figure intead?
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ p{3.15cm} |  p{3.15cm} | p{3.15cm} | p{3.15cm } }
+			\hline
+			I Max & V Max & $\Delta$T Max & $Q_c$ Max\\ \hline \hline
+			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
+		\end{tabular}
+	\end{center}
+	\caption[Ferrotec 9500-035-085 B Performance Specifications.]{Ferrotec 9500-035-085 B Performance Specifications.}
+	\label{tab:TECperf}
+\end{table}
+
+\subsubsection{Discussion}
+
+The simulation conducted provides a number of key results. These include the adequate performance of the TEC modules and setup selected, evidence to support reducing the number of TEC modules used in each Processor Module and finally, possible areas in which the mechanical design can be improved.\\
+
+The sectioned views given in Figures XXX (Figures of sections of thermal region) show a high level of consistency across the component and therefore validate the mechanical design.
+
+As can be seen from Table \ref{tab:TECperf}, the TEC modules are operating at a very high Coefficient of Performance (COP). It should be noted that is in fact possible to operate at COP's of greater than 1, as this value is obtained by the equation \cite{Ferroteceff}:
+\begin{equation}
+COP = \frac{Q_h}{P_{in}}
+\end{equation}
+where,
+
+$$Q_h$$ is the thermal power generated by the TEC at the hot side.\\
+$$P_{in}$$ is the power supplied to the TEC.\\
+
+The COP obtained in this simulation suggests the TEC's are operating below their maximum operating point in order to drive the Thermal Region to this temperature. This is further shown by the maximum current value, $I_{max}$, which shows the module operating at XXXX \% of it's maximum, as was given in Table \ref{tab:TECspec}. While operating at a fraction of $I_{max}$ gives a higher efficiency, there are advantages of operating at a point near this value. Due to the Ferrotec TEC modules costing around \$16.00 each, reducing the number of TEC's per Processor Module is advantageous due to the cost reduction this would achieve for each Gene-Plex Extractor.\\ %NEED to add percentage of current operation here
+
+Finally, the results of this initial simulation identified an area through which significant heat transfer was occurring and must be reduced. This region is shown by the sectioned view in Figure XXX to be at the meeting plane of the Thermal Region and the Carrier. This design feature was used to ensure a level placement and proper location of the Thermal Region with respect to the Carrier. However, the area of material used to achieve this may be reduced significantly to avoid the thermal losses occurring as a result.\\
+
+%IMAGE of thermal transfer between thermal region and carrier
+
+\subsubsection{CFD Simulation - Refined Design}
+
+The results drawn from the initial experiment were then applied to form a refined design. This section described the results obtained from the analysis of this design. The two major refinements made include the reduction of TEC modules from three to two, along with the reduction in contact area between the Thermal Region and the Carrier.\\
+
+The refined design was then simulated using an identical setup as was used previously. The results of this simulation, after the solver had reach convergence, are given in Figure XXXX. Once again, the convergence plot for this simulation is provided in Appendix \ref{cha:CFDconverg}.
+
+%INSRET figure for 2 TEC results
+
+Figures XX below show the temperature variation across the Thermal Region in the X, Y and Z planes, with the plot of temperature across the components axis shown in Figure YY.
+
+%FIGURES for both the X Y and Z cuts of thermal region and then also the plots of temps over area
+
+The thermal transfer between the Thermal Region and the Carrier are shown along the X and Y plane in Figure XX.
+
+%FIGURE of thermal transfer between thermal region and carrier in both vertical directions
+
+The critical TEC performance values are summarised below in Table \ref{tab:TECperf2}:
+%TABLE needs to be filled with TEC performance data. May also want to show this data from CFD in a figure intead?
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ p{3.15cm} |  p{3.15cm} | p{3.15cm} | p{3.15cm } }
+			\hline
+			I Max & V Max & $\Delta$T Max & $Q_c$ Max\\ \hline \hline
+			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
+		\end{tabular}
+	\end{center}
+	\caption[Ferrotec 9500-035-085 B Performance Specifications.]{Ferrotec 9500-035-085 B Performance Specifications.}
+	\label{tab:TECperf2}
+\end{table}
+
+\subsubsection{Discussion}
+
+By comparison between the results obtained by simulating the refined design as opposed to the initial design and by analysing the critical data points, a number of key points may be noted.\\
+
+Most critically, the sectioned views in Figures XXX (refer to sections of thermal region and also plots) show a consistent temperature distribution is still attained despite the drop to two TEC modules. The results show a maximum difference of XX $\degree$C across the device in any direction, along with a maximum deviation from the target temperature of 60$\degree$C of XX$\degree$C. the results validate the performance of the hardware design in providing a stable platform for temperature control to be carried out within.\\
+%FILL Out data here
+
+Considering the performance figures of each of the TEC modules in Table \ref{tab:TECperf2}, the suitability of the reduction in TEC units  can be assessed. Given the COP of XX and the maximum current of XX A resulting in a XX\% usage of each devices operating limit, the modules are shown to be working within their operating limits. Furthermore, the fraction of the maximum capacity used represents a more effective usage of the capacity of the two TEC's.\\
+%FILL in details 
+
+As a result of the experiment conducted, the configuration simulated is seen to achieve the stipulated operating requirements as well as make effective use of the capabilities of the heating components. Therefore, this configuration is selected as the final design for the Processor Module.
+
+\subsection{Final Mechanical Design}
 
 \subsection{Temperature Controller}
 
