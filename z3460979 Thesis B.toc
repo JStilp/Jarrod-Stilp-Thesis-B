@@ -3,54 +3,54 @@
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Acknowledgements}{iv}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}The Extraction Process}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The Extraction Process}{4}{subsection.1.1.1}
 \contentsline {section}{\numberline {1.2}Aim}{8}{section.1.2}
-\contentsline {section}{\numberline {1.3}Scope}{9}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Mechanical}{9}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.3}Scope}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Mechanical}{8}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Electronic}{10}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Software}{11}{subsection.1.3.3}
-\contentsline {chapter}{\numberline {2}Literature Review}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Heating}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}Cooling}{16}{section.2.2}
-\contentsline {section}{\numberline {2.3}Controllability}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Temperature Sensors}{19}{section.2.4}
-\contentsline {section}{\numberline {2.5}Temperature Sensing}{20}{section.2.5}
-\contentsline {section}{\numberline {2.6}Controller Design}{22}{section.2.6}
-\contentsline {section}{\numberline {2.7}Magnetic Separation}{23}{section.2.7}
-\contentsline {chapter}{\numberline {3}Methodology}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Processor Module}{27}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Hardware}{27}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Temperature Controller}{28}{subsection.3.1.2}
-\contentsline {subsubsection}{Controller Performance}{32}{section*.11}
-\contentsline {subsubsection}{Pole Zero Cancellation}{33}{section*.12}
-\contentsline {subsubsection}{Experimental Verification}{36}{section*.14}
-\contentsline {subsection}{\numberline {3.1.3}Magnetic Separation}{38}{subsection.3.1.3}
-\contentsline {subsubsection}{Experimental Verification}{39}{section*.16}
-\contentsline {section}{\numberline {3.2}Magnetic Separation Station}{40}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Magnetic Separation}{41}{subsection.3.2.1}
-\contentsline {subsubsection}{Experimental Verification}{42}{section*.17}
-\contentsline {subsection}{\numberline {3.2.2}Waste Disposal}{43}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{45}{chapter.4}
-\contentsline {section}{\numberline {4.1}Processor Module}{46}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Hardware}{46}{subsection.4.1.1}
-\contentsline {subsubsection}{Thermal Isolation}{46}{section*.18}
-\contentsline {subsubsection}{Heater Selection}{51}{section*.21}
-\contentsline {subsubsection}{CFD Simulation - Initial Design}{57}{section*.23}
-\contentsline {subsubsection}{Discussion}{58}{section*.24}
-\contentsline {subsubsection}{CFD Simulation - Refined Design}{60}{section*.25}
-\contentsline {subsubsection}{Discussion}{62}{section*.30}
-\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{63}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Processor Module Assembly}{70}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Temperature Controller}{77}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{77}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{77}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{77}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{77}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Discussion}{78}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{79}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{80}{chapter.7}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{81}{chapter.7}
-\contentsline {chapter}{\numberline {A}Raw Results}{85}{appendix.A}
-\contentsline {chapter}{\numberline {B}Simulation Setup}{86}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{86}{section.B.1}
-\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{86}{section.B.2}
+\contentsline {chapter}{\numberline {2}Literature Review}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}Heating}{12}{section.2.1}
+\contentsline {section}{\numberline {2.2}Cooling}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}Controllability}{16}{section.2.3}
+\contentsline {section}{\numberline {2.4}Temperature Sensors}{18}{section.2.4}
+\contentsline {section}{\numberline {2.5}Temperature Sensing}{19}{section.2.5}
+\contentsline {section}{\numberline {2.6}Controller Design}{21}{section.2.6}
+\contentsline {section}{\numberline {2.7}Magnetic Separation}{22}{section.2.7}
+\contentsline {chapter}{\numberline {3}Methodology}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Processor Module}{26}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Hardware}{26}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Temperature Controller}{27}{subsection.3.1.2}
+\contentsline {subsubsection}{Controller Performance}{31}{section*.11}
+\contentsline {subsubsection}{Pole Zero Cancellation}{32}{section*.12}
+\contentsline {subsubsection}{Experimental Verification}{35}{section*.14}
+\contentsline {subsection}{\numberline {3.1.3}Magnetic Separation}{37}{subsection.3.1.3}
+\contentsline {subsubsection}{Experimental Verification}{38}{section*.16}
+\contentsline {section}{\numberline {3.2}Magnetic Separation Station}{39}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Magnetic Separation}{40}{subsection.3.2.1}
+\contentsline {subsubsection}{Experimental Verification}{41}{section*.17}
+\contentsline {subsection}{\numberline {3.2.2}Waste Disposal}{42}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Processor Module}{45}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{45}{subsection.4.1.1}
+\contentsline {subsubsection}{Thermal Isolation}{45}{section*.18}
+\contentsline {subsubsection}{Heater Selection}{50}{section*.21}
+\contentsline {subsubsection}{CFD Simulation - Initial Design}{56}{section*.23}
+\contentsline {subsubsection}{Discussion}{57}{section*.24}
+\contentsline {subsubsection}{CFD Simulation - Refined Design}{59}{section*.25}
+\contentsline {subsubsection}{Discussion}{61}{section*.30}
+\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{62}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Processor Module Assembly}{69}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Temperature Controller}{76}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{76}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{76}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{76}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{76}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Discussion}{77}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{78}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{79}{chapter.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{80}{chapter.7}
+\contentsline {chapter}{\numberline {A}Raw Results}{84}{appendix.A}
+\contentsline {chapter}{\numberline {B}Simulation Setup}{85}{appendix.B}
+\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{85}{section.B.1}
+\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{85}{section.B.2}
