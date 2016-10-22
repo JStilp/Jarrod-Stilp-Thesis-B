@@ -39,10 +39,17 @@ Warning--entry type for "Ferroteclife" isn't style-file defined
 --line 304 of file References.bib
 Warning--entry type for "Ferroteceff" isn't style-file defined
 --line 320 of file References.bib
-Illegal end of database file---line 326 of file References.bib
- : }
- :  
+I was expecting a `,' or a `}'---line 328 of file References.bib
+ : 
+ : @techreport{BSI,
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 332 of file References.bib
+ :    number=10
+ :             .1,
+I'm skipping whatever remains of this entry
+Warning--entry type for "jehbco" isn't style-file defined
+--line 341 of file References.bib
 Warning--empty booktitle in 12436620
 Warning--empty journal in 6464884
 Warning--empty booktitle in 2006289990179
@@ -53,4 +60,6 @@ Warning--empty journal in 1704922
 Warning--empty booktitle in 11303490
 Warning--empty booktitle in 12096602
 Warning--empty author in 2006189852255
-(There was 1 error message)
+Warning--empty institution in BSI
+Warning--empty year in BSI
+(There were 2 error messages)

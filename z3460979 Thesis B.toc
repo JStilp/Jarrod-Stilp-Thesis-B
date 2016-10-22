@@ -36,20 +36,21 @@
 \contentsline {subsubsection}{Thermal Isolation}{46}{section*.18}
 \contentsline {subsubsection}{Heater Selection}{51}{section*.21}
 \contentsline {subsubsection}{CFD Simulation - Initial Design}{57}{section*.23}
-\contentsline {subsubsection}{Discussion}{58}{section*.25}
-\contentsline {subsubsection}{CFD Simulation - Refined Design}{60}{section*.26}
-\contentsline {subsubsection}{Discussion}{61}{section*.28}
-\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{62}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Temperature Controller}{62}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Magnetic Separation}{62}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{62}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{62}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{62}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Discussion}{63}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusions}{64}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Work}{65}{chapter.7}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{66}{chapter.7}
-\contentsline {chapter}{\numberline {A}Raw Results}{70}{appendix.A}
-\contentsline {chapter}{\numberline {B}Simulation Setup}{71}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{71}{section.B.1}
-\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{71}{section.B.2}
+\contentsline {subsubsection}{Discussion}{58}{section*.24}
+\contentsline {subsubsection}{CFD Simulation - Refined Design}{60}{section*.25}
+\contentsline {subsubsection}{Discussion}{62}{section*.30}
+\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{63}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Processor Module Assembly}{70}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Temperature Controller}{77}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{77}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{77}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{77}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{77}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Discussion}{78}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusions}{79}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{80}{chapter.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{81}{chapter.7}
+\contentsline {chapter}{\numberline {A}Raw Results}{85}{appendix.A}
+\contentsline {chapter}{\numberline {B}Simulation Setup}{86}{appendix.B}
+\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{86}{section.B.1}
+\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{86}{section.B.2}

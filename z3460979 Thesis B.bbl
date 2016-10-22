@@ -140,5 +140,17 @@ Ferrotec Corporation.
 
 \bibitem{Ferroteceff}
 Ferrotec Corporation.
+\newblock {Thermoelectric Module Modelling}, year = 2015, url =
+  {https://thermal.ferrotec.com/technology/thermoelectric-reference-guide/thermalref11/},
+  urldate = {2016-9-1}.
+
+\bibitem{BSI}
+British Standard.
+\newblock {BS EN 61010-1:2010}.
+\newblock Technical Report~10.
+
+\bibitem{jehbco}
+Jehbco.
+\newblock Sponge silicone sheet, 2015.
 
 \end{thebibliography}

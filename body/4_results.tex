@@ -1,22 +1,5 @@
 \chapter{Results and Discussion}
 \label{cha:results}
-% This chapter should display the results of your experiments. It should be entirely
-% factual, so leave the discussion you draw from it for the Discussion chapter.
-%
-% You may choose to structure your thesis slightly differently, but the overall 
-% approach should be the same.
-%
-% 1. By now you should have already described your methodology and  evaluation 
-%    procedures. There is no reason to discuss these in the results.
-% 2. Do not include raw data in the results chapter, leave it for the appendix 
-%    or simply don't include it. If you don't think people will refer to it it's
-%    probably not worth including.
-% 3. Display your results in an informative way. Charts, tables, summaries, etc.
-%
-% If your results form a complete chapter you can use the conclusion section to
-% state how the results answer your hypothesis. If you don't have a spearate
-% conclusion chapter make sure you answer the hypothesis as you go. The reader
-% should have answers to these before the Discussion.
 
 The problem at hand along with the methodology employed to produce the solution are now well defined. Paired with an understanding of important previous works in this area and the technologies available, the design of each of the components may be given consideration. This chapter will present the designs of the required additions to the Gene-Plex Extractor, as were defined in Section \ref{sec:intro_scope}, Scope. This will include relevant results from stages of the design process, the conducted simulations along with validations and verifications via experimental methods. Through the sections below, the reader will be familiar with the design of each of the components along with the resulting performance of the realised and implemented component.\\
 
@@ -25,6 +8,7 @@ The problem at hand along with the methodology employed to produce the solution 
 \subsection{Hardware}
 
 \subsubsection{Thermal Isolation}
+\label{sec:isolation}
 
 The first consideration given to the design of the physical Processor Module was the thermal isolation of the heated and non-heated volumes. While there is no requirement stipulating that only tubes 2 and 3 may be heated, it was deemed  thermally inefficient to heat the entire module. Such a design would also decrease the performance of the controller due to the larger mass to be heated. Therefore, the module was split into two regions, refereed to as the Thermal Region and the Carrier. While the method of isolation needed to be effective to create a stable and controllable thermal system, a number of other design considerations were present:
 \begin{enumerate}
@@ -66,6 +50,7 @@ Locational Clearance & 0.1mm & 0.2mm\\ \hline
 Due to the high degree of positional accuracy achieved by the fit described above, the design was able to be further simplified. Whether a TEC or resistive heaters were chosen, a heat sink was required on the bottom side of the device to fulfil the requirements of controller either heating device. This heat sink must be located on the bottom of the Thermal Region to extract thermal energy. Therefore, it may be used to "clamp" the single piece carrier and secure it in position. In this arrangement, the locational clearance fit locates the components in the X and Y directions, while the clamping force provided by securing the Thermal Region to the heat sink with the Carrier in between secures the Z direction movement. This allows a further reduction in hardware fasteners which not only increases manufacturability, but also reduces heat transfer due to conductive transfers that are created by fasteners such as bolts.
 
 \subsubsection{Heater Selection}
+\label{sec:heaterselection}
 
 In order to achieve the heating requirements of the extraction process, two main heating devices were considered, as were explored in Chapter \ref{cha:literaturereview}, Literature Review. These were the solid state TEC and the resistive heat strip.\\
 
@@ -145,7 +130,7 @@ Q = Q_{active} + Q_{passive}
 Using these equations, the thermal load of the Thermal Region was determined to be:
 $$ Q \approx 47 W $$
 
-This figure was determined using the equations discussed via a MATLAB script. For this estimation, some simplifications were made. This includes neglecting the effects of radiative loads due to their low weighting in this result. Furthermore, only the significant bodies and thermal transfers in the assembly were modelled. The purpose of obtaining this estimate was to guide a good starting point for TEC selection. Comprehensive CFD was completed as a later step, as detailed below, and therefore a high level of accuracy was not necessary in this calculation.\\ %THE The full MATLAB script used to calculate this figure is included in Appendix XXXX. %NEED to include this or remove it.
+This figure was determined using the equations discussed via a MATLAB script. For this estimation, some simplifications were made. This includes neglecting the effects of radiative loads due to their low weighting in this result. Furthermore, only the significant bodies and thermal transfers in the assembly were modelled. The purpose of obtaining this estimate was to guide a good starting point for TEC selection. Comprehensive CFD was completed as a later step, as detailed below, and therefore a high level of accuracy was not necessary in this calculation.\\
 
 Using this figure and comparing the available TEC modules available from suppliers, it was decided that this power requirement could be most effectively met by utilizing 3 TEC's, each with a 16W capacity. This divide matches closely with the available module power outputs when considering the area to which they will be mounted, as achieving this output from a single device would result in a module that exceeds the area available for mounting.\\
 	
@@ -166,10 +151,11 @@ The modules selected for use were the Ferrotec 9500-035-085 B. The device has di
 \end{table}
 
 \subsubsection{CFD Simulation - Initial Design}
+\label{initialcfd}
 
 With the TEC modules selected, the module's design was completed in Autodesk Inventor Professional to enable CFD Simulation to be completed. This first stage of CFD was used gauge the first design iterations ability to heat the Thermal Region to the desired set temperature.\\
 
-To ensure the efficient usage of computing resources, the design was simplified appropriated with the following changes made:
+To ensure the efficient usage of computing resources, the design was simplified appropriately with the following changes made:
 \begin{itemize}
 	\item Removal of all corner fillets and chamfers.
 	\item Removal of interferences between components, such as where foam insulators will be compressed.
@@ -178,39 +164,17 @@ To ensure the efficient usage of computing resources, the design was simplified 
 	\item Circuit board removed.
 \end{itemize}
 
-These simplifications allowed for the model to be meshed with a total of XXXX elements. The mesh obtained is shown in Figure XXXX.\\ %ELEMENT COUNT.
-%MESH
+These simplifications allowed for the model to be meshed with a total of $2.1\times 10^6$ elements.
 
-While the specifics of the CFD setup are not presented, it is noted that the Chimney approach was used for the boundary condition setup. This setup is applied to the body of air surrounding the model, as shown in Figure XXXX. This body of air then has two boundary conditions applied. The first is a 25$\degree$C temperature boundary condition on the bottom face. This is then completed with two 0 kPa boundary conditions on the top and bottom faces. For details on the modelling of the TEC modules within Autodesk CFD Simulation, please refer to Appendix \ref{cha:app_TEC_CFD}\\ %FIG Of boundary conditions
-%Note the similation type and settings used if important
-
-With this setup, the results of the simulation are shown in Figure XXXX below. The convergence plot of this simulation is provided in Appendix \ref{cha:CFDconverg}.
-%FIG of CFD result of 3 TEC
-
-Figure XXX shows a cut plane in the X, Y and Z plane across the Thermal Region. Figure XXX plots the temperature profile across these three sections for numerical comparison.\\
-%CUTS across thermal region in X Y and Z directions. also plot of temp data change
-
-With the mechanical design validated, the performance of the TEC modules was then validated. The critical values indicating TEC performance ar provided in Table \ref{tab:TECperf}:
-%TABLE needs to be filled with TEC performance data. May also want to show this data from CFD in a figure intead?
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ p{3.15cm} |  p{3.15cm} | p{3.15cm} | p{3.15cm } }
-			\hline
-			I Max & V Max & $\Delta$T Max & $Q_c$ Max\\ \hline \hline
-			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
-		\end{tabular}
-	\end{center}
-	\caption[Ferrotec 9500-035-085 B Performance Specifications.]{Ferrotec 9500-035-085 B Performance Specifications.}
-	\label{tab:TECperf}
-\end{table}
+While the specifics of the CFD setup are not presented, it is noted that the Chimney approach was used for the boundary condition setup. This setup is applied to the body of air surrounding the model. This body of air then has two boundary conditions applied. The first is a 25$\degree$C temperature boundary condition on the bottom face. This is then completed with two 0 kPa pressure boundary conditions on the top and bottom faces. With this setup, the simulation was run to convergence.\\
 
 \subsubsection{Discussion}
 
-The simulation conducted provides a number of key results. These include the adequate performance of the TEC modules and setup selected, evidence to support reducing the number of TEC modules used in each Processor Module and finally, possible areas in which the mechanical design can be improved.\\
+The simulation conducted provided a number of key results. These include the adequate performance of the TEC modules and setup selected, evidence to support reducing the number of TEC modules used in each Processor Module and finally, possible areas in which the mechanical design can be improved.\\
 
-The sectioned views given in Figures XXX (Figures of sections of thermal region) show a high level of consistency across the component and therefore validate the mechanical design.
+A study of the cross sectional temperature gradient throughout the Thermal Region displayed a high level of consistency across the component and therefore validated the mechanical design.
 
-As can be seen from Table \ref{tab:TECperf}, the TEC modules are operating at a very high Coefficient of Performance (COP). It should be noted that is in fact possible to operate at COP's of greater than 1, as this value is obtained by the equation \cite{Ferroteceff}:
+The simulation also demonstrated the TEC modules were operating at a very high Coefficient of Performance (COP). It should be noted that is in fact possible to operate at COP's of greater than 1, as this value is obtained by the equation \cite{Ferroteceff}:
 \begin{equation}
 COP = \frac{Q_h}{P_{in}}
 \end{equation}
@@ -219,39 +183,61 @@ where,
 $$Q_h$$ is the thermal power generated by the TEC at the hot side.\\
 $$P_{in}$$ is the power supplied to the TEC.\\
 
-The COP obtained in this simulation suggests the TEC's are operating below their maximum operating point in order to drive the Thermal Region to this temperature. This is further shown by the maximum current value, $I_{max}$, which shows the module operating at XXXX \% of it's maximum, as was given in Table \ref{tab:TECspec}. While operating at a fraction of $I_{max}$ gives a higher efficiency, there are advantages of operating at a point near this value. Due to the Ferrotec TEC modules costing around \$16.00 each, reducing the number of TEC's per Processor Module is advantageous due to the cost reduction this would achieve for each Gene-Plex Extractor.\\ %NEED to add percentage of current operation here
+The COP obtained in this simulation suggests the TEC's are operating below their maximum operating point in order to drive the Thermal Region to this temperature. This was further shown by the maximum current value, which demonstrated the module operating at less than 10\% of it's maximum, as was given in Table \ref{tab:TECspec}. While operating at a fraction of $I_{max}$ gives a higher efficiency, there are advantages of operating at a point nearer this value. Due to the Ferrotec TEC modules costing around \$16.00 each, reducing the number of TEC's per Processor Module is advantageous due to the cost reduction this would achieve for each Gene-Plex Extractor.\\
 
-Finally, the results of this initial simulation identified an area through which significant heat transfer was occurring and must be reduced. This region is shown by the sectioned view in Figure XXX to be at the meeting plane of the Thermal Region and the Carrier. This design feature was used to ensure a level placement and proper location of the Thermal Region with respect to the Carrier. However, the area of material used to achieve this may be reduced significantly to avoid the thermal losses occurring as a result.\\
-
-%IMAGE of thermal transfer between thermal region and carrier
+Finally, the results of this initial simulation identified an area through which significant heat transfer was occurring and must be reduced. This region was found to be at the meeting plane of the Thermal Region and the Carrier, where an overlap between the two parts was created along the entire perimeter of the Thermal Region. This design feature was used to ensure a level placement and proper location of the Thermal Region with respect to the Carrier. However, the area of material used to achieve this may be reduced significantly to avoid the thermal losses occurring as a result.\\
 
 \subsubsection{CFD Simulation - Refined Design}
+\label{refinedcfd}
 
 The results drawn from the initial experiment were then applied to form a refined design. This section described the results obtained from the analysis of this design. The two major refinements made include the reduction of TEC modules from three to two, along with the reduction in contact area between the Thermal Region and the Carrier.\\
 
-The refined design was then simulated using an identical setup as was used previously. The results of this simulation, after the solver had reach convergence, are given in Figure XXXX. Once again, the convergence plot for this simulation is provided in Appendix \ref{cha:CFDconverg}.
+The refined design was then simulated using an identical setup as was used previously. The results of this simulation, after the solver had reached convergence, are given in Figure \ref{fig:result2}. Once again, the convergence plot for this simulation is provided in Appendix \ref{cha:CFDconverg}.
 
-%INSRET figure for 2 TEC results
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{result2.png}
+	\caption[CFD Results - Refined Design.]{Final results of the CFD Simulation of the refined design.}
+	\label{fig:result2}
+\end{figure} 
+\FloatBarrier
 
-Figures XX below show the temperature variation across the Thermal Region in the X, Y and Z planes, with the plot of temperature across the components axis shown in Figure YY.
+Figures \ref{fig:cutcfd} below show the temperature variation across the Thermal Region normal to the X, Y and Z axes.
 
-%FIGURES for both the X Y and Z cuts of thermal region and then also the plots of temps over area
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{cutcfd.png}
+	\caption[CFD Results - Spatial Variations of Temperation.]{Spatial variation of temperature through the XY, XZ and YZ planes of the Thermal Region.}
+	\label{fig:cutcfd}
+\end{figure} 
+\FloatBarrier
 
-The thermal transfer between the Thermal Region and the Carrier are shown along the X and Y plane in Figure XX.
+The thermal transfer between the Thermal Region and the Carrier are shown along the YZ plane in Figure \ref{fig:thermalvariation}.
 
-%FIGURE of thermal transfer between thermal region and carrier in both vertical directions
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{thermalvariation.jpg}
+	\caption[CFD Results - Thermal Losses from Thermal Region to Carrier.]{Thermal Losses from Thermal Region to Carrier.}
+	\label{fig:thermalvariation}
+\end{figure} 
+\FloatBarrier
 
 The critical TEC performance values are summarised below in Table \ref{tab:TECperf2}:
-%TABLE needs to be filled with TEC performance data. May also want to show this data from CFD in a figure intead?
+
 \begin{table}[h!]
 	\begin{center}
-		\begin{tabular}{ p{3.15cm} |  p{3.15cm} | p{3.15cm} | p{3.15cm } }
+		\begin{tabular}{ p{5.15cm} |  p{3.15cm} | p{3.15cm} }
 			\hline
-			I Max & V Max & $\Delta$T Max & $Q_c$ Max\\ \hline \hline
-			8.5 A & 4.8 V & 72 $\degree$C & 22.0 W\\ \hline
+			TEC No. & 1 & 2 \\ \hline
+			Status A & Normal & Normal \\ \hline
+			Cold Side Temperature & 31.00 $\degree$C & 31.25 $\degree$C \\ \hline
+			Hot Side Temperature & 60.00 $\degree$C & 60.00 $\degree$C \\ \hline
+			Power Input & 3.53 W & 3.37 W \\ \hline
+			Operating Current & 1.43 A & 1.40 A \\ \hline
+			COP & 0.92 & 0.94 \\ \hline
 		\end{tabular}
 	\end{center}
-	\caption[Ferrotec 9500-035-085 B Performance Specifications.]{Ferrotec 9500-035-085 B Performance Specifications.}
+	\caption[Ferrotec 9500-035-085 B Simulated Performance.]{Ferrotec 9500-035-085 B Simulated Performance.}
 	\label{tab:TECperf2}
 \end{table}
 
@@ -259,17 +245,171 @@ The critical TEC performance values are summarised below in Table \ref{tab:TECpe
 
 By comparison between the results obtained by simulating the refined design as opposed to the initial design and by analysing the critical data points, a number of key points may be noted.\\
 
-Most critically, the sectioned views in Figures XXX (refer to sections of thermal region and also plots) show a consistent temperature distribution is still attained despite the drop to two TEC modules. The results show a maximum difference of XX $\degree$C across the device in any direction, along with a maximum deviation from the target temperature of 60$\degree$C of XX$\degree$C. the results validate the performance of the hardware design in providing a stable platform for temperature control to be carried out within.\\
-%FILL Out data here
+Most critically, the sectioned views in Figures \ref{fig:cutcfd} show a consistent temperature distribution is still attained despite the drop to two TEC modules. The results show an average temperature across the Thermal Region of 59.58$\degree$C, and a minimum temperature of 58.78$\degree$C. The results validate the performance of the hardware design in providing a stable platform for temperature control to be carried out within.\\
 
-Considering the performance figures of each of the TEC modules in Table \ref{tab:TECperf2}, the suitability of the reduction in TEC units  can be assessed. Given the COP of XX and the maximum current of XX A resulting in a XX\% usage of each devices operating limit, the modules are shown to be working within their operating limits. Furthermore, the fraction of the maximum capacity used represents a more effective usage of the capacity of the two TEC's.\\
-%FILL in details 
+Considering the performance figures of each of the TEC modules in Table \ref{tab:TECperf2}, the suitability of the reduction in TEC units can be assessed. Given the minimum COP of 0.92 and the maximum operating current of 1.43 A resulting in a 16.8\% usage of each devices operating limit, the modules are shown to be working within their operating limits at a high efficiency when holding the Thermal Region at a steady state 60$\degree$C.\\
 
 As a result of the experiment conducted, the configuration simulated is seen to achieve the stipulated operating requirements as well as make effective use of the capabilities of the heating components. Therefore, this configuration is selected as the final design for the Processor Module.
 
 \subsection{Final Mechanical Design}
+\label{sec:mechdesign}
+
+With the mechanical design validated by a thorough CFD simulation and analysis, the final design was determined and finalised. The following is a summary of the notable features of the result of this process.\\
+
+Due to the results of the intial simulations in Section \ref{initialcfd} and the validation obtained in Section \ref{refinedcfd}, the method of locating the Carrier on the Thermal Region was revised. The result is the locating design displayed in Figure \ref{fig:carrierlocation}, where a small overlap of the Thermal Region on the Carrier is used to lock the Carrier between the Thermal Region and the heak sink it is fastened to. This design choice allows the Carrier to be held in place with no fasteners. As was discussed in Section \ref{sec:isolation}, this will constrain only the movement in the Z direction. Therefore, the locational clearance fit of Concept D is used to ensure complete location of the Carrier, without the direct use of a fastener.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{carrierlocation.png}
+	\caption[Design for Carrier Location on Thermal Region.]{Design for accurate carrier location around the Thermal Region.}
+	\label{fig:carrierlocation}
+\end{figure} 
+\FloatBarrier
+
+The design of the Carrier itself was considered to ensure it fulfils two main purposes. These are prevention of user contact with the hot Thermal Region and ensuring the correct positioning of the cassette tubes in the Thermal Region. The first purpose is to ensure the design complies with Standard BS EN 61010-1:2010 \cite{BSI} in preventing the user from unintentionally making contact with the hot component during normal operation. The combination of the Carrier and the installed cassette tubes provide full coverage of the Thermal Region and hence prevent such contact occurring unintentionally. Finally, the design of the Carrier is such that it does not allow the cassette tubes to be misplaced by the user. This is achieved via a number of design elements. Firstly, the Carrier itself prevents the cassette tubes from being positioned in the Processor Module in the reverse orientation. The fit of the cassette tubes in the Thermal Region is then controlled by the geometry of the tube holes in the Carrier wells. As is pictured in Figure \ref{fig:carrierfit}, the cassette tubes are tightly fitted within the Thermal Region, while sitting in the Carrier supported only at their base to control their height. This ensures that the fit within the Thermal Region is accurate independent of the manner in which the user places the tubes into the Processor Module, by preventing rocking. Furthermore, it ensures any deviation of the Carrier's position around the Thermal Region due to the locational clearance fit does not force the cassette tubes out of contact with the heated material.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{carrierfit.png}
+	\caption[Cassette tube fit within Carrier and Thermal Region.]{Cassette tube fit within Carrier and Thermal Region ensures a reliable contact on the heated tubes.}
+	\label{fig:carrierfit}
+\end{figure} 
+\FloatBarrier
+
+The heat sink designed for the Processor Module is required to maintain the stable thermal state during both heating and steady state operation. As was noted in Chapter \ref{cha:literaturereview}, Literature Review and in Section \ref{sec:heaterselection}, the TEC modules will only pump heat if they are operating below a $\Delta$T of 72$\degree$C. the design parameter set was to maintain the heat sink at a maximum of 15$\degree$C below ambient. It was decided to achieve this via passive cooling of the heat sink using only natural transfers, as opposed to an active approach using a fan, for example. This was to reduce overall system complexity, system power requirements and cost of each Processor Module. Therefore, it was necessary to ensure the heat sink comprised of a large thermal mass and surface area to promote heat transfers with the surrounding air and to ensure a slow rate of response to the heat energy that the TEC modules will introduce.\\
+
+Further to this, the heat sink is used as the mounting location for the TEC modules and the associated wires and sensors. The final design of the heat sink is pictured in Figure \ref{fig:heatsink}, with the two TEC's. The insulator and the TEC Spacers shown in grey and black respectively.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{heatsink.png}
+	\caption[Heat sink final design.]{The final heat sink design, including TEC housing and wire and sensor accommodation}
+	\label{fig:heatsink}
+\end{figure} 
+\FloatBarrier
+
+The insulator placed around the perimeter of the TEC modules is a critical design feature. It ensures that the heated and cooled regions fo the Thermal Region and heat sink respectively are not able to transfer heat energy via conduction to one another, and forms the separating piece between both components. The insulator is made of a silicon gasket insulator \cite{jehbco}, and has been proven effective as an insulator in the AusDiagnostics MTX Cycler. Further to this, the silicon material used has a surface skin that results in a very low absorption of liquid \cite{jehbco}. This feature has allowed the insulator to form a seal around the open areas of the design, to ensure no split liquid or chemicals are able to enter the internal device area.\\
+
+The TEC Spacers are two components placed around the bolted connections, shown in black. These components are included in order to ensure the operation life of the TEC modules is not compromised by uneven loading. Due to the asymmetrical design of the heat sink, it is possible that an uneven load may result across the face of the TEC modules. It is also critical that the modules are clamped between an evenly spaced void to reduce as much as is possible any shear loading. The Acetal TEC Spacers achieve this by ensuring the heat sink and Thermal Region are parallel when assembled, while also ensuring the spacing between the TEC surfaces is consistent. The components are machined from Acetall, due to its properties as a good insulator, good thermal stability and the high accuracy with which it may be machined.
+
+In order to ensure the TEC modules are then adequately clamped and are in ideal conditions, the two fastening bolts must be torqued precisely. The recommendation provided by Ferrotec, the TEC manufacturer, is as follows:
+\begin{equation}
+\tau = \frac{S_a A}{N}Kd
+\end{equation}
+where,
+\begin{itemize}
+	\item $S_a$ is given as 25-50 psi for a cycling application, or 50-75 psi for static applications such as this.
+	\item A is the total surface area of the TEC modules.
+	\item N is the number of bolts used to clamp the modules.
+	\item K is the torque coefficient, recommended as 0.2 for steel fasteners.
+	\item d is the nominal bolt diameter. In this case, two M3 bolts are used and hence $d=3$.
+\end{itemize}
+Therefore:
+$$\tau = \frac{(3444738 pa)(9\times 10^{-4}m^2)}{2}(0.2)(3\times10^{-3}m)$$
+$$\tau = 0.93 Nm$$
+
+A fully exploded rendering of the final Processor Module design is given in Figure \ref{fig:exploded}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{exploded.png}
+	\caption[Processor Module Exploded Rendering.]{An exploded representation of the final Processor Module Design.}
+	\label{fig:exploded}
+\end{figure} 
+\FloatBarrier
+
+\subsection{Processor Module Assembly}
+
+This section provides a brief and summarised overview of the assembly process of one of the 10 Processor Modules which were manufactured following the design and validation completed. This work is completed in preparation for the controller design, detailed in Section \ref{sec:ControllerDesign}. The full set of manufactured components are pictured in Figure \ref{fig:1}, and includes (from left to right) the:
+\begin{itemize}
+	\item Carrier
+	\item Heat sink
+	\item TEC Spacers
+	\item Thermal Region
+	\item Ferrotec TEC Modules
+	\item TEC Gasket/Insulator
+\end{itemize}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{1.jpg}
+	\caption[Processor Module Components.]{All Processor Module components (MTX Cycler electronics board not included).}
+	\label{fig:1}
+\end{figure} 
+\FloatBarrier
+
+The first stage is to prepare the two TEC modules to be used within the assembly, as shown in Figure \ref{fig:2}. This required wiring and soldering the modules in series and protecting the connections to ensure reliable operation.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{2.jpg}
+	\caption[TEC Module connection.]{The assembly of the Processor Module's two TEC modules.}
+	\label{fig:2}
+\end{figure} 
+\FloatBarrier
+
+Prior to placement in the heat sink, it is crucial that a thermally conductive paste is applied evenly to the surface as in Figure \ref{fig:3}. The thickness of this coating must be 0.02mm or less, however ensures full contact is made between the TEC and the surface along with providing necessary lubrication for the expansion experienced by the device.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{3.jpg}
+	\caption[Heat sink thermal paste application.]{Application of thermally conductive paste to the contact area of the TEC modules.}
+	\label{fig:3}
+\end{figure} 
+\FloatBarrier
+
+Following this, the TEC's may be placed into the heat sink and their wiring directed through the port. The TEC Spacers and the insulator/gasket is also attached via its adhesive backing to the heat sink. A final identical layer of thermal paste is once again required on the hot side of the TEC modules. This stage is shown in Figure \ref{fig:4}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{4.jpg}
+	\caption[Heat sink component assembly.]{Placement of the TEC modules, gasket/insulator and TEC spacers into the heat sink.}
+	\label{fig:4}
+\end{figure} 
+\FloatBarrier
+
+Before final positioning, the required wiring is added to the thermistor sensor and protected, as shown in Figure \ref{fig:5}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{5.jpg}
+	\caption[Thermistor Preparation.]{The thermistor sensor is prepared with additional wiring.}
+	\label{fig:5}
+\end{figure} 
+\FloatBarrier
+
+The thermistor sensor is then epoxied into the Thermal Region and encased in thermal paste to ensure accurate measurement. This step is pictured in Figure \ref{fig:6}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{6.jpg}
+	\caption[Thermistor Placement.]{The thermistor sensor placement in the Thermal Region.}
+	\label{fig:6}
+\end{figure} 
+\FloatBarrier
+
+The Thermal Region, Carrier and heat sink may now be fastened together via the two M3 bolts, with the torque specified in Section \ref{sec:mechdesign}. The MTX Cycler electronic board is also fixed to the device and the connections for the thermistor sensor, the TEC voltage and ground along with the communications connector for the Gene-Plex Extractor main board. This assembly is shown in Figure \ref{fig:7}. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{7.jpg}
+	\caption[Thermal Region and Board Assembly.]{The Thermal Region is then assembled onto the heat sink with the Carrier, along with the circuit board.}
+	\label{fig:7}
+\end{figure} 
+\FloatBarrier
+
+Finally, the circuit board cover may be fastened to the bottom of the module to complete the assembly. The completed Processor Module assembly is pictured in Figure \ref{fig:8}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{8.jpg}
+	\caption[Assembled Processor Mpdule.]{The fully assembled Processor Module.}
+	\label{fig:8}
+\end{figure} 
+\FloatBarrier
 
 \subsection{Temperature Controller}
+\label{sec:ControllerDesign}
 
 \subsection{Magnetic Separation}
 
