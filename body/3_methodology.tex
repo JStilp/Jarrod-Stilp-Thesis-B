@@ -1,13 +1,13 @@
 \chapter{Methodology}
 \label{cha:methodology}
 
-With the scope of the work now defined, the manner in which the required results will be obtained can now be detailed. The necessary additions as defined in Section \ref*{sec:intro_scope}, Scope, may will be implemented in the form of two independent assemblies in order to meet the requirements of the work. These two assemblies will be refereed to as the Processor Module and the Magnetic Separation Station. The former will be the site of the chemical reactions as described in Section \ref{subsec:intro_extraction}, The Extraction Process, and will be the hardware element that forms the SBS block on the Gene-Plex Extractor deck. Therefore, given it will house the full set of reactions, it will also encompass the software and hardware requirements of the liquid temperature control (including the associated controller), along with the magnetic separation required in tube number 4 of the cassette. The Magnetic Separation Station will be the location of disposal of the supernatant and therefore shall include the magnetic hardware required to physically manipulate the magnetic silica beads in order to retain them in the pipette tip while the waste is expelled. Given the biological nature of the liquid waste involved, this station will also include provisions for hygienically disposing of and storing this waste.
+With the scope of the work now defined, the manner in which the required results will be obtained can now be detailed. The necessary additions as defined in Section \ref*{sec:intro_scope}, Scope, may will be implemented in the form of two independent assemblies in order to meet the requirements of the work. These two assemblies will be referred to as the Processor Module and the Magnetic Separation Station. The former will be the site of the chemical reactions as described in Section \ref{subsec:intro_extraction}, The Extraction Process, and will be the hardware element that forms the SBS block on the Gene-Plex Extractor deck. Therefore, given it will house the full set of reactions, it will also encompass the software and hardware requirements of the liquid temperature control (including the associated controller), along with the magnetic separation required in tube number 4 of the cassette. The Magnetic Separation Station will be the location of disposal of the supernatant and therefore shall include the magnetic hardware required to physically manipulate the magnetic silica beads in order to retain them in the pipette tip while the waste is expelled. Given the biological nature of the liquid waste involved, this station will also include provisions for hygienically disposing of and storing this waste.
 
 \section{Processor Module}
 
 \subsection{Hardware}
 
-The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained in Section \ref{lit_controlability}, Controllability. The work in this sections will also include the selection of an appropriate heat pumping device. In order to ensure the requirements of the hardware elements are met, the design process is applied as follows:
+The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained in Section \ref{lit_controlability}, Controllability. The work in this section will also include the selection of an appropriate heat pumping device. In order to ensure the requirements of the hardware elements are met, the design process is applied as follows:
 \begin{enumerate}
 	\item Generation of concepts related to thermally isolating the heated and non-heated regions of the block. This includes a focus on the manufacturability of the resulting components.
 	\item Investigation into and selection of an appropriate heating method.
@@ -19,13 +19,13 @@ The hardware component of the Processor Module design is concerned with ensuring
 \subsection{Temperature Controller}
 \label{Method_controller}
 
-This work will result in the finalisation of a software temperature controller capable meeting the liquid heating requirements of the chemical reaction as detailed in Section \ref{subsec:intro_extraction}, The Extraction Process.
+This work will result in the finalisation of a software temperature controller capable of meeting the liquid heating requirements of the chemical reaction as detailed in Section \ref{subsec:intro_extraction}, The Extraction Process.
 
 In order to enable controller design to be commenced, the first step will be to assemble the completed Processor Module. Due to the complex dynamics of the heat transfer between the heating device and the liquid, a mathematical modelling method is not used. Instead, the system will be identified via the step input response plant identification method. To obtain the required response data, sensors will be placed strategically on the Processor Module to monitor and record key temperatures:
 \begin{itemize}
-	\item The temperature at the centre of the block will be taken as this sensor data will be utilized as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
+	\item The temperature at the centre of the block will be recorded as this sensor data will be utilized as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
 	\item The temperature of the heat sink will be plotted to monitor the temperature differential created across the module.
-	\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
+	\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in a responsive and stable manner.
 	\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
 \end{itemize}
 
@@ -38,7 +38,6 @@ This data will have been logged in the MATLAB workspace in real-time, during the
 To complete the plant analysis process using the pre-processed data, the MATLAB PID Tuner tool will be used. This tool provides a GUI for specifying a set of response data, the step input provided. This information is then used to interactively fit an appropriate function to the plants response data. The tool offers a number of plant structures to allow the correct plant to be identified. These range from a simple "One Pole" plant to a discrete time system.\\
 
 As a result of this process, the transfer function which represents the plant of the Processor Module will be known. This plant will be in the continuous time domain and is represented by:
-
 $$G_p(S)$$
 
 Before utilizing the identified plant for controller design, it will be verified via simulation in Simulink. The validation will be conducted by providing the plant an identical step input as was done experimentally and verifying that the responses match. The Simulink layout used to conduct this simulated verification is shown below in Figure \ref{fig:openloopplant}.\\
