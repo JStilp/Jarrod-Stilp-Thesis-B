@@ -21,47 +21,36 @@
 \contentsline {section}{\numberline {3.1}Processor Module}{26}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Hardware}{26}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Temperature Controller}{27}{subsection.3.1.2}
-\contentsline {subsubsection}{Controller Performance}{33}{section*.11}
-\contentsline {subsubsection}{Pole Zero Cancellation}{34}{section*.12}
-\contentsline {subsubsection}{Experimental Verification}{37}{section*.14}
-\contentsline {subsection}{\numberline {3.1.3}Magnetic Separation}{39}{subsection.3.1.3}
-\contentsline {subsubsection}{Experimental Verification}{40}{section*.16}
-\contentsline {section}{\numberline {3.2}Magnetic Separation Station}{41}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Magnetic Separation}{42}{subsection.3.2.1}
-\contentsline {subsubsection}{Experimental Verification}{43}{section*.17}
-\contentsline {subsection}{\numberline {3.2.2}Waste Disposal}{44}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Results and Discussion}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}Processor Module}{47}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Hardware}{47}{subsection.4.1.1}
-\contentsline {subsubsection}{Thermal Isolation}{47}{section*.18}
-\contentsline {subsubsection}{Heater Selection}{52}{section*.21}
-\contentsline {subsubsection}{CFD Simulation - Initial Design}{58}{section*.23}
-\contentsline {subsubsection}{Discussion}{59}{section*.24}
-\contentsline {subsubsection}{CFD Simulation - Refined Design}{61}{section*.25}
-\contentsline {subsubsection}{Discussion}{63}{section*.30}
-\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{64}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Processor Module Assembly}{71}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Temperature Controller}{78}{subsection.4.1.4}
-\contentsline {subsubsection}{Plant Identification}{78}{section*.43}
-\contentsline {subsubsection}{Discussion}{83}{section*.48}
-\contentsline {subsubsection}{PID Controller Design}{83}{section*.49}
-\contentsline {subsubsection}{PID Controller Verification}{84}{section*.51}
-\contentsline {subsubsection}{Discussion}{87}{section*.55}
-\contentsline {subsubsection}{Controller Calibration}{88}{section*.56}
-\contentsline {subsubsection}{Discussion}{89}{section*.58}
-\contentsline {subsubsection}{Discrete Time, Direct Method Controller Design}{89}{section*.59}
-\contentsline {subsubsection}{Discrete Time, Direct Method Controller Validation}{92}{section*.61}
-\contentsline {subsubsection}{Discrete Time, Direct Method Controller Verification}{93}{section*.63}
-\contentsline {subsubsection}{Discussion}{94}{section*.64}
-\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{95}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{99}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{99}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{99}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{100}{chapter.5}
-\contentsline {chapter}{\numberline {6}Future Work}{101}{chapter.6}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{102}{chapter.6}
-\contentsline {chapter}{\numberline {A}Raw Results}{106}{appendix.A}
-\contentsline {chapter}{\numberline {B}Simulation Setup}{107}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{107}{section.B.1}
-\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{107}{section.B.2}
-\contentsline {section}{\numberline {B.3}Controller Software}{108}{section.B.3}
+\contentsline {subsubsection}{Controller Performance}{32}{section*.11}
+\contentsline {subsubsection}{Pole Zero Cancellation}{33}{section*.12}
+\contentsline {subsubsection}{Experimental Verification}{36}{section*.14}
+\contentsline {subsection}{\numberline {3.1.3}Magnetic Separation}{38}{subsection.3.1.3}
+\contentsline {chapter}{\numberline {4}Results and Discussion}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Processor Module}{40}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{40}{subsection.4.1.1}
+\contentsline {subsubsection}{Thermal Isolation}{40}{section*.16}
+\contentsline {subsubsection}{Heater Selection}{45}{section*.19}
+\contentsline {subsubsection}{CFD Simulation - Initial Design}{51}{section*.21}
+\contentsline {subsubsection}{Discussion}{52}{section*.22}
+\contentsline {subsubsection}{CFD Simulation - Refined Design}{54}{section*.23}
+\contentsline {subsubsection}{Discussion}{56}{section*.28}
+\contentsline {subsection}{\numberline {4.1.2}Final Mechanical Design}{57}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Processor Module Assembly}{64}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Temperature Controller}{71}{subsection.4.1.4}
+\contentsline {subsubsection}{Plant Identification}{71}{section*.41}
+\contentsline {subsubsection}{Discussion}{76}{section*.46}
+\contentsline {subsubsection}{Controller Response Requirements}{76}{section*.47}
+\contentsline {subsubsection}{PID Controller Design}{77}{section*.48}
+\contentsline {subsubsection}{PID Controller Verification}{77}{section*.50}
+\contentsline {subsubsection}{Discussion}{80}{section*.54}
+\contentsline {subsubsection}{Controller Calibration}{81}{section*.55}
+\contentsline {subsubsection}{Discussion}{82}{section*.57}
+\contentsline {subsubsection}{Discrete Time, Direct Method Controller Design}{82}{section*.58}
+\contentsline {subsubsection}{Discrete Time, Direct Method Controller Validation}{85}{section*.60}
+\contentsline {subsubsection}{Discrete Time, Direct Method Controller Verification}{86}{section*.62}
+\contentsline {subsubsection}{Discussion}{87}{section*.63}
+\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{88}{subsection.4.1.5}
+\contentsline {chapter}{\numberline {5}Conclusions}{93}{chapter.5}
+\contentsline {chapter}{\numberline {6}Future Work}{96}{chapter.6}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{97}{chapter.6}
+\contentsline {section}{\numberline {.1}CFD Simulation Convergence Data}{101}{section.Alph0.1}

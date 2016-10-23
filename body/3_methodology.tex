@@ -40,7 +40,7 @@ To complete the plant analysis process using the pre-processed data, the MATLAB 
 As a result of this process, the transfer function which represents the plant of the Processor Module will be known. This plant will be in the continuous time domain and is represented by:
 $$G_p(S)$$
 
-Before utilizing the identified plant for controller design, it will be verified via simulation in Simulink. The validation will be conducted by providing the plant an identical step input as was done experimentally and verifying that the responses match. The Simulink layout used to conduct this simulated verification is shown below in Figure \ref{fig:openloopplant}.\\
+Before utilizing the identified plant for controller design, it will be verified via simulation in Simulink. The validation will be conducted by providing the plant an identical step input, as was done experimentally. Subsequently, the response will be verified to match that obtained from experimental data. The Simulink layout used to conduct this simulated verification is shown below in Figure \ref{fig:openloopplant}.\\
 
 \begin{figure}[!htb]
 	\centering
@@ -50,7 +50,7 @@ Before utilizing the identified plant for controller design, it will be verified
 \end{figure} 
 \FloatBarrier
 
-With the transfer function representing the Processor Module now known, the process of controller design may be commenced. Two methods of controller design will be completed and implemented. Initially, a PID controller will be created. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications is PID control. This method is also able to be completed in short periods of time and therefore will allow the mechanical design of the Processor Module and heating element to be validated experimentally as early as possible. While this method is fast, there are however numerous advantages to the use of other methods. The second method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain.  This method has been selected due the benefits of competing controller design in the z-domain with discrete time. By completing the design entirely in the z-domain, there is no need to convert the resulting controller from the s domain, allowing the controller to be directly implemented. By completing this second controller design, a greater degree of control is available in which the response of the system may be finely adjusted. The methodology used to form each controller is given below.\\
+With the transfer function representing the Processor Module now known, the process of controller design may be commenced. Two methods of controller design will be completed and implemented. Initially, a PID controller will be created. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications, is PID control. This method is also able to be completed in short periods of time and therefore will allow the mechanical design of the Processor Module and heating element to be validated experimentally as early as possible. While this method is fast, there are however numerous advantages to the use of other methods. The second method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain.  This method has been selected due the benefits of completing controller design in the z-domain with discrete time. By completing the design entirely in the z-domain, there is no need to convert the resulting controller from the s domain, allowing the controller to be directly implemented. By completing this second controller design, a greater degree of control is available in which the response of the system may be finely adjusted. The methodology used to form each controller is given below.\\
 
 In order to create the PID controller, the MATLAB PID Tuner tool will be utilized. This tool will allow the identified plant to be taken directly from the plant identification step above and a controller tuned to suit the requirements. A system response time may be set along with the transient behaviour of the system. The tool then outputs the response of the system to the reference signal, as controlled by the PID controller. The tool then allows the following parameters to be inspected:
 \begin{itemize}
@@ -68,7 +68,7 @@ In order to create the PID controller, the MATLAB PID Tuner tool will be utilize
 
 With the outputs above provided, the tool allows for a time efficient method of designing a PID controller. This controller will then be directly implemented on the MTX Cycler software by directly substituting for the PID controller used in the previous application on the High-Plex Processor. This allows for immediate experimentation to be conducted.\\
 
-The direct analytical method uses the principle that if the output that is required along with the input applied is known the intermediate transfer function may be determined. This is represented by Equation \ref{eq_direct}, where $C(z)$ is the required output, $U(z)$ is the applied input and $F(z)$ is the intermediate transfer function.
+The direct analytical method uses the principle that if the output that is required along with the input applied is known, the intermediate transfer function may be determined. This is represented by Equation \ref{eq_direct}, where $C(z)$ is the required output, $U(z)$ is the applied input and $F(z)$ is the intermediate transfer function.
 
 \begin{equation}
 \label{eq_direct}
@@ -115,7 +115,7 @@ z = e^{sT}
 
 Where T is the sample time of the controller. The resulting pole is then placed as a pole of $F(z)$.\\
 
-It is also important to control the steady state error of the controller. To do this, the DC gain of the system is set to 1, resulting in the output equalling the input at steady state. By setting the following, this can be achieved:
+It is also important to control the steady state error of the controller. To do this, the DC gain of the system is set to 1, resulting in the output equalling the input at a steady state. By setting the following, this can be achieved:
 
 \begin{equation}
 F(z)|_{z=1} = F(1) = 1
@@ -175,14 +175,11 @@ In order to validate the design of the controller prior to implementation, the d
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width = \textwidth]{controllervalidation.png}
-	\caption[Controller valiation Simulink Model.]{The Simulink model layout used to validate via simulation the designed controller for the Processor Module.}
+	\caption[Controller valiation Simulink Model.]{The Simulink model layout used to validate via simulation the designed Processor Module controller.}
 	\label{fig:controllervalidation}
 \end{figure} 
-\FloatBarrier
 
 Following the successful validation of the temperature controller, it will be implemented via software currently driving the MTX cycler, along with any required modifications.
-
-%UP TO HERE
 
 \subsubsection{Experimental Verification}
 \label{sec:expver}
@@ -203,72 +200,14 @@ In order to verify the performance of the resulting controller, the following ex
 	\item Set the reference input to the controller to 60$\degree$C.
 	\item Collect data for a total of 30 minutes to capture the long term steady state performance of the module (to allow any slow heat transfers to be observed) along with the transient response.
 	\item Repeat the experiment for all four assembled modules. This allows for the controllers ability to reject disturbances caused by the differing of the plant properties to be determined as is caused by the slight differences in assembly.
-	\item Repeat experiment in differing environmental conditions. The experiment should  be conducted in rooms at temperatures of 18$\degree$C, 22$\degree$C and 26$\degree$C. This allows for the disturbance rejection of the controller to be assessed where the disturbance is due to altered environmental conditions.
 	\item Use the collected data to assess the consistency of the heating profile and the temperature stabilisation across the tubes of the module. These results will be used to make conclusions regarding the designed controller along with the thermal characteristics of the hardware. It should be noted that the worst case response will be used to draw conclusions regarding performance to ensure all samples fall within the requirements.
 \end{enumerate}
 
 \subsection{Magnetic Separation}
 
-As the final stage of the extraction process is the removal of the clean sample from the waste beads, the success of extraction depends on the complete and reliable separation in tube number 4. To ensure this is achieved, the following design process and experimental verification will be conducted:
+As the final stage of the extraction process is the removal of the clean sample from the waste beads, the success of extraction depends on the complete and reliable separation in tube number 4. To ensure this is achieved, the following design process and experimental verification is conducted:
 \begin{enumerate}
-	\item An investigation will be conducted into the various possible methods of magnetic separation in this application, taking into account the recommendations to use ND-Fe-B magnet compositions as found in the reviewed literature.
-	\item 3D Printed test jigs will be created to test the effectiveness of the most suitable configurations via manual inspection.
-	\item With a preferred design selected, the a test module will be 3D printed including the magnetic arrangement. This test module will be assembled on the robot deck and verified experimentaly via the method described below.
+	\item An investigation shall be conducted into the various possible methods of magnetic separation in this application, taking into account the recommendations to use ND-Fe-B magnet compositions as found in the reviewed literature.
+	\item 3D Printed test jigs are created to test the effectiveness of the most suitable configurations via manual inspection.
+	\item With a preferred design selected, the test module is then 3D printed including the magnetic arrangement. This test module is assembled on the robot deck and verified experimentally via the method described below.
 \end{enumerate}
-
-\subsubsection{Experimental Verification}
-
-To allow a confident conclusion to be made regarding the effectiveness of the magnetic separation within the Processor Module to be made, the following experiment will be conducted. This experiment will replicate the setup used by the robot and its processes to ensure the result is representative of the true scenario.
-
-\begin{enumerate}
-	\item Place test module with magnetic separation on Gene-Plex Extractor deck within one of the SBS spaces.
-	\item Place a 5mL tube on the robot deck to collect the experiment output.
-	\item Place a full set of 8 cassettes in the test module with 100$\mu$L of filtered water and 10$\mu$L of magnetic beads in tube 3. The water will simulate the elution buffer. Both volumes are equal to that used in the final process.
-	\item Instruct the robot to aspirate the mixture in tube 3 and expel it into tube 4, the location of the magnetic separation.
-	\item Wait for 5 seconds for separation to take place. It should be noted that this waiting period is a design variable and may be adjusted and this experiment repeated to determine the optimal wait time.
-	\item Aspirate the separated liquid at a distance of 1mm from the tube bottom. This distance once again may be adjusted, however is a sound starting point for experimentation.
-	\item Expel the liquid from the tip into the 5mL tube on the deck.
-	\item Repeat this separation procedure for all 8 cassettes.
-	\item Refill all cassettes with equal volumes of water and beads, as was defined in step 3.
-	\item Repeat the separation for a total of 3 modules to equal the total volume of liquid which will be processed by the Gene-Plex Extractor during the processing of all 24 samples.
-	\item Place the 5mL tube with extracted contents adjacent to a large ND-Fe-B magnet to draw any beads to the tube wall. Examine the tube contents for any sign of magnetic beads. The presence of a bead within the tube indicated a failed separation within tube 4. Such a result may lead to severe complications in step 2 (amplification), such as the failed diagnosis of a patient. Therefore, for a successful verification, it is required that no beads are present.
-\end{enumerate}
-
-\section{Magnetic Separation Station}
-
-The magnetic separation station is a standalone module on the robot deck which will fulfil two requirements of the extraction process. Firstly, the station will provide the means of separating the waste liquid from the magnetic beads and captured DNA/RNA, as necessary after step 2 (refer to Section \ref{subsec:intro_extraction}) of the extraction process. Following the successful separation of the supernatant, the separation station will provide a means of hygienically disposing of the associated biological waste. The work will be completed via the the methodology described below.
-
-\subsection{Magnetic Separation}
-
-This stage of the extraction process carries a high level of significance in relation to the final result. Poor magnetic separation may effect the reliability of the diagnosis due to a reduction in the sensitivity of the step 2 amplification, or failure of step 3 analysis due to the presence of inhibitors. The former may be caused by a lack of concentration of the target DNA or RNA in the extracted clean sample. Failed magnetic separation could cause this by not properly capturing the magnetic beads and bound target, allowing them to be expelled into waste. This loss of target will lower the sensitivity of the amplifications stage and hence may lower the accuracy of diagnosis. The second scenario of inhibitors may occur if some of the waste liquid remains after washing, contaminating the sample and lowering the effectiveness of the amplification and analysis steps. Therefore, the method used for the design of the magnetic separation capabilities of the Magnetic Separation Station is aimed at ensuring a strong and reliable separation.
-
-\begin{enumerate}
-	\item An investigation will be carried out to determine the most suitable magnetic arrangement for providing reliable separation. Similar to the treatment of the magnetic separation capabilities within the Processor Module, the investigation will focus on those employing the ND-Fe-B composition.
-	\item The selected configuration will then be implemented as a design concept and a CAD model generated. This detailed design will also account for a number of secondary requirements. These include maintaining a minimum distance between the pipette tip and the Separation Station at all points to remove the possibility of cross contamination occurring through liquid transfer.
-	\item The detailed design will then be prototyped using 3D printing to allow experimental verification.
-	\item The prototype Separation Station will then be assembled on the Gene-Plex Extractor deck along with the necessary tubes to perform magnetic separation via the experimental procedure detailed below.
-\end{enumerate}
-
-\subsubsection{Experimental Verification}
-
-In order to verify the required performance is achieved by the designed Magnetic Separation Station, the following experiment will be performed.
-
-\begin{enumerate}
-	\item The prototyped Magnetic Separation Station will be fully assembled and positioned on the deck of the Gene-Plex Extractor.
-	\item 3 cassettes and therefore 24 tubes will be positoned on the deck with 640$\mu$L of water and 10$\mu$L of magnetic silica beads in each. These volumes are equal to those used in the extraction process and this will be repeated 24 times, once for each of the 24 samples. Therefore, this setup matches the volumes to be processed by the implemented extractor.
-	\item The robot will then be setup to aspirate the liquid mixture from one of the tubes.
-	\item The pipette will then be positioned within the magnetic separation station and lowered to full depth. 
-	%NOTE THAT A DIAGRAM OF THIS WOULD BE GOOD to show positions
-	\item The pipette tip will then be raised and lowered with the full liquid height passing along the magnetic arrangment a total of 2 times.
-	%DETERMINE THESE DISTANCES AND PUT IN DIAGRAM
-	\item With the beads now separated from the liquid and captured on the pipette wall, the water will be ejected into the waste disposal system. For this experiment, the waste disposal will be replaced by a small glass container that may be used to collect and analyse the ejected liquid.
-	\item This procedure will then be repeated for all 24 ``samples".
-	\item The contents of the waste container will then be subjected to a magnetic field to collect any beads which were not correctly separated by the process. The presence of any bead within the waste liquid indicated a failed separation.
-	%ADD PERCENTAGE TOLERANCES OR VOLUMES 
-\end{enumerate}
-
-\subsection{Waste Disposal}
-
-The work on this component of the Magnetic Separation Station is concerned with ensuring the product meets key standards and requirements in order to dispose of the biological waste in a hygienic manner. The disposal of the waste generated by the process is a key factor in ensuring a successful sample extraction. Any failure to safely dispose of this waste may introduce the risk of a cross contamination occurring between two independent samples and therefore a failure to correctly diagnose the patient.\\
-
-To ensure the waste disposal system negates these risks, the process used will focus on researching the related standards initially in order to determine the best practices which must, by regulation, be adhered to. This research will be supplemented by end user feedback. To gain this, a group of key product users will be consulted on preferred methods of waste disposal and hygiene to guide the design process. Using the results of this investigation, the design process will be used to form a final design which takes into account the gathered information and requirements and therefore produce a functional and hygienic waste disposal system.

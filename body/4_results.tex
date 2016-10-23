@@ -10,11 +10,11 @@ The problem at hand along with the methodology employed to produce the solution 
 \subsubsection{Thermal Isolation}
 \label{sec:isolation}
 
-The first consideration given to the design of the physical Processor Module was the thermal isolation of the heated and non-heated volumes. While there is no requirement stipulating that only tubes 2 and 3 may be heated, it was deemed  thermally inefficient to heat the entire module. Such a design would also decrease the performance of the controller due to the larger mass to be heated. Therefore, the module was split into two regions, refereed to as the Thermal Region and the Carrier. While the method of isolation needed to be effective to create a stable and controllable thermal system, a number of other design considerations were present:
+The first consideration given to the design of the physical Processor Module was the thermal isolation of the heated and non-heated volumes. While there is no requirement stipulating that only tubes 2 and 3 may be heated, it was deemed  thermally inefficient to heat the entire module. Such a design would also decrease the performance of the controller due to the larger mass to be heated. Therefore, the module was split into two regions, referred to as the Thermal Region and the Carrier. While the method of isolation needed to be effective to create a stable and controllable thermal system, a number of other design considerations were present:
 \begin{enumerate}
 	\item[Manufacturability] The design of the thermal isolation method needed to consider the available manufacturing methods and their capabilities. For example, concept A shown in Figure \ref{fig:splitconcepts}, utilized a simple "trench" to create an air gap between the heated and non-heated regions of a single block of aluminium. While this concept satisfied the serviceability and cost objectives, there were a number of physical constraints preventing it from being feasible. Due to the geometry of the cassettes, the trench width was limited to 3mm across. At this size, the maximum depth at which the tooling could cut was stated to be 30mm \cite{Sorenson}. At this depth, not only would a large area of material still connect the two regions, but the cost of machining would be high.
-	\item[Serviceability] When considering the serviceability of the product, two main aspects were key. This includes the initial assembly of the device after manufacture along with the periodic maintenance during its operating life. The resulting design must ensure manual assembly is practical and that the replacement of components, such as sensors or heating hardware is considered. 
-	\item[Cost] Given that a total of 3 Processor Modules are required for each Gene-Plex Extractor, the designs selected must be cost effective. while a number of high cost manufacturing methods or materials may have met the needs of the thermal isolation requirement, the cumulative cost required led to a need for alternative concepts to be generated.
+	\item[Serviceability] When considering the serviceability of the product, two main aspects were key. This includes the initial assembly of the device after manufacture along with the periodic maintenance during its' operating life. The resulting design must ensure manual assembly is practical and that the replacement of components, such as sensors or heating hardware is considered. 
+	\item[Cost] Given that a total of 3 Processor Modules are required for each Gene-Plex Extractor, the designs selected must be cost effective. While a number of high cost manufacturing methods or materials may have met the needs of the thermal isolation requirement, the cumulative cost required led to a need for alternative concepts to be generated.
 \end{enumerate}	
 
 With these factors in mind, four main concepts were generated with the goal of insulating the thermally controlled region of the Processor Module from the non-heated portion in mind. These concepts are displayed in Figure \ref{fig:splitconcepts}.\\
@@ -27,7 +27,7 @@ With these factors in mind, four main concepts were generated with the goal of i
 \end{figure} 
 \FloatBarrier
 
-Concept A features a groove machined into a solid billet of Aluminium, forming an air gap between the two regions. This concept has the advantage of simplicity, aiding with manufacture and serviceability. It's use of a single piece of material is also cost effective. It however had two main drawbacks. With the groove limited to a maximum of 3mm width and therefore 30mm deep, there is a large portion of material remaining which joins the two regions, leading to an undesirable level of heat transfer. Furthermore, the tooling costs involved with manufacturing this concept with the high aspect ration groove are significantly higher than with traditional machining operations. For these reasons, this concept required further development.\\
+Concept A features a groove machined into a solid billet of Aluminium, forming an air gap between the two regions. This concept has the advantage of simplicity, aiding with manufacture and serviceability. It's use of a single piece of material is also cost effective. It however had two main drawbacks. With the groove limited to a maximum of 3mm width and therefore 30mm deep, there is a large portion of material remaining which joins the two regions, leading to an undesirable level of heat transfer. Furthermore, the tooling costs involved with manufacturing this concept with the high aspect ratio groove are significantly higher than with traditional machining operations. For these reasons, this concept required further development.\\
 
 Concept B furthered the ideal behind Concept A by improving on some of its flaws, namely the transfer of heat. This was achieved by including further machining operations on the bottom face of the block. Therefore, the groove depth could be through the thickness of the block, apart from the small connecting regions on the outer edges of each groove. This simple change allowed the connecting area of material to be reduced to only 10\% of that of Concept A. Despite these improvements, the extra operations still require that small sections be machined at the same 30mm depth with the 3mm tool bit. Avoiding this is possible by performing machining operations on all four faces as opposed to only the top and bottom, however this will still carry added cost. Further to this, the homogeneous material and solid connection would allow for a more rapid heat transfer than was desirable. While aluminium is required for the Thermal Region due to its high level of heat transfer, this will result in large energy losses to the Carrier. It was therefore decided that the insulation should also make use of a thermally insulation material along with the physical separation used in the concepts to date.\\
 
@@ -47,20 +47,20 @@ Locational Clearance & 0.1mm & 0.2mm\\ \hline
 \label{tab:fit}
 \end{table}
 
-Due to the high degree of positional accuracy achieved by the fit described above, the design was able to be further simplified. Whether a TEC or resistive heaters were chosen, a heat sink was required on the bottom side of the device to fulfil the requirements of controller either heating device. This heat sink must be located on the bottom of the Thermal Region to extract thermal energy. Therefore, it may be used to "clamp" the single piece carrier and secure it in position. In this arrangement, the locational clearance fit locates the components in the X and Y directions, while the clamping force provided by securing the Thermal Region to the heat sink with the Carrier in between secures the Z direction movement. This allows a further reduction in hardware fasteners which not only increases manufacturability, but also reduces heat transfer due to conductive transfers that are created by fasteners such as bolts.
+Due to the high degree of positional accuracy achieved by the fit described above, the design was able to be further simplified. Whether a TEC or resistive heaters were chosen, a heat sink was required on the bottom side of the device to fulfil the requirements of controller. This heat sink must be located on the bottom of the Thermal Region to extract thermal energy. Therefore, it may be used to "clamp" the single piece carrier and secure it in position. In this arrangement, the locational clearance fit locates the components in the X and Y directions, while the clamping force provided by securing the Thermal Region to the heat sink with the Carrier in between secures the Z direction movement. This allows a further reduction in hardware fasteners which not only increases manufacturability, but also reduces heat transfer due to conductive transfers that are created by fasteners such as bolts.
 
 \subsubsection{Heater Selection}
 \label{sec:heaterselection}
 
 In order to achieve the heating requirements of the extraction process, two main heating devices were considered, as were explored in Chapter \ref{cha:literaturereview}, Literature Review. These were the solid state TEC and the resistive heat strip.\\
 
-After consideration of the properties of each device, the TEC was selected as the heating device to be used. While the resistive heating elements are cost effective, easily installed, possess a long service life and can generate large quantities of thermal energy, the TEC has a number of significant advantages. The TEC modules are a solid state device and hence provide a highly reliable means of thermal management. The devices, provided they are installed correctly, may last for up to 200,000 hours of use \cite{Ferroteclife}. This figure is supplied by Ferrotec, the supplier of TEC's used by AusDiagnostics, and is stated to be an accepted industry standard MTBF (Mean Time Between Failures). Along with this high level of reliability, these modules are capable of provide precise temperature control to within $\pm$ 0.1$\degree$C. This advantage is paired with their simple power supply requirements, being able to be controlled via PWM (Pulse Width Modulation) directly from a DC power source. The TEC devices available are also capable of outputting significant amounts of thermal energy, with single state devices able to transfer up to 6 $W/cm^2$ of device surface area \cite{Ferroteclife}. By far the greatest advantage however, is the ability of the TEC to pump heat in either direction to enable both heating or cooling of the target component with the same installing. As was described in Chapter \ref{cha:literaturereview}, Literature Review, this is controlled simply by inverting the direction in which current is applied to the terminals of the TEC. This has large significance for the control of the system temperature, as the controller can actively drive the temperature in the necessary direction to drive the error to 0, as opposed to relying purely on passive methods or even fan based cooling.\\
+After consideration of the properties of each device, the TEC was selected as the heating device to be used. While the resistive heating elements are cost effective, easily installed, possess a long service life and can generate large quantities of thermal energy, the TEC has a number of significant advantages. The TEC modules are a solid state device and hence provide a highly reliable means of thermal management. The devices, provided they are installed correctly, may last for up to 200,000 hours of use \cite{Ferroteclife}. This figure is supplied by Ferrotec, the supplier of TEC's used by AusDiagnostics, and is stated to be an accepted industry standard MTBF (Mean Time Between Failures). Along with this high level of reliability, these modules are capable of providing precise temperature control to within $\pm$ 0.1$\degree$C. This advantage is paired with their simple power supply requirements, being able to be controlled via PWM (Pulse Width Modulation) directly from a DC power source. The TEC devices available are also capable of outputting significant amounts of thermal energy, with single state devices able to transfer up to 6 $W/cm^2$ of device surface area \cite{Ferroteclife}. By far the greatest advantage however, is the ability of the TEC to pump heat in either direction to enable both heating or cooling of the target component with the same installing. As was described in Chapter \ref{cha:literaturereview}, Literature Review, this is controlled simply by inverting the direction in which current is applied to the terminals of the TEC. This has large significance for the control of the system temperature, as the controller can actively drive the temperature in the necessary direction to drive the error to 0, as opposed to relying purely on passive methods or even fan based cooling.\\
 
-With the device to be used now selected, the power requirements of the TEC needed to be determined. In order to ensure the selected TEC would be capable of driving the temperature of the Thermal Region to 60$\degree$C, the thermal transfers of the system needed to be understood. As the Thermal Region reaches is target temperature, losses will begin to occur at a greater rate to its surroundings due to the increasing temperature differential. The power of this energy transfer must be at the very least matched by the power output of the TEC to maintain a stable temperature, or exceeded to drive the temperature change at an acceptable rate. To determine these variables, a number of design parameters are required:
+With the device to be used now selected, the power requirements of the TEC needed to be determined. In order to ensure the selected TEC would be capable of driving the temperature of the Thermal Region to 60$\degree$C, the thermal transfers of the system needed to be understood. As the Thermal Region reaches its' target temperature, losses will begin to occur at a greater rate to its surroundings due to the increasing temperature differential. The power of this energy transfer must be at the very least matched by the power output of the TEC to maintain a stable temperature, or exceeded to drive the temperature change at an acceptable rate. To determine these variables, a number of design parameters are required:
 \begin{enumerate}
-	\item [$T_h$] This is the maximum hot side temperature of the TEC module. For this application, the module will need to drive the Thermal Region to 60$\degree$C and therefore this temperature is selected. However, it is recommended that for large thermal loads, or those were the path of heat transfer is greater than 25mm, that this variable be increased by 5$\degree$C. This application involves both of these conditions and therefore:
+	\item [$T_h$] This is the maximum hot side temperature of the TEC module. For this application, the module will need to drive the Thermal Region to 60$\degree$C and therefore this temperature is selected. However, it is recommended that for large thermal loads, or those where the path of heat transfer is greater than 25mm, that this variable be increased by 5$\degree$C. This application involves both of these conditions and therefore:
 	$$T_h = 65\degree C$$
-	\item[$T_c$] This variable is determined by the minimum expected ambient temperature in which the device will work within along with the capacity of the applied heat sink. If the system operates with a small thermal load and adequate heat sinking, then the following equations is applied:
+	\item[$T_c$] This variable is determined by the minimum expected ambient temperature in which the device will work within the capacity of the applied heat sink. If the system operates with a small thermal load and adequate heat sinking, then the following equation is applied:
 	\begin{equation}
 	T_c = T_{ambient} - 5\degree C
 	\end{equation}
@@ -153,13 +153,13 @@ The modules selected for use were the Ferrotec 9500-035-085 B. The device has di
 \subsubsection{CFD Simulation - Initial Design}
 \label{initialcfd}
 
-With the TEC modules selected, the module's design was completed in Autodesk Inventor Professional to enable CFD Simulation to be completed. This first stage of CFD was used gauge the first design iterations ability to heat the Thermal Region to the desired set temperature.\\
+With the TEC modules selected, the module's design was completed in Autodesk Inventor Professional to enable CFD Simulation to be completed. This first stage of CFD was used to gauge the first design iterations ability to heat the Thermal Region to the desired set temperature.\\
 
 To ensure the efficient usage of computing resources, the design was simplified appropriately with the following changes made:
 \begin{itemize}
 	\item Removal of all corner fillets and chamfers.
 	\item Removal of interferences between components, such as where foam insulators will be compressed.
-	\item Detailed TEC module component replaced with simplified rectangular prism.
+	\item Detailed TEC module component replaced with a simplified rectangular prism.
 	\item Bolted connection and associated holes removed.
 	\item Circuit board removed.
 \end{itemize}
@@ -174,16 +174,16 @@ The simulation conducted provided a number of key results. These include the ade
 
 A study of the cross sectional temperature gradient throughout the Thermal Region displayed a high level of consistency across the component and therefore validated the mechanical design.
 
-The simulation also demonstrated the TEC modules were operating at a very high Coefficient of Performance (COP). It should be noted that is in fact possible to operate at COP's of greater than 1, as this value is obtained by the equation \cite{Ferroteceff}:
+The simulation also demonstrated the TEC modules were operating at a very high Coefficient of Performance (COP). It should be noted that it is in fact possible to operate at COP's of greater than 1, as this value is obtained by the equation \cite{Ferroteceff}:
 \begin{equation}
 COP = \frac{Q_h}{P_{in}}
 \end{equation}
 where,
 
-$$Q_h$$ is the thermal power generated by the TEC at the hot side.\\
+$$ Q_h$$ is the thermal power generated by the TEC at the hot side.\\
 $$P_{in}$$ is the power supplied to the TEC.\\
 
-The COP obtained in this simulation suggests the TEC's are operating below their maximum operating point in order to drive the Thermal Region to this temperature. This was further shown by the maximum current value, which demonstrated the module operating at less than 10\% of it's maximum, as was given in Table \ref{tab:TECspec}. While operating at a fraction of $I_{max}$ gives a higher efficiency, there are advantages of operating at a point nearer this value. Due to the Ferrotec TEC modules costing around \$16.00 each, reducing the number of TEC's per Processor Module is advantageous due to the cost reduction this would achieve for each Gene-Plex Extractor.\\
+The COP obtained in this simulation suggests the TEC's are operating below their maximum operating point in order to drive the Thermal Region to this temperature. This was further shown by the maximum current value, which demonstrated the module operating at less than 10\% of it's maximum, as was given in Table \ref{tab:TECspec}. While operating at a fraction of $I_{max}$ gives a higher efficiency, there are advantages of operating at a point nearer this value. Due to the Ferrotec TEC modules costing around \$16.00 each, reducing the number of TEC's per Processor Module is advantageous, due to the cost reduction this would achieve for each Gene-Plex Extractor.\\
 
 Finally, the results of this initial simulation identified an area through which significant heat transfer was occurring and must be reduced. This region was found to be at the meeting plane of the Thermal Region and the Carrier, where an overlap between the two parts was created along the entire perimeter of the Thermal Region. This design feature was used to ensure a level placement and proper location of the Thermal Region with respect to the Carrier. However, the area of material used to achieve this may be reduced significantly to avoid the thermal losses occurring as a result.\\
 
@@ -276,7 +276,7 @@ The design of the Carrier itself was considered to ensure it fulfils two main pu
 \end{figure} 
 \FloatBarrier
 
-The heat sink designed for the Processor Module is required to maintain the stable thermal state during both heating and steady state operation. As was noted in Chapter \ref{cha:literaturereview}, Literature Review and in Section \ref{sec:heaterselection}, the TEC modules will only pump heat if they are operating below a $\Delta$T of 72$\degree$C. the design parameter set was to maintain the heat sink at a maximum of 15$\degree$C below ambient. It was decided to achieve this via passive cooling of the heat sink using only natural transfers, as opposed to an active approach using a fan, for example. This was to reduce overall system complexity, system power requirements and cost of each Processor Module. Therefore, it was necessary to ensure the heat sink comprised of a large thermal mass and surface area to promote heat transfers with the surrounding air and to ensure a slow rate of response to the heat energy that the TEC modules will introduce.\\
+The heat sink designed for the Processor Module is required to maintain the stable thermal state during both heating and steady state operation. As was noted in Chapter \ref{cha:literaturereview}, Literature Review and in Section \ref{sec:heaterselection}, the TEC modules will only pump heat if they are operating below a $\Delta$T of 72$\degree$C. the design parameter set was to maintain the heat sink at a maximum of 15$\degree$C below ambient. It was decided to achieve this via passive cooling of the heat sink using only natural transfers, as opposed to an active approach, for example using a fan. This was to reduce overall system complexity, system power requirements and cost of each Processor Module. Therefore, it was necessary to ensure the heat sink comprised of a large thermal mass and surface area to promote heat transfers with the surrounding air and to ensure a slow rate of response to the heat energy that the TEC modules will introduce.\\
 
 Further to this, the heat sink is used as the mounting location for the TEC modules and the associated wires and sensors. The final design of the heat sink is pictured in Figure \ref{fig:heatsink}, with the two TEC's. The insulator and the TEC Spacers shown in grey and black respectively.
 
@@ -288,7 +288,7 @@ Further to this, the heat sink is used as the mounting location for the TEC modu
 \end{figure} 
 \FloatBarrier
 
-The insulator placed around the perimeter of the TEC modules is a critical design feature. It ensures that the heated and cooled regions fo the Thermal Region and heat sink respectively are not able to transfer heat energy via conduction to one another, and forms the separating piece between both components. The insulator is made of a silicon gasket insulator \cite{jehbco}, and has been proven effective as an insulator in the AusDiagnostics MTX Cycler. Further to this, the silicon material used has a surface skin that results in a very low absorption of liquid \cite{jehbco}. This feature has allowed the insulator to form a seal around the open areas of the design, to ensure no split liquid or chemicals are able to enter the internal device area.\\
+The insulator placed around the perimeter of the TEC modules is a critical design feature. It ensures that the heated and cooled regions of the Thermal Region and heat sink respectively are not able to transfer heat energy via conduction to one another, and forms the separating piece between both components. The insulator is made of a silicon gasket insulator \cite{jehbco}, and has been proven effective as an insulator in the AusDiagnostics MTX Cycler. Further to this, the silicon material used has a surface skin that results in a very low absorption of liquid \cite{jehbco}. This feature has allowed the insulator to form a seal around the open areas of the design, to ensure no spilt liquid or chemicals are able to enter the internal device area.\\
 
 The TEC Spacers are two components placed around the bolted connections, shown in black. These components are included in order to ensure the operation life of the TEC modules is not compromised by uneven loading. Due to the asymmetrical design of the heat sink, it is possible that an uneven load may result across the face of the TEC modules. It is also critical that the modules are clamped between an evenly spaced void to reduce as much as is possible any shear loading. The Acetal TEC Spacers achieve this by ensuring the heat sink and Thermal Region are parallel when assembled, while also ensuring the spacing between the TEC surfaces is consistent. The components are machined from Acetall, due to its properties as a good insulator, good thermal stability and the high accuracy with which it may be machined.
 
@@ -435,7 +435,7 @@ The input to the system, due to the method in which the MTX Cycler electronics b
 \end{figure} 
 \FloatBarrier
 
-The response data above includes the heat sink temperature as well as the Thermal Region temperature and liquid temperature in order to observe the response of the system. The data of interest however is the block temperature. This data is taken from the sensor installed underneath the Thermal Region, as was shown in Figure \ref{fig:6}. This sensor is the source of the feedback signal to the controller to be designed, and hence is the value which will be controlled to 60$\degree$C. The isolated data from this sensor and hence the data to be used for plant identification is plotted in Figure 
+The response data above includes the heat sink temperature as well as the Thermal Region temperature and liquid temperature in order to observe the response of the system. The data of interest however is the block temperature. This data is taken from the sensor installed underneath the Thermal Region, as was shown in Figure \ref{fig:6}. This sensor is the source of the feedback signal to the controller to be designed, and hence is the value which will be controlled to 60$\degree$C. The isolated data from this sensor and hence the data to be used for plant identification is plotted in Figure \ref{fig:blockresponse]}.
 
 \begin{figure}[!htb]
 	\centering
@@ -463,7 +463,16 @@ In order to validate the plant identified, the open loop system was simulated vi
 
 This work has enabled the identification of the transfer function which represents the transformation carried out by the Processor Module from a PWM input to a Thermal Region temperature output. This model has been shown to fit the experimental data with a high accuracy of 96.47\% and through validation produced an output fitting the experimental results to a high degree. Therefore, this plant transfer function was used for the process of controller design.\\
 
-While the true output of the system is in fact the liquid temperature, it should be noted that the block temperature (temperature from the internal Thermal Region thermistor) is used for both feedback and as the controlled variable. This is due to the fact that the fact that the system which includes the liquid temperature is unobservable and hence cannot be controlled. The rate of response of the liquid temperature depends on a range of factors including the initial temperature, the liquid volume and the ambient temperature. Due to this unknown rate, the inclusion of this process in the system plant transfer function can lead to a higher degree of error in the controlled output. Due to the consistency of taking measurements and hence feedback from the internal thermistor, the output may be controlled with a high level of reliability and accuracy. Section \ref{sec:controller_verification} addresses the small steady state error in the liquid temperature that is a compromise of this method.
+While the true output of the system is in fact the liquid temperature, it should be noted that the block temperature (temperature from the internal Thermal Region thermistor) is used for both feedback and as the controlled variable. This is due to the fact that the system which includes the liquid temperature is unobservable and hence cannot be controlled. The rate of response of the liquid temperature depends on a range of factors including the initial temperature, the liquid volume and the ambient temperature. Due to this unknown rate, the inclusion of this process in the system plant transfer function can lead to a higher degree of error in the controlled output. Due to the consistency of taking measurements and hence feedback from the internal thermistor, the output may be controlled with a high level of reliability and accuracy. Section \ref{sec:controller_verification} addresses the small steady state error in the liquid temperature that is a compromise of this method.
+
+\subsubsection{Controller Response Requirements}
+The following is a concise list of requirements which must be obtained by the designed controller:
+\begin{itemize}
+	\item A response time constant of 240 seconds.
+	\item A zero steady state error, to within 2$\degree$C.
+	\item A non-oscillatory transient response.
+	\item An overshoot of less than 2$\degree$C.
+\end{itemize}
 
 \subsubsection{PID Controller Design}
 
@@ -484,7 +493,7 @@ Using the continuous time plant transfer function identified and the MATLAB PID 
 \subsubsection{PID Controller Verification}
 \label{sec:controller_verification}
 
-The designed controller was then implemented via the MTX Cycler software by modifying the C code and reprogramming the device. For the created C function which conducts the temperature control, see Appendix \ref{controllerimp}. To record the required data for validation, the sensor layout given in Methodology Section \ref{sec:expver} was implemented. The full experimental setup is displayed in Figure \ref{fig:controllertest]}.
+The designed controller was then implemented via the MTX Cycler software by modifying the C code and reprogramming the device. To record the required data for validation, the sensor layout given in Methodology Section \ref{sec:expver} was implemented. The full experimental setup is displayed in Figure \ref{fig:controllertest]}.
 
 \begin{figure}[!htb]
 	\centering
@@ -655,6 +664,7 @@ void TemperatureControl(void)
 The results of this implementation however encountered a persistent issue. The response of the controlled temperature was observed to cycler between heating and cooling action in a repetitive loop which did not cease or deviate. After measuring the current which was being supplied to the TEC modules as a result of the controller, it was noticed that this value would cycler between maximum current and minimum current in the same fashion. By observing this response, it was hypothesised that a data overflow was occurring within the control function. Efforts to debug this issue were hindered by the lack of debugging on the Atmel ATmega16 used for the MTX Cycler electronics. Therefore, only  simulated debugging environment was available. Despite significant efforts to locate the source of the error, due to time constraints the issue was not resolved. Despite this, the validation simulation conducted provides evidence that the controller design was indeed successful. It is therefore able to be implemented as part of the debugged software as future work.
 
 \subsection{Magnetic Separation}
+\label{magsep}
 
 With the mechanical design and thermal control elements integrating into the Processor Module, the magnetic separation capabilities were considered. The first stage of this process involved consideration of the various magnetic configurations and arrangements which may be used. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, this investigation focused on the Neodymium composition specifically.\\
 
@@ -696,7 +706,7 @@ Of the three configurations tested, the arrangement known as "k=1" was experimen
 
 Despite the experimental evidence showing the effectiveness of the array, it was decided an inefficient means of achieving the required separation. This was due to the high level of complexity and hence assembly effort, the cost of the 12 $5mm^3$ magnet elements required by each array and the relatively marginal benefits provided over the simple magnetic block arrangement. Therefore, as a result of this investigation, it was concluded that a simple magnetic block arrangement is the most effective method for achieving the separation of the magnetic silica beads.\\
 
-This conclusion was applied and the resulting design, pictured in Figure \ref{fig:magnets} produced.
+This conclusion was applied and the resulting design, pictured in Figure \ref{fig:magnets} produced. This figure shows the resulting placement of the magnetic blocks within the tube location of the Carrier, where the magnetic fields of each magnet are aligned to created a uniform magnetic field.
 
 \begin{figure}[!htb]
 	\centering
@@ -705,15 +715,3 @@ This conclusion was applied and the resulting design, pictured in Figure \ref{fi
 	\label{fig:magnets}
 \end{figure} 
 \FloatBarrier
-
-
-
-\section{Magnetic Separation Station}
-
-The contents of this section provide the results of the conceptual design of the Magnetic Separation Station. This includes the selected magnetic separation method as well as the 
-
- 
-
-\subsection{Magnetic Separation}
-
-\subsection{Waste Disposal}

@@ -1,25 +1,16 @@
 \chapter{Conclusions}
 \label{cha:conclusions}
-% If you have not read the notes for how to write a discussion I recommend
-% understanding those first. The conclusion follows on directly from there.
-%
-% Your conclusion should make two key links.
-%    1. It should answer the aim you set in the introduction chapter
-%    2. It should arise from your discussion chapter
-%
-% You have formulated and discussed key points in the discussion, and lead
-% the reader toward why they are significant. Now you can make a conclusion
-% from each of these points.
-%
-% The folowing are some general guidelines. Depending on the structure these
-% may become a bit fuzzy. I think this will especially be the case with undergrad
-% thesis as we have no idea what we're doing at the start and our aim develps
-% over the year.
-%  - You should draw conclusions soley from the discussion chapter
-%  - There should be no discussion in the conclusion chapter
-%  - The conclusions should respond to the aim in the introduction
-%  - Summaries are NOT conclusions. If you are summarising you are either not
-%    responding to the aim or your aim is too vague.
-%       Summaries are brief account of what you found, conclusions are a
-%       statement of the significance of what you found - what you concluded.
-%  - Conclusions should be short and concise. 2-3 pages is enough.
+
+This work has developed the required additions to the Gene-Plex Extractor platform, enabling the functionality of several key capabilities for the extraction of DNA/RNA via super paramagnetic bead based extraction.\\
+
+It was discovered that the use of an air gap along with significant reduction in surface area contact, provides adequate levels of thermal insulation. Paired with the minimization of the heated mass and a heat sink of ample capacity, this setup was found to provide a stable platform for temperature control. This platform was found to be capable of sustaining a set temperature of 60$\degree$C for an experimentally tested 30 minute period, where no degradation of the system was found. Therefore, it is concluded that the design methodology used has enabled the creation of a thermally stable system.\\
+
+Furthermore, it was shown via numerical simulation and experimental verification that the TEC module is an effective means of providing the heat energy necessary to maintain the system at the required setpoint. Not only were the devices used capable of driving the system to the required thermal state, however the rate of response achieved exceeds the requirements of the component. Along with their high degree of reliability and high MTBF, the device selected for this application is concluded as an effective solution.\\
+
+The PID controller implemented has been verified as a suitable means of controlling the temperature of the system. Despite the simplified design method and the lower degree of control, the controller designed was capable of driving the system to a steady state in the required time period, with the transient response required. This response exhibited a stable steady state response over a long term experiment. Therefore it has been shown that the developed PID controller is an effective controller for the system designed.\\
+
+While the discussed PID controller achieved the stable steady state required, it is noted that the zero error condition is not inherently met. As was discussed, this is due to the design decision to take temperature feedback measurements from a location as close to the TEC module heating elements as possible. This decision has been shown through the response to result in the required transient response being achieved, however it is evident that the thermal losses occurring in the system result in an error at the liquid temperature as the temperature of interest. This temperature error was however shown to be stable, and may therefore easily and reliably be corrected via a simple calibration. This calibration was in the form of a temperature offset equal to that of the steady state error, and resulted in a corrected response with the liquid temperature achieving an error of only 0.083$\degree$C. Due to this result, this calibration process along with the placement of the temperature sensor may be concluded an effective control strategy.\\
+
+The design of the discrete time, direct analytical method controller was completed and validated. The design of the controller was shown via simulated response to exceed the requirements of the system and control the system to a zero error steady state, with the stipulated transient response. Despite the successful validation of the controller design, the implemented software controller was not able to be verified due to the data overflow bug described. Despite this shortcoming, it may however be concluded via the simulated validation that the developed controller is capable of meeting and exceeding the system requirements.\\
+
+Finally, via a review of the applicable magnetic configurations and arrangements, the use of the simple block magnet was found to be most effective for use in this application. This was due to the high strength of the ND-B-Fe magnet chemistry and the unnecessary complexities of the investigated arrangements which were found experimentally to give negligible advantage. Therefore, pending further experimental validation and verification, it is concluded that the application of simple, high strength ND-B-Fe magnets is the most effective option for further work.\\

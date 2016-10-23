@@ -8,40 +8,38 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Open loop plant valiation Simulink Model.}}{29}{figure.caption.9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Unity feedback system.}}{32}{figure.caption.10}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Controller valiation Simulink Model.}}{36}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Temperature Measured Tubes.}}{38}{figure.caption.15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Temperature Measured Tubes.}}{37}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Thermal Insulation Concepts.}}{49}{figure.caption.19}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CFD Results - Refined Design.}}{61}{figure.caption.26}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces CFD Results - Spatial Variations of Temperation.}}{62}{figure.caption.27}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CFD Results - Thermal Losses from Thermal Region to Carrier.}}{63}{figure.caption.28}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Design for Carrier Location on Thermal Region.}}{65}{figure.caption.31}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Cassette tube fit within Carrier and Thermal Region.}}{67}{figure.caption.32}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Heat sink final design.}}{68}{figure.caption.33}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Processor Module Exploded Rendering.}}{71}{figure.caption.34}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Processor Module Components.}}{72}{figure.caption.35}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces TEC Module connection.}}{73}{figure.caption.36}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Heat sink thermal paste application.}}{74}{figure.caption.37}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Heat sink component assembly.}}{75}{figure.caption.38}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Thermistor Preparation.}}{75}{figure.caption.39}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Thermistor Placement.}}{76}{figure.caption.40}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Thermal Region and Board Assembly.}}{77}{figure.caption.41}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Assembled Processor Module.}}{78}{figure.caption.42}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Plant Identification Setup.}}{79}{figure.caption.44}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Full System Response to Step Input.}}{80}{figure.caption.45}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Plant Response to Step Input.}}{81}{figure.caption.46}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plant validation simulation.}}{82}{figure.caption.47}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Controller Verification Experimental Setup.}}{85}{figure.caption.52}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Temperature Sensor Data - 60$\ensuremath {^\circ }$C Setpoint.}}{86}{figure.caption.53}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Temperature Sensor Data Key Values - 60$\ensuremath {^\circ }$C Setpoint.}}{87}{figure.caption.54}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Temperature Sensor Data Key Values - calibrated 63.2$\ensuremath {^\circ }$C Setpoint.}}{88}{figure.caption.57}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Discrete Plant Transfer Function Pole Zero Map.}}{90}{figure.caption.60}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Discrete Controller Simulation.}}{92}{figure.caption.62}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Halbach Array Flux Diagram.}}{96}{figure.caption.65}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Halbach Array Jig.}}{97}{figure.caption.66}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Halbach Array Jig - K=1.}}{98}{figure.caption.67}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Processor Module Magnet Positioning.}}{99}{figure.caption.68}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Thermal Insulation Concepts.}}{42}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CFD Results - Refined Design.}}{54}{figure.caption.24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CFD Results - Spatial Variations of Temperation.}}{55}{figure.caption.25}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CFD Results - Thermal Losses from Thermal Region to Carrier.}}{56}{figure.caption.26}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Design for Carrier Location on Thermal Region.}}{58}{figure.caption.29}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cassette tube fit within Carrier and Thermal Region.}}{60}{figure.caption.30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Heat sink final design.}}{61}{figure.caption.31}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Processor Module Exploded Rendering.}}{64}{figure.caption.32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Processor Module Components.}}{65}{figure.caption.33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces TEC Module connection.}}{66}{figure.caption.34}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Heat sink thermal paste application.}}{67}{figure.caption.35}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Heat sink component assembly.}}{68}{figure.caption.36}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Thermistor Preparation.}}{68}{figure.caption.37}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Thermistor Placement.}}{69}{figure.caption.38}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Thermal Region and Board Assembly.}}{70}{figure.caption.39}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Assembled Processor Module.}}{71}{figure.caption.40}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Plant Identification Setup.}}{72}{figure.caption.42}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Full System Response to Step Input.}}{73}{figure.caption.43}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Plant Response to Step Input.}}{74}{figure.caption.44}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plant validation simulation.}}{75}{figure.caption.45}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Controller Verification Experimental Setup.}}{78}{figure.caption.51}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Temperature Sensor Data - 60$\ensuremath {^\circ }$C Setpoint.}}{79}{figure.caption.52}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Temperature Sensor Data Key Values - 60$\ensuremath {^\circ }$C Setpoint.}}{80}{figure.caption.53}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Temperature Sensor Data Key Values - calibrated 63.2$\ensuremath {^\circ }$C Setpoint.}}{81}{figure.caption.56}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Discrete Plant Transfer Function Pole Zero Map.}}{83}{figure.caption.59}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Discrete Controller Simulation.}}{85}{figure.caption.61}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Halbach Array Flux Diagram.}}{89}{figure.caption.64}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Halbach Array Jig.}}{90}{figure.caption.65}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Halbach Array Jig - K=1.}}{91}{figure.caption.66}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Processor Module Magnet Positioning.}}{92}{figure.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{107}{figure.caption.70}
+\contentsline {figure}{\numberline {1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{101}{figure.caption.69}
