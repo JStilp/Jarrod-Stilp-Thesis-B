@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  24 OCT 2016 00:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  24 OCT 2016 02:57
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
-LaTeX2e <2016/03/31> patch level 1
+LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 (unswthesis.cls
 Document Class: unswthesis 2001/06/18 Durham Maths thesis class
@@ -24,10 +24,9 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\stellenbosch\usnom
-encl.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\stellenbosch\usnomencl.sty
 Package: usnomencl 2008/05/30 v1.1 Stellenbosh Thesis Nomenclature (DNJ ELS)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count88
 \calc@Bcount=\count89
@@ -48,11 +47,11 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \NomLblSep=\skip51
 \UnitLabelWdth=\skip52
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\was\gensymb.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -62,8 +61,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2016/06/17 v0.06h Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -83,12 +82,10 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.st
-y"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.s
-ty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen107
@@ -101,12 +98,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count92
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption
-.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count93
 \c@subtable=\count94
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
@@ -118,7 +115,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/03/10 v2.15b AMS math features
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
@@ -175,12 +172,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen123
 \lightrulewidth=\dimen124
@@ -200,17 +196,17 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count110
 \@thisrulewidth=\dimen135
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\t2\mathtext.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\t2\mathtext.sty
 Package: mathtext 1999/01/28 v1.0 transparent text-and-math defs
 LaTeX Info: Redefining \halign on input line 111.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen136
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
@@ -224,17 +220,14 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count111
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count112
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumpars
-er.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.sty
 Package: fcnumparser 2012/09/28
 \fc@digit@counter=\count113
 )) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
@@ -250,18 +243,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \@DT@loopN=\count121
 \@DT@X=\count122
 
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-englis
-h.def"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-english.def
 File: fc-english.def 2013/08/17
 ))
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\ctable\ctable.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\ctable\ctable.sty
 Package: ctable 2015/10/17 v1.31 ctable package for flexible typesetting of tab
 le and figure floats using key/value directives
+
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -375,8 +369,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\listofsymbols\list
-ofsymbols.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\listofsymbols\listofsymbol
+s.sty
 Package: listofsymbols 
 \symindent=\skip60
 \symwidth=\skip61
@@ -387,9 +381,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \old@parskip=\skip63
 \old@parindent=\skip64
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.
-sty"
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip65
 \f@ncyO@elh=\skip66
 \f@ncyO@erh=\skip67
@@ -399,12 +391,13 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@erf=\skip71
 \f@ncyO@olf=\skip72
 \f@ncyO@orf=\skip73
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen163
 \epsfysize=\dimen164
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -420,7 +413,7 @@ Package: theorem 2014/10/28 v2.2c Theorem extension package (FMi)
 File: thp.sty 2014/10/28 v2.2c Theorem extension package (FMi)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2016/05/21 v6.83p Hypertext links for LaTeX
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -460,7 +453,7 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 \Hy@pagecounter=\count126
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2016/05/21 v6.83p Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 \symPD1letters=\mathgroup6
 )
 \Hy@SavedSpaceFactor=\count127
@@ -498,7 +491,7 @@ LaTeX Info: Redefining \pageref on input line 6416.
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2016/05/21 v6.83p Hyperref driver for pdfTeX
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count133
 \c@bookmark@seq@number=\count134
 
@@ -515,7 +508,7 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\eepic\epic.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\eepic\epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count135
 \d@lta=\count136
@@ -533,15 +526,38 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \num@segments=\count141
 \num@segmentsi=\count142
 \@datafile=\read1
+) (C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count143
+\lst@gtempboxa=\box31
+\lst@token=\toks28
+\lst@length=\count144
+\lst@currlwidth=\dimen175
+\lst@column=\count145
+\lst@pos=\count146
+\lst@lostspace=\dimen176
+\lst@width=\dimen177
+\lst@newlines=\count147
+\lst@lineno=\count148
+\lst@maxwidth=\dimen178
+
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count149
+\lst@skipnumbers=\count150
+\lst@framebox=\box32
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\mdwlist.s
-ty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\mdwlist.sty
 Package: mdwlist 1996/05/02 1.1 Various list-related things
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
@@ -549,59 +565,57 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorit
-hm.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
- ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count143
-\float@exts=\toks28
-\float@box=\box31
-\@float@everytoks=\toks29
-\@floatcapt=\box32
+\c@float@type=\count151
+\float@exts=\toks29
+\float@box=\box33
+\@float@everytoks=\toks30
+\@floatcapt=\box34
 )
-\@float@every@algorithm=\toks30
-\c@algorithm=\count144
+\@float@every@algorithm=\toks31
+\c@algorithm=\count152
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algps
-eudocode.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode
+.sty
 Package: algpseudocode 
 
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algor
-ithmicx.sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmicx.
+sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count145
-\c@ALG@rem=\count146
-\c@ALG@nested=\count147
+\c@ALG@line=\count153
+\c@ALG@rem=\count154
+\c@ALG@nested=\count155
 \ALG@tlm=\skip77
 \ALG@thistlm=\skip78
-\c@ALG@Lnr=\count148
-\c@ALG@blocknr=\count149
-\c@ALG@storecount=\count150
-\c@ALG@tmpcounter=\count151
+\c@ALG@Lnr=\count156
+\c@ALG@blocknr=\count157
+\c@ALG@storecount=\count158
+\c@ALG@tmpcounter=\count159
 \ALG@tmplength=\skip79
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\printlen\printlen.
-sty"
+) (C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\printlen\printlen.sty
 Package: printlen 2009/09/03 v1.1a print lengths with units
 )
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\latex\placeins\placeins.
-sty"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\latex\placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup8
 )
 (include/format.tex
-\c@ind=\count152
-\c@Pro=\count153
-\c@The=\count154
-\c@Exp=\count155
+\c@ind=\count160
+\c@Pro=\count161
+\c@The=\count162
+\c@Exp=\count163
 )
 \@input{include/commands.aux}
 \openout2 = `include/commands.aux'.
@@ -616,76 +630,76 @@ LaTeX Warning: Unused global option(s):
 (body/7_futurework.aux) (body/A_appendix.aux))
 \openout1 = `"z3460979 Thesis B.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 67.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Info: Redefining \celsius on input line 66.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 66.
+LaTeX Info: Redefining \celsius on input line 67.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 66.
-Package gensymb Info: Using \upOmega for \ohm on input line 66.
+LaTeX Info: Redefining \ohm on input line 67.
+Package gensymb Info: Using \upOmega for \ohm on input line 67.
 
 Package gensymb Warning: Not defining \micro.
 
-
-("C:\Users\Jarrod Stilp\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mk
-ii"
+(C:\Users\jstil\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
-\scratchdimen=\dimen175
-\scratchbox=\box33
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen176
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count164
+\scratchdimen=\dimen179
+\scratchbox=\box35
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen180
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks33
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 66.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 67.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 
 ("z3460979 Thesis B.out") ("z3460979 Thesis B.out")
 \@outlinefile=\write3
 \openout3 = `"z3460979 Thesis B.out"'.
 
+\c@lstlisting=\count171
  (include/symbolslist.tex
 \@sym=\write4
 \openout4 = `"z3460979 Thesis B.sym"'.
@@ -703,7 +717,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
 
 
 
-{C:/Users/Jarrod Stilp/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/jstil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
@@ -711,12 +725,8 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 57.
  (header/abstract.tex
-Overfull \hbox (10.6501pt too wide) in paragraph at lines 1--2
-[]\OT1/ppl/m/n/12 Most of these first few pages are gen-er-ated by the file hea
-der/frontpage.tex 
- []
-
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 3.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
@@ -820,7 +830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[2] <./images/highplex.png, id=347, 600.74437pt x 483.8075pt>
+[2] <./images/highplex.png, id=357, 600.74437pt x 483.8075pt>
 File: ./images/highplex.png Graphic file (type png)
 
 <use ./images/highplex.png>
@@ -845,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  []
 
 [4 <./images/highplex.png>]
-<./images/decklayout.png, id=360, 1048.66782pt x 590.95781pt>
+<./images/decklayout.png, id=370, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
@@ -854,7 +864,7 @@ Package pdftex.def Info: ./images/decklayout.png used on input line 37.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [5 <./images/decklayout.png>] [6]
-<./images/cassette.png, id=377, 306.64563pt x 263.98625pt>
+<./images/cassette.png, id=387, 306.64563pt x 263.98625pt>
 File: ./images/cassette.png Graphic file (type png)
 
 <use ./images/cassette.png>
@@ -882,7 +892,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<./images/tec.jpg, id=420, 252.945pt x 126.4725pt>
+<./images/tec.jpg, id=430, 252.945pt x 126.4725pt>
 File: ./images/tec.jpg Graphic file (type jpg)
  <use ./images/tec.jpg>
 Package pdftex.def Info: ./images/tec.jpg used on input line 12.
@@ -960,7 +970,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<./images/openloopplant.png, id=576, 558.96329pt x 120.0736pt>
+<./images/openloopplant.png, id=586, 558.96329pt x 120.0736pt>
 File: ./images/openloopplant.png Graphic file (type png)
 
 <use ./images/openloopplant.png>
@@ -984,7 +994,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<./images/unityfeedback.png, id=590, 303.00703pt x 50.81485pt>
+<./images/unityfeedback.png, id=600, 303.00703pt x 50.81485pt>
 File: ./images/unityfeedback.png Graphic file (type png)
 
 <use ./images/unityfeedback.png>
@@ -1032,7 +1042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-<./images/controllervalidation.png, id=633, 565.73859pt x 142.65797pt>
+<./images/controllervalidation.png, id=643, 565.73859pt x 142.65797pt>
 File: ./images/controllervalidation.png Graphic file (type png)
 
 <use ./images/controllervalidation.png>
@@ -1041,7 +1051,7 @@ Package pdftex.def Info: ./images/controllervalidation.png used on input line 1
 (pdftex.def)             Requested size: 398.33858pt x 100.44762pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [36 <./images/controllervalidation.png>] <./images/measuredtubes.png, id=640, 
+ [36 <./images/controllervalidation.png>] <./images/measuredtubes.png, id=650, 
 712.91344pt x 535.2497pt>
 File: ./images/measuredtubes.png Graphic file (type png)
 
@@ -1075,7 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-<./images/splitconcepts.png, id=732, 1243.64626pt x 1017.8025pt>
+<./images/splitconcepts.png, id=742, 1243.64626pt x 1017.8025pt>
 File: ./images/splitconcepts.png Graphic file (type png)
 
 <use ./images/splitconcepts.png>
@@ -1183,7 +1193,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[60] <./images/result2.png, id=818, 694.84593pt x 569.87906pt>
+[60] <./images/result2.png, id=828, 694.84593pt x 569.87906pt>
 File: ./images/result2.png Graphic file (type png)
 
 <use ./images/result2.png>
@@ -1192,7 +1202,7 @@ Package pdftex.def Info: ./images/result2.png used on input line 199.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [61 <./images/result2.png>]
-<./images/cutcfd.png, id=826, 763.35187pt x 993.7125pt>
+<./images/cutcfd.png, id=836, 763.35187pt x 993.7125pt>
 File: ./images/cutcfd.png Graphic file (type png)
 
 <use ./images/cutcfd.png>
@@ -1201,7 +1211,7 @@ Package pdftex.def Info: ./images/cutcfd.png used on input line 209.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [62 <./images/cutcfd.png>]
-<./images/thermalvariation.jpg, id=833, 576.65437pt x 211.79124pt>
+<./images/thermalvariation.jpg, id=843, 576.65437pt x 211.79124pt>
 File: ./images/thermalvariation.jpg Graphic file (type jpg)
 
 <use ./images/thermalvariation.jpg>
@@ -1235,7 +1245,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[64] <./images/carrierlocation.png, id=852, 685.05937pt x 449.42906pt>
+[64] <./images/carrierlocation.png, id=862, 685.05937pt x 449.42906pt>
 File: ./images/carrierlocation.png Graphic file (type png)
 
 <use ./images/carrierlocation.png>
@@ -1244,7 +1254,7 @@ Package pdftex.def Info: ./images/carrierlocation.png used on input line 263.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [65 <./images/carrierlocation.png>]
-<./images/carrierfit.png, id=861, 506.6428pt x 304.13625pt>
+<./images/carrierfit.png, id=871, 506.6428pt x 304.13625pt>
 File: ./images/carrierfit.png Graphic file (type png)
 
 <use ./images/carrierfit.png>
@@ -1258,7 +1268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
  []
 
 [67 <./images/carrierfit.png>]
-<./images/heatsink.png, id=874, 784.43062pt x 426.84468pt>
+<./images/heatsink.png, id=884, 784.43062pt x 426.84468pt>
 File: ./images/heatsink.png Graphic file (type png)
 
 <use ./images/heatsink.png>
@@ -1272,7 +1282,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--292
  []
 
 [68 <./images/heatsink.png>] [69]
-<./images/exploded.png, id=889, 797.22844pt x 1069.74657pt>
+<./images/exploded.png, id=899, 797.22844pt x 1069.74657pt>
 File: ./images/exploded.png Graphic file (type png)
 
 <use ./images/exploded.png>
@@ -1281,7 +1291,7 @@ Package pdftex.def Info: ./images/exploded.png used on input line 315.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [70] [71 <./images/exploded.png>]
-<./images/1.jpg, id=902, 3899.56876pt x 1460.45625pt>
+<./images/1.jpg, id=912, 3899.56876pt x 1460.45625pt>
 File: ./images/1.jpg Graphic file (type jpg)
  <use ./images/1.jpg>
 Package pdftex.def Info: ./images/1.jpg used on input line 335.
@@ -1289,7 +1299,7 @@ Package pdftex.def Info: ./images/1.jpg used on input line 335.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-<./images/2.jpg, id=904, 3976.8575pt x 2365.83875pt>
+<./images/2.jpg, id=914, 3976.8575pt x 2365.83875pt>
 File: ./images/2.jpg Graphic file (type jpg)
  <use ./images/2.jpg>
 Package pdftex.def Info: ./images/2.jpg used on input line 345.
@@ -1297,7 +1307,7 @@ Package pdftex.def Info: ./images/2.jpg used on input line 345.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-[72 <./images/1.jpg>] <./images/3.jpg, id=910, 3997.93625pt x 2317.65875pt>
+[72 <./images/1.jpg>] <./images/3.jpg, id=920, 3997.93625pt x 2317.65875pt>
 File: ./images/3.jpg Graphic file (type jpg)
 
 <use ./images/3.jpg>
@@ -1306,14 +1316,14 @@ Package pdftex.def Info: ./images/3.jpg used on input line 355.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [73 <./images/2.jpg>]
-<./images/4.jpg, id=916, 4015.0pt x 3003.22pt>
+<./images/4.jpg, id=926, 4015.0pt x 3003.22pt>
 File: ./images/4.jpg Graphic file (type jpg)
  <use ./images/4.jpg>
 Package pdftex.def Info: ./images/4.jpg used on input line 365.
 (pdftex.def)             Requested size: 398.33858pt x 297.95668pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [74 <./images/3.jpg>] <./images/5.jpg, id=922, 3790.16pt x 551.05875pt>
+ [74 <./images/3.jpg>] <./images/5.jpg, id=932, 3790.16pt x 551.05875pt>
 File: ./images/5.jpg Graphic file (type jpg)
 
 <use ./images/5.jpg>
@@ -1321,7 +1331,7 @@ Package pdftex.def Info: ./images/5.jpg used on input line 375.
 (pdftex.def)             Requested size: 398.33858pt x 57.90912pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- <./images/6.jpg, id=924, 4015.0pt x 3003.22pt>
+ <./images/6.jpg, id=934, 4015.0pt x 3003.22pt>
 File: ./images/6.jpg Graphic file (type jpg)
 
 <use ./images/6.jpg>
@@ -1330,14 +1340,14 @@ Package pdftex.def Info: ./images/6.jpg used on input line 385.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [75 <./images/4.jpg> <./images/5.jpg>]
-<./images/7.jpg, id=931, 4015.0pt x 3003.22pt>
+<./images/7.jpg, id=941, 4015.0pt x 3003.22pt>
 File: ./images/7.jpg Graphic file (type jpg)
  <use ./images/7.jpg>
 Package pdftex.def Info: ./images/7.jpg used on input line 395.
 (pdftex.def)             Requested size: 398.33858pt x 297.95668pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [76 <./images/6.jpg>] <./images/8.jpg, id=938, 3273.22874pt x 2729.19624pt>
+ [76 <./images/6.jpg>] <./images/8.jpg, id=948, 3273.22874pt x 2729.19624pt>
 File: ./images/8.jpg Graphic file (type jpg)
 
 <use ./images/8.jpg>
@@ -1346,7 +1356,7 @@ Package pdftex.def Info: ./images/8.jpg used on input line 405.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [77 <./images/7.jpg>]
-<./images/testsetup.jpg, id=946, 4015.0pt x 3003.22pt>
+<./images/testsetup.jpg, id=956, 4015.0pt x 3003.22pt>
 File: ./images/testsetup.jpg Graphic file (type jpg)
 
 <use ./images/testsetup.jpg>
@@ -1356,7 +1366,7 @@ Package pdftex.def Info: ./images/testsetup.jpg used on input line 422.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-<./images/response.png, id=953, 632.3625pt x 474.27188pt>
+<./images/response.png, id=963, 632.3625pt x 474.27188pt>
 File: ./images/response.png Graphic file (type png)
 
 <use ./images/response.png>
@@ -1365,7 +1375,7 @@ Package pdftex.def Info: ./images/response.png used on input line 432.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [79 <./images/testsetup.jpg>]
-<./images/blockresponse.png, id=959, 632.3625pt x 474.27188pt>
+<./images/blockresponse.png, id=969, 632.3625pt x 474.27188pt>
 File: ./images/blockresponse.png Graphic file (type png)
 
 <use ./images/blockresponse.png>
@@ -1378,7 +1388,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
 
-<./images/plantsim.png, id=965, 632.3625pt x 474.27188pt>
+<./images/plantsim.png, id=975, 632.3625pt x 474.27188pt>
 File: ./images/plantsim.png Graphic file (type png)
 
 <use ./images/plantsim.png>
@@ -1392,7 +1402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-[83] <./images/controllertest.jpg, id=986, 4015.0pt x 3003.22pt>
+[83] <./images/controllertest.jpg, id=996, 4015.0pt x 3003.22pt>
 File: ./images/controllertest.jpg Graphic file (type jpg)
 
 <use ./images/controllertest.jpg>
@@ -1401,7 +1411,7 @@ Package pdftex.def Info: ./images/controllertest.jpg used on input line 491.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [84]
-<./images/res1.png, id=995, 632.3625pt x 474.27188pt>
+<./images/res1.png, id=1005, 632.3625pt x 474.27188pt>
 File: ./images/res1.png Graphic file (type png)
  <use ./images/res1.png>
 Package pdftex.def Info: ./images/res1.png used on input line 501.
@@ -1427,7 +1437,7 @@ Overfull \hbox (7.47249pt too wide) in paragraph at lines 508--510
 res ex-pe-ri-enced across
  []
 
-<./images/res2.png, id=1001, 632.3625pt x 474.27188pt>
+<./images/res2.png, id=1011, 632.3625pt x 474.27188pt>
 File: ./images/res2.png Graphic file (type png)
  <use ./images/res2.png>
 Package pdftex.def Info: ./images/res2.png used on input line 513.
@@ -1436,7 +1446,7 @@ Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
 [86 <./images/res1.png (PNG copy)>] [87 <./images/res2.png (PNG copy)>]
-<./images/res3.png, id=1012, 632.3625pt x 474.27188pt>
+<./images/res3.png, id=1022, 632.3625pt x 474.27188pt>
 File: ./images/res3.png Graphic file (type png)
  <use ./images/res3.png>
 Package pdftex.def Info: ./images/res3.png used on input line 532.
@@ -1449,7 +1459,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-[89] <./images/polezeromap.png, id=1029, 856.70062pt x 767.86874pt>
+[89] <./images/polezeromap.png, id=1039, 856.70062pt x 767.86874pt>
 File: ./images/polezeromap.png Graphic file (type png)
 
 <use ./images/polezeromap.png>
@@ -1462,12 +1472,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
-[91]) [92]
+[91] <./images/discreteval.png, id=1050, 951.555pt x 571.38469pt>
+File: ./images/discreteval.png Graphic file (type png)
+
+<use ./images/discreteval.png>
+Package pdftex.def Info: ./images/discreteval.png used on input line 599.
+(pdftex.def)             Requested size: 398.33858pt x 239.19525pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+ [92 <./images/discreteval.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 612.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlppl.fd"
+File: omlppl.fd 
+)
+LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 612.
+
+Overfull \hbox (55.26604pt too wide) in paragraph at lines 623--624
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.86552pt too wide) in paragraph at lines 625--626
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[93]
+Overfull \hbox (26.46574pt too wide) in paragraph at lines 637--638
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--664
+
+ []
+
+[95] <./images/halbach.jpg, id=1119, 842.39719pt x 582.67688pt>
+File: ./images/halbach.jpg Graphic file (type jpg)
+
+<use ./images/halbach.jpg>
+Package pdftex.def Info: ./images/halbach.jpg used on input line 669.
+(pdftex.def)             Requested size: 398.33858pt x 275.52966pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
+
+ []
+
+[96 <./images/halbach.jpg>]
+<./images/HalbachJig.png, id=1126, 475.02469pt x 208.52907pt>
+File: ./images/HalbachJig.png Graphic file (type png)
+
+<use ./images/HalbachJig.png>
+Package pdftex.def Info: ./images/HalbachJig.png used on input line 681.
+(pdftex.def)             Requested size: 398.33858pt x 174.87048pt.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 682.
+
+
+LaTeX Warning: Citation `halbach' on page 97 undefined on input line 682.
+
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+<./images/k1.jpg, id=1128, 405.01312pt x 233.87375pt>
+File: ./images/k1.jpg Graphic file (type jpg)
+ <use ./images/k1.jpg>
+Package pdftex.def Info: ./images/k1.jpg used on input line 691.
+(pdftex.def)             Requested size: 398.33858pt x 230.02617pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+
+[97 <./images/HalbachJig.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+ []
+
+<./images/magnets.png, id=1135, 923.70094pt x 348.55219pt>
+File: ./images/magnets.png Graphic file (type png)
+
+<use ./images/magnets.png>
+Package pdftex.def Info: ./images/magnets.png used on input line 703.
+(pdftex.def)             Requested size: 398.33858pt x 150.31062pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+ [98 <./images/k1.jpg>]) [99 <./images/magnets.png>]
 \openout2 = `body/6_conclusion.aux'.
 
- (body/6_conclusion.tex
+
+(body/6_conclusion.tex
 Chapter 5.
-) [93
+) [100
 
 
 
@@ -1476,7 +1583,7 @@ Chapter 5.
 
  (body/7_futurework.tex
 Chapter 6.
-) [94
+) [101
 
 
 
@@ -1509,20 +1616,20 @@ Underfull \hbox (badness 7722) in paragraph at lines 23--31
 e-ment
  []
 
-[95
+[102
 
 
-] [96] [97]) [98]
+] [103] [104]) [105]
 \openout2 = `body/A_appendix.aux'.
 
  (body/A_appendix.tex
 Appendix A.
-[99
+[106
 
 
 ]
 Appendix B.
-<./images/2tecconv.png, id=1078, 792.71156pt x 321.45094pt>
+<./images/2tecconv.png, id=1177, 792.71156pt x 321.45094pt>
 File: ./images/2tecconv.png Graphic file (type png)
 
 <use ./images/2tecconv.png>
@@ -1530,9 +1637,9 @@ Package pdftex.def Info: ./images/2tecconv.png used on input line 19.
 (pdftex.def)             Requested size: 398.33858pt x 161.52948pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
-) [100
+) [107
 
- <./images/2tecconv.png>] [101]
+ <./images/2tecconv.png>] [108]
 \@syc=\write8
 \openout8 = `"z3460979 Thesis B.syc"'.
 
@@ -1542,41 +1649,44 @@ Missing character: There is no ˆ in font pplr7t!
 \openout9 = `"z3460979 Thesis B.suc"'.
 
  ("z3460979 Thesis B.sub")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  ("z3460979 Thesis B.aux"
 (body/1_introduction.aux) (body/2_literaturereview.aux) (body/3_methodology.aux
 ) (body/4_results.aux) (body/6_conclusion.aux) (body/7_futurework.aux)
 (body/A_appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `"z3460979 Thesis B".out' has not changed.
 (rerunfilecheck)             Checksum: 5CDEBAD057A8B6B4B44CBA7E554B8A9D;2865.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 11146 strings out of 493335
- 164716 string characters out of 3139237
- 275416 words of memory out of 3000000
- 13984 multiletter control sequences out of 15000+200000
- 36870 words of font info for 106 fonts, out of 3000000 for 9000
+ 12422 strings out of 493334
+ 183255 string characters out of 3139252
+ 301173 words of memory out of 3000000
+ 15184 multiletter control sequences out of 15000+200000
+ 38217 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,53p,2520b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,14n,53p,2520b,1632s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Jarrod Stilp/AppData/Roaming/Mi
-KTeX/2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/Jarrod Stilp/AppData/R
-oaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplri8a.pfb>
-Output written on "z3460979 Thesis B.pdf" (110 pages, 34437553 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/jstil/AppData/Roaming/MiKTeX/2.9/fonts/
+type1/public/mathpazo/fplmr.pfb><C:/Users/jstil/AppData/Roaming/MiKTeX/2.9/font
+s/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "z3460979 Thesis B.pdf" (117 pages, 35346724 bytes).
 PDF statistics:
- 1186 PDF objects out of 1200 (max. 8388607)
- 311 named destinations out of 1000 (max. 500000)
- 531 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1298 PDF objects out of 1440 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 556 words of extra memory for PDF output out of 10000 (max. 10000000)
 

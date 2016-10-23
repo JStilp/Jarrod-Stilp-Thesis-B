@@ -585,19 +585,134 @@ $$G_c(z) = \frac{0.0021z^{-1} - 0.004195z^{-2} + 0.002095z^{-3}}{0.01518 - 0.044
 And the final difference equation to be implemented of:
 \begin{equation}
 \begin{split}
+\label{diffeq}
 	m(k) =  2.9611m(k-1) - 2.9223m(k-2) + 0.9611m(k-3)\\ + 0.1383e(k-1) - 0.2764e(k-2) + 0.1380e(k-3)
 \end{split}
 \end{equation}
 
 \subsubsection{Discrete Time, Direct Method Controller Validation}
 
+Following the design of the discrete time controller, it was modelled via Simulink in order to verify its' performance. The results of this simulation are provided below in Figure \ref{fig:discreteval}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{discreteval.png}
+	\caption[Discrete Controller Simulation.]{The simulated response of the designed discrete controller.}
+	\label{fig:discreteval}
+\end{figure} 
+\FloatBarrier
+
 \subsubsection{Discrete Time, Direct Method Controller Verification}
+
+The controller was then implemented via a C function within the MTX Cycler software in the form of the difference equation of Equation \ref{diffeq}. The function implemented is given below:
+
+\begin{lstlisting}
+void TemperatureControl(void)
+{
+	if(settemperature > 0)
+	{
+		//Shift errors back
+		e3 = e2;
+		e2 = e1;
+		e1 = e;
+		//Shift controller efforts back
+		m3 = m2;
+		m2 = m1;
+		m1 = m;
+		//Calculate error
+		e = (float)settemperature - (float)temperature;
+		//Calculate controller effort
+		m = c1*m1-c2*m2+c3*m3+c4*e1-c5*e2+c6*e3;
+		pwmdrive = (short)m;
+		//set bridge direction
+		if(pwmdrive > 0){
+			BRIDGE_HEAT;
+		} else {
+			BRIDGE_COOL;
+		}
+		//Correct after direction change
+		if(pwmdrive < 0) pwmdrive = -pwmdrive;
+		
+		//Limit maximum drive
+		if(pwmdrive> MAXDRIVE) pwmdrive = MAXDRIVE;
+	} else {
+		// no temp control enabled	
+		//limit turn off rate of pwm	  
+		pwmdrive = 1023 - OCR1A;
+		if(pwmdrive > DELTAPWM){
+			pwmdrive = pwmdrive - DELTAPWM;
+		} else {
+			pwmdrive = 0;	
+		}
+	}
+	// drive updated in current limit routine
+	pwmout = pwmdrive;	
+}
+\end{lstlisting}
 
 \subsubsection{Discussion}
 
+The results of this implementation however encountered a persistent issue. The response of the controlled temperature was observed to cycler between heating and cooling action in a repetitive loop which did not cease or deviate. After measuring the current which was being supplied to the TEC modules as a result of the controller, it was noticed that this value would cycler between maximum current and minimum current in the same fashion. By observing this response, it was hypothesised that a data overflow was occurring within the control function. Efforts to debug this issue were hindered by the lack of debugging on the Atmel ATmega16 used for the MTX Cycler electronics. Therefore, only  simulated debugging environment was available. Despite significant efforts to locate the source of the error, due to time constraints the issue was not resolved. Despite this, the validation simulation conducted provides evidence that the controller design was indeed successful. It is therefore able to be implemented as part of the debugged software as future work.
+
 \subsection{Magnetic Separation}
 
+With the mechanical design and thermal control elements integrating into the Processor Module, the magnetic separation capabilities were considered. The first stage of this process involved consideration of the various magnetic configurations and arrangements which may be used. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, this investigation focused on the Neodymium composition specifically.\\
+
+Three main magnet configurations were considered for application in this component. The first was the arrangement of one or more geometrically simple magnets, as available from common suppliers. Such an arrangement is simple to assemble, cost effective and relatively high strength. They also allow an ideal position to be created to ensure full magnetic field coverage of the pipette tip.\\
+
+Also considered was the use of a magnetic circuit. These devices use a ferromagnetic material to redirect the magnetic field of the magnet. Such a circuit may be used to redirect the magnetic field to a specifically sized air gap, at which point the concentrated magnetic field may in fact be of greater strength than that provided by the magnet \cite{magcirc}.\\
+
+The final considered arrangement was the Halbach Array. These array use a strategic positioning and orientation of small magnet elements to manipulate the magnetic field. The result is a field manipulation such that only one side of the magnetic arrangement experiences a magnetic field. This effect is visualised in Figure \ref{fig:halbach}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{halbach.jpg}
+	\caption[Halbach Array Flux Diagram.]{Halbach Array Flux Diagram.}
+	\label{fig:halbach}
+\end{figure} 
+\FloatBarrier
+
+Such an arrangement has a number of potential benefits. Firstly, the absence of magnetic field on one side of the arrangement may be beneficial in ensuring other magnetic elements of the Gene-Plex Extractor are not effected. Furthermore, these arrangements have been shown to produce up to two times the magnetic field strength of the combined magnetic elements on the directed side.\\
+
+In order to determine the feasibility of such an arrangement, a representative test piece was created via 3D printing. The array created, pictured in Figure \ref{fig:HalbachJig}, allowed the testing of 3 differing halbach array configurations. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{HalbachJig.png}
+	\caption[Halbach Array Jig.]{Halbach Array Test Jig. \cite{halbach}}
+	\label{fig:HalbachJig}
+\end{figure} 
+\FloatBarrier
+
+Of the three configurations tested, the arrangement known as "k=1" was experimentally shown to be the most effective, as is seen in Figure \ref{fig:k1}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{k1.jpg}
+	\caption[Halbach Array Jig - K=1.]{Halbach Array Test Jig for K=1.}
+	\label{fig:k1}
+\end{figure} 
+\FloatBarrier
+
+Despite the experimental evidence showing the effectiveness of the array, it was decided an inefficient means of achieving the required separation. This was due to the high level of complexity and hence assembly effort, the cost of the 12 $5mm^3$ magnet elements required by each array and the relatively marginal benefits provided over the simple magnetic block arrangement. Therefore, as a result of this investigation, it was concluded that a simple magnetic block arrangement is the most effective method for achieving the separation of the magnetic silica beads.\\
+
+This conclusion was applied and the resulting design, pictured in Figure \ref{fig:magnets} produced.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{magnets.png}
+	\caption[Processor Module Magnet Positioning.]{The positioning of block magnets between the liquid tubes for the Processor Module magnetic separation.}
+	\label{fig:magnets}
+\end{figure} 
+\FloatBarrier
+
+
+
 \section{Magnetic Separation Station}
+
+The contents of this section provide the results of the conceptual design of the Magnetic Separation Station. This includes the selected magnetic separation method as well as the 
+
+ 
 
 \subsection{Magnetic Separation}
 

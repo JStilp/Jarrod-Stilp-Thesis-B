@@ -3,7 +3,6 @@ A level-1 auxiliary file: body/1_introduction.aux
 A level-1 auxiliary file: body/2_literaturereview.aux
 A level-1 auxiliary file: body/3_methodology.aux
 A level-1 auxiliary file: body/4_results.aux
-A level-1 auxiliary file: body/5_discussion.aux
 A level-1 auxiliary file: body/6_conclusion.aux
 A level-1 auxiliary file: body/7_futurework.aux
 The style file: unsrt.bst
@@ -50,6 +49,26 @@ I was expecting a `,' or a `}'---line 332 of file References.bib
 I'm skipping whatever remains of this entry
 Warning--entry type for "jehbco" isn't style-file defined
 --line 341 of file References.bib
+Warning--entry type for "magcirc" isn't style-file defined
+--line 349 of file References.bib
+I was expecting a `,' or a `}'---line 357 of file References.bib
+ : 
+ : @article{2006189852255 ,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 357 of file References.bib
+ : @article{2006189852255
+ :                        ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 378 of file References.bib
+ : 
+ : @online{magcirc,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 378 of file References.bib
+ : @online{magcirc
+ :                ,
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in 12436620
 Warning--empty journal in 6464884
 Warning--empty booktitle in 2006289990179
@@ -62,4 +81,4 @@ Warning--empty booktitle in 12096602
 Warning--empty author in 2006189852255
 Warning--empty institution in BSI
 Warning--empty year in BSI
-(There were 2 error messages)
+(There were 6 error messages)

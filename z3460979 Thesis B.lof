@@ -35,8 +35,13 @@
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Temperature Sensor Data Key Values - 60$\ensuremath {^\circ }$C Setpoint.}}{87}{figure.caption.54}
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Temperature Sensor Data Key Values - calibrated 63.2$\ensuremath {^\circ }$C Setpoint.}}{88}{figure.caption.57}
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Discrete Plant Transfer Function Pole Zero Map.}}{90}{figure.caption.60}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Discrete Controller Simulation.}}{92}{figure.caption.62}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Halbach Array Flux Diagram.}}{96}{figure.caption.65}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Halbach Array Jig.}}{97}{figure.caption.66}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Halbach Array Jig - K=1.}}{98}{figure.caption.67}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Processor Module Magnet Positioning.}}{99}{figure.caption.68}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{100}{figure.caption.65}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{107}{figure.caption.70}

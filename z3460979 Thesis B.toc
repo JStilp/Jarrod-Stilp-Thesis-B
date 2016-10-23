@@ -51,17 +51,17 @@
 \contentsline {subsubsection}{Discussion}{89}{section*.58}
 \contentsline {subsubsection}{Discrete Time, Direct Method Controller Design}{89}{section*.59}
 \contentsline {subsubsection}{Discrete Time, Direct Method Controller Validation}{92}{section*.61}
-\contentsline {subsubsection}{Discrete Time, Direct Method Controller Verification}{92}{section*.62}
-\contentsline {subsubsection}{Discussion}{92}{section*.63}
-\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{92}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{92}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{92}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{92}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{93}{chapter.5}
-\contentsline {chapter}{\numberline {6}Future Work}{94}{chapter.6}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{95}{chapter.6}
-\contentsline {chapter}{\numberline {A}Raw Results}{99}{appendix.A}
-\contentsline {chapter}{\numberline {B}Simulation Setup}{100}{appendix.B}
-\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{100}{section.B.1}
-\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{100}{section.B.2}
-\contentsline {section}{\numberline {B.3}Controller Software}{101}{section.B.3}
+\contentsline {subsubsection}{Discrete Time, Direct Method Controller Verification}{93}{section*.63}
+\contentsline {subsubsection}{Discussion}{94}{section*.64}
+\contentsline {subsection}{\numberline {4.1.5}Magnetic Separation}{95}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Magnetic Separation Station}{99}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Magnetic Separation}{99}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Waste Disposal}{99}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Conclusions}{100}{chapter.5}
+\contentsline {chapter}{\numberline {6}Future Work}{101}{chapter.6}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{102}{chapter.6}
+\contentsline {chapter}{\numberline {A}Raw Results}{106}{appendix.A}
+\contentsline {chapter}{\numberline {B}Simulation Setup}{107}{appendix.B}
+\contentsline {section}{\numberline {B.1}Ferrotec 9500-035-085 B CFD Modelling}{107}{section.B.1}
+\contentsline {section}{\numberline {B.2}CFD Simulation Convergence Data}{107}{section.B.2}
+\contentsline {section}{\numberline {B.3}Controller Software}{108}{section.B.3}
