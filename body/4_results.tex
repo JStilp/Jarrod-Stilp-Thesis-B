@@ -403,13 +403,93 @@ Finally, the circuit board cover may be fastened to the bottom of the module to 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width = \textwidth]{8.jpg}
-	\caption[Assembled Processor Mpdule.]{The fully assembled Processor Module.}
+	\caption[Assembled Processor Module.]{The fully assembled Processor Module.}
 	\label{fig:8}
 \end{figure} 
 \FloatBarrier
 
 \subsection{Temperature Controller}
 \label{sec:ControllerDesign}
+
+Following the completion of the Processor Module hardware design and assembly, the controller design process was commenced. The results given in the following section follow the methodology presented in Section \ref{Method_controller} to develop a PID controller along with a discrete time, Direct Designed controller.
+
+\subsubsection{Plant Identification}
+
+Using the experimental setup described in Section \ref{Method_controller}, a Processor Module was assembled for testing purposes, with the additional sensors as described. The full setup, including the Arduino interface with the thermistor sensors, is pictured in Figure \ref{fig:plantidentification]}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{testsetup.jpg}
+	\caption[Plant Identification Setup.]{The experimental setup used for plant identification.}
+	\label{fig:plantidentification]}
+\end{figure} 
+\FloatBarrier
+
+The input to the system, due to the method in which the MTX Cycler electronics board functions, is PWM percentage. This PWM value determines the current which the TEC modules are driven by, at a constant 4.8 V. The value corresponding to the maximum TEC current of 8.5 A is 260 PWM units, or 26\%. Therefore, the MTX Cycler software was modified to produce a constant 8.5 A at 4.8 V to provide the required step input to the system. The data collected of the systems response to this step input is displayed in Figure \ref{fig:response]}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{response.png}
+	\caption[Full System Response to Step Input.]{The experimental response of the Processor Module to a step input.}
+	\label{fig:response]}
+\end{figure} 
+\FloatBarrier
+
+The response data above includes the heat sink temperature as well as the Thermal Region temperature and liquid temperature in order to observe the response of the system. The data of interest however is the block temperature. This data is taken from the sensor installed underneath the Thermal Region, as was shown in Figure \ref{fig:6}. This sensor is the source of the feedback signal to the controller to be designed, and hence is the value which will be controlled to 60$\degree$C. The isolated data from this sensor and hence the data to be used for plant identification is plotted in Figure 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{blockresponse.png}
+	\caption[Plant Response to Step Input.]{The experimental response of the plant to a step input.}
+	\label{fig:blockresponse]}
+\end{figure} 
+\FloatBarrier
+
+Using this data and the known step input, the MATLAB Plant Identification tool was used and the following plant identified:
+$$ G_p(s) = \frac{1 + 12.438s}{1 + 268.62s} $$
+This single pole, single zero transfer function model was fitted to the plant response data with an accuracy of 96.47\% and a MSE (mean squared error) of 0.5488.\\
+
+In order to validate the plant identified, the open loop system was simulated via Simulink. The simulation was used to excite the plant with an identical 260 PWM unit step input and was compared to the experimental results. The result of this simulation is given in Figure \ref{fig:plantsim]}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{plantsim.png}
+	\caption[Plant validation simulation.]{The simulated vs experimental plant response to a step input.}
+	\label{fig:plantsim]}
+\end{figure} 
+\FloatBarrier
+
+\subsubsection{Discussion}
+
+This work has enabled the identification of the transfer function which represents the transformation carried out by the Processor Module from a PWM input to a Thermal Region temperature output. This model has been shown to fit the experimental data with a high accuracy of 96.47\% and through validation produced an output fitting the experimental results to a high degree. Therefore, this plant transfer function was used for the process of controller design.\\
+
+While the true output of the system is in fact the liquid temperature, it should be noted that the block temperature (temperature from the internal Thermal Region thermistor) is used for both feedback and as the controlled variable. This is due to the fact that the fact that the system which includes the liquid temperature is unobservable and hence cannot be controlled. The rate of response of the liquid temperature depends on a range of factors including the initial temperature, the liquid volume and the ambient temperature. Due to this unknown rate, the inclusion of this process in the system plant transfer function can lead to a higher degree of error in the controlled output. Due to the consistency of taking measurements and hence feedback from the internal thermistor, the output may be controlled with a high level of reliability and accuracy. Section \ref{sec:controller_verification} addresses the small steady state error in the liquid temperature that is a compromise of this method.
+
+\subsubsection{PID Controller Design}
+
+Using the continuous time plant transfer function identified and the MATLAB PID Tuner interface a PID controller was identified with the following values:
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{ | p{4cm} |  p{4cm} | p{4cm} | }
+			\hline
+			Proportional Gain & Integral Gain & Derivative Gain \\ \hline
+			1 & 80 & 1 \\ \hline
+		\end{tabular}
+	\end{center}
+	\caption[PID Controller Gains.]{The PID Controller gains.}
+	\label{tab:PIDgains}
+\end{table}
+
+
+\subsubsection{PID Controller Validation}
+
+\subsubsection{PID Controller Verification}
+\label{sec:controller_verification}
+
+\subsubsection{Discussion}
+
+-Plant identified as and correct
 
 \subsection{Magnetic Separation}
 
