@@ -7,8 +7,6 @@ With the scope of the work now defined, the manner in which the required results
 
 \subsection{Hardware}
 
-%NOTE : need to atleast mention use of autodesk CFD and rough method
-
 The hardware component of the Processor Module design is concerned with ensuring the module accepts the required cassette tubes, fits within the stipulated SBS space and provides a stable platform for the required temperature control using the knowledge gained in Section \ref{lit_controlability}, Controllability. The work in this sections will also include the selection of an appropriate heat pumping device. In order to ensure the requirements of the hardware elements are met, the design process is applied as follows:
 \begin{enumerate}
 	\item Generation of concepts related to thermally isolating the heated and non-heated regions of the block. This includes a focus on the manufacturability of the resulting components.
@@ -25,7 +23,7 @@ This work will result in the finalisation of a software temperature controller c
 In order to enable controller design to be commenced, the first step will be to assemble the completed Processor Module. Due to the complex dynamics of the heat transfer between the heating device and the liquid, a mathematical modelling method is not used. Instead, the system will be identified via the step input response plant identification method. To obtain the required response data, sensors will be placed strategically on the Processor Module to monitor and record key temperatures:
 \begin{itemize}
 	\item The temperature at the centre of the block will be taken as this sensor data will be utilized as feedback for the controller to be implemented. This follows the recommendations given in Section \ref{cha:literaturereview} by Vilchiz et. al.
-	\item The temperature of the heatsink will be plotted to monitor the temperature differential created across the module.
+	\item The temperature of the heat sink will be plotted to monitor the temperature differential created across the module.
 	\item The temperature of the heated region of the module will be taken on its outer surface to determine the success of the design in creating a component that responds to temperature control in responsive and stable manner.
 	\item The temperature of the liquid within the cassette tubes will be measured as the final output of the system. The ability of the controller to drive this temperature to the desired set point will determine the success of the design.
 \end{itemize}
@@ -52,7 +50,23 @@ Before utilizing the identified plant for controller design, it will be verified
 \end{figure} 
 \FloatBarrier
 
-With the transfer function representing the Processor Module now known, the process of controller design may be commenced. The method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications is PID control. This method has not been selected however due the benefits of competing controller design in the z-domain with discrete time. By completing the design entirely in the z-domain, there is no need to convert the resulting controller from the s domain, allowing the controller to be directly implemented.\\
+With the transfer function representing the Processor Module now known, the process of controller design may be commenced. Two methods of controller design will be completed and implemented. Initially, a PID controller will be created. As was noted in Chapter \ref{cha:literaturereview}, Literature Review, the most common method of control for thermal cycling devices in similar applications is PID control. This method is also able to be completed in short periods of time and therefore will allow the mechanical design of the Processor Module and heating element to be validated experimentally as early as possible. While this method is fast, there are however numerous advantages to the use of other methods. The second method chosen for this design process is the Direct Analytical Method (also known as Ragazzini's Method), in the discrete time domain.  This method has been selected due the benefits of competing controller design in the z-domain with discrete time. By completing the design entirely in the z-domain, there is no need to convert the resulting controller from the s domain, allowing the controller to be directly implemented. By completing this second controller design, a greater degree of control is available in which the response of the system may be finely adjusted. The methodology used to form each controller is given below.\\
+
+In order to create the PID controller, the MATLAB PID Tuner tool will be utilized. This tool will allow the identified plant to be taken directly from the plant identification step above and a controller tuned to suit the requirements. A system response time may be set along with the transient behaviour of the system. The tool then outputs the response of the system to the reference signal, as controlled by the PID controller. The tool then allows the following parameters to be inspected:
+\begin{itemize}
+	\item Proportional gain, $K_p$
+	\item Integral gain, $K_i$
+	\item Derivative gain, $K_d$
+	\item Rise time
+	\item Settling time
+	\item Overshoot
+	\item Peak response, as a percentage of the reference input
+	\item Gain margin
+	\item Phase Margin
+	\item Closed loop stability of the system
+\end{itemize}
+
+With the outputs above provided, the tool allows for a time efficient method of designing a PID controller. This controller will then be directly implemented on the MTX Cycler software by directly substituting for the PID controller used in the previous application on the High-Plex Processor. This allows for immediate experimentation to be conducted.\\
 
 The direct analytical method uses the principle that if the output that is required along with the input applied is known the intermediate transfer function may be determined. This is represented by Equation \ref{eq_direct}, where $C(z)$ is the required output, $U(z)$ is the applied input and $F(z)$ is the intermediate transfer function.
 
