@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  23 OCT 2016 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.2)  23 OCT 2016 23:11
 entering extended mode
 **"./z3460979 Thesis B.tex"
 ("z3460979 Thesis B.tex"
@@ -820,7 +820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[2] <./images/highplex.png, id=331, 600.74437pt x 483.8075pt>
+[2] <./images/highplex.png, id=347, 600.74437pt x 483.8075pt>
 File: ./images/highplex.png Graphic file (type png)
 
 <use ./images/highplex.png>
@@ -845,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  []
 
 [4 <./images/highplex.png>]
-<./images/decklayout.png, id=344, 1048.66782pt x 590.95781pt>
+<./images/decklayout.png, id=360, 1048.66782pt x 590.95781pt>
 File: ./images/decklayout.png Graphic file (type png)
 
 <use ./images/decklayout.png>
@@ -854,7 +854,7 @@ Package pdftex.def Info: ./images/decklayout.png used on input line 37.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [5 <./images/decklayout.png>] [6]
-<./images/cassette.png, id=361, 306.64563pt x 263.98625pt>
+<./images/cassette.png, id=377, 306.64563pt x 263.98625pt>
 File: ./images/cassette.png Graphic file (type png)
 
 <use ./images/cassette.png>
@@ -882,7 +882,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<./images/tec.jpg, id=404, 252.945pt x 126.4725pt>
+<./images/tec.jpg, id=420, 252.945pt x 126.4725pt>
 File: ./images/tec.jpg Graphic file (type jpg)
  <use ./images/tec.jpg>
 Package pdftex.def Info: ./images/tec.jpg used on input line 14.
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<./images/openloopplant.png, id=560, 558.96329pt x 120.0736pt>
+<./images/openloopplant.png, id=576, 558.96329pt x 120.0736pt>
 File: ./images/openloopplant.png Graphic file (type png)
 
 <use ./images/openloopplant.png>
@@ -984,7 +984,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-<./images/unityfeedback.png, id=574, 303.00703pt x 50.81485pt>
+<./images/unityfeedback.png, id=590, 303.00703pt x 50.81485pt>
 File: ./images/unityfeedback.png Graphic file (type png)
 
 <use ./images/unityfeedback.png>
@@ -1032,7 +1032,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-<./images/controllervalidation.png, id=617, 565.73859pt x 142.65797pt>
+<./images/controllervalidation.png, id=633, 565.73859pt x 142.65797pt>
 File: ./images/controllervalidation.png Graphic file (type png)
 
 <use ./images/controllervalidation.png>
@@ -1041,18 +1041,18 @@ Package pdftex.def Info: ./images/controllervalidation.png used on input line 1
 (pdftex.def)             Requested size: 398.33858pt x 100.44762pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [36 <./images/controllervalidation.png>] <./images/measuredtubes.png, id=624, 
+ [36 <./images/controllervalidation.png>] <./images/measuredtubes.png, id=640, 
 712.91344pt x 535.2497pt>
 File: ./images/measuredtubes.png Graphic file (type png)
 
 <use ./images/measuredtubes.png>
-Package pdftex.def Info: ./images/measuredtubes.png used on input line 197.
+Package pdftex.def Info: ./images/measuredtubes.png used on input line 198.
 (pdftex.def)             Requested size: 398.33858pt x 299.06807pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [37] [38 <./images/measuredtubes.png>]
 [39] [40] [41] [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
@@ -1075,7 +1075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-<./images/splitconcepts.png, id=716, 1243.64626pt x 1017.8025pt>
+<./images/splitconcepts.png, id=732, 1243.64626pt x 1017.8025pt>
 File: ./images/splitconcepts.png Graphic file (type png)
 
 <use ./images/splitconcepts.png>
@@ -1183,7 +1183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[60] <./images/result2.png, id=802, 694.84593pt x 569.87906pt>
+[60] <./images/result2.png, id=818, 694.84593pt x 569.87906pt>
 File: ./images/result2.png Graphic file (type png)
 
 <use ./images/result2.png>
@@ -1192,7 +1192,7 @@ Package pdftex.def Info: ./images/result2.png used on input line 199.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [61 <./images/result2.png>]
-<./images/cutcfd.png, id=810, 763.35187pt x 993.7125pt>
+<./images/cutcfd.png, id=826, 763.35187pt x 993.7125pt>
 File: ./images/cutcfd.png Graphic file (type png)
 
 <use ./images/cutcfd.png>
@@ -1201,7 +1201,7 @@ Package pdftex.def Info: ./images/cutcfd.png used on input line 209.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [62 <./images/cutcfd.png>]
-<./images/thermalvariation.jpg, id=817, 576.65437pt x 211.79124pt>
+<./images/thermalvariation.jpg, id=833, 576.65437pt x 211.79124pt>
 File: ./images/thermalvariation.jpg Graphic file (type jpg)
 
 <use ./images/thermalvariation.jpg>
@@ -1235,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[64] <./images/carrierlocation.png, id=836, 685.05937pt x 449.42906pt>
+[64] <./images/carrierlocation.png, id=852, 685.05937pt x 449.42906pt>
 File: ./images/carrierlocation.png Graphic file (type png)
 
 <use ./images/carrierlocation.png>
@@ -1244,7 +1244,7 @@ Package pdftex.def Info: ./images/carrierlocation.png used on input line 263.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [65 <./images/carrierlocation.png>]
-<./images/carrierfit.png, id=845, 506.6428pt x 304.13625pt>
+<./images/carrierfit.png, id=861, 506.6428pt x 304.13625pt>
 File: ./images/carrierfit.png Graphic file (type png)
 
 <use ./images/carrierfit.png>
@@ -1258,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
  []
 
 [67 <./images/carrierfit.png>]
-<./images/heatsink.png, id=858, 784.43062pt x 426.84468pt>
+<./images/heatsink.png, id=874, 784.43062pt x 426.84468pt>
 File: ./images/heatsink.png Graphic file (type png)
 
 <use ./images/heatsink.png>
@@ -1272,7 +1272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--292
  []
 
 [68 <./images/heatsink.png>] [69]
-<./images/exploded.png, id=873, 797.22844pt x 1069.74657pt>
+<./images/exploded.png, id=889, 797.22844pt x 1069.74657pt>
 File: ./images/exploded.png Graphic file (type png)
 
 <use ./images/exploded.png>
@@ -1281,7 +1281,7 @@ Package pdftex.def Info: ./images/exploded.png used on input line 315.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [70] [71 <./images/exploded.png>]
-<./images/1.jpg, id=886, 3899.56876pt x 1460.45625pt>
+<./images/1.jpg, id=902, 3899.56876pt x 1460.45625pt>
 File: ./images/1.jpg Graphic file (type jpg)
  <use ./images/1.jpg>
 Package pdftex.def Info: ./images/1.jpg used on input line 335.
@@ -1289,7 +1289,7 @@ Package pdftex.def Info: ./images/1.jpg used on input line 335.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-<./images/2.jpg, id=888, 3976.8575pt x 2365.83875pt>
+<./images/2.jpg, id=904, 3976.8575pt x 2365.83875pt>
 File: ./images/2.jpg Graphic file (type jpg)
  <use ./images/2.jpg>
 Package pdftex.def Info: ./images/2.jpg used on input line 345.
@@ -1297,7 +1297,7 @@ Package pdftex.def Info: ./images/2.jpg used on input line 345.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-[72 <./images/1.jpg>] <./images/3.jpg, id=894, 3997.93625pt x 2317.65875pt>
+[72 <./images/1.jpg>] <./images/3.jpg, id=910, 3997.93625pt x 2317.65875pt>
 File: ./images/3.jpg Graphic file (type jpg)
 
 <use ./images/3.jpg>
@@ -1306,14 +1306,14 @@ Package pdftex.def Info: ./images/3.jpg used on input line 355.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [73 <./images/2.jpg>]
-<./images/4.jpg, id=900, 4015.0pt x 3003.22pt>
+<./images/4.jpg, id=916, 4015.0pt x 3003.22pt>
 File: ./images/4.jpg Graphic file (type jpg)
  <use ./images/4.jpg>
 Package pdftex.def Info: ./images/4.jpg used on input line 365.
 (pdftex.def)             Requested size: 398.33858pt x 297.95668pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [74 <./images/3.jpg>] <./images/5.jpg, id=906, 3790.16pt x 551.05875pt>
+ [74 <./images/3.jpg>] <./images/5.jpg, id=922, 3790.16pt x 551.05875pt>
 File: ./images/5.jpg Graphic file (type jpg)
 
 <use ./images/5.jpg>
@@ -1321,7 +1321,7 @@ Package pdftex.def Info: ./images/5.jpg used on input line 375.
 (pdftex.def)             Requested size: 398.33858pt x 57.90912pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- <./images/6.jpg, id=908, 4015.0pt x 3003.22pt>
+ <./images/6.jpg, id=924, 4015.0pt x 3003.22pt>
 File: ./images/6.jpg Graphic file (type jpg)
 
 <use ./images/6.jpg>
@@ -1330,14 +1330,14 @@ Package pdftex.def Info: ./images/6.jpg used on input line 385.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [75 <./images/4.jpg> <./images/5.jpg>]
-<./images/7.jpg, id=915, 4015.0pt x 3003.22pt>
+<./images/7.jpg, id=931, 4015.0pt x 3003.22pt>
 File: ./images/7.jpg Graphic file (type jpg)
  <use ./images/7.jpg>
 Package pdftex.def Info: ./images/7.jpg used on input line 395.
 (pdftex.def)             Requested size: 398.33858pt x 297.95668pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
- [76 <./images/6.jpg>] <./images/8.jpg, id=922, 3273.22874pt x 2729.19624pt>
+ [76 <./images/6.jpg>] <./images/8.jpg, id=938, 3273.22874pt x 2729.19624pt>
 File: ./images/8.jpg Graphic file (type jpg)
 
 <use ./images/8.jpg>
@@ -1346,7 +1346,7 @@ Package pdftex.def Info: ./images/8.jpg used on input line 405.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [77 <./images/7.jpg>]
-<./images/testsetup.jpg, id=930, 4015.0pt x 3003.22pt>
+<./images/testsetup.jpg, id=946, 4015.0pt x 3003.22pt>
 File: ./images/testsetup.jpg Graphic file (type jpg)
 
 <use ./images/testsetup.jpg>
@@ -1356,7 +1356,7 @@ Package pdftex.def Info: ./images/testsetup.jpg used on input line 422.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
 
-<./images/response.png, id=937, 632.3625pt x 474.27188pt>
+<./images/response.png, id=953, 632.3625pt x 474.27188pt>
 File: ./images/response.png Graphic file (type png)
 
 <use ./images/response.png>
@@ -1365,7 +1365,7 @@ Package pdftex.def Info: ./images/response.png used on input line 432.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
  [79 <./images/testsetup.jpg>]
-<./images/blockresponse.png, id=943, 632.3625pt x 474.27188pt>
+<./images/blockresponse.png, id=959, 632.3625pt x 474.27188pt>
 File: ./images/blockresponse.png Graphic file (type png)
 
 <use ./images/blockresponse.png>
@@ -1378,7 +1378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
 
-<./images/plantsim.png, id=949, 632.3625pt x 474.27188pt>
+<./images/plantsim.png, id=965, 632.3625pt x 474.27188pt>
 File: ./images/plantsim.png Graphic file (type png)
 
 <use ./images/plantsim.png>
@@ -1392,12 +1392,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-[83]) [84]
+[83] <./images/controllertest.jpg, id=986, 4015.0pt x 3003.22pt>
+File: ./images/controllertest.jpg Graphic file (type jpg)
+
+<use ./images/controllertest.jpg>
+Package pdftex.def Info: ./images/controllertest.jpg used on input line 491.
+(pdftex.def)             Requested size: 398.33858pt x 297.95668pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+ [84]
+<./images/res1.png, id=995, 632.3625pt x 474.27188pt>
+File: ./images/res1.png Graphic file (type png)
+ <use ./images/res1.png>
+Package pdftex.def Info: ./images/res1.png used on input line 501.
+(pdftex.def)             Requested size: 398.33858pt x 298.75668pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 502.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 502.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 502.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 502.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 502.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 502.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+
+[85 <./images/controllertest.jpg>]
+Overfull \hbox (7.47249pt too wide) in paragraph at lines 508--510
+\OT1/ppl/m/n/12 ex-tracted for the run to vi-su-alise the ex-treme tem-per-a-tu
+res ex-pe-ri-enced across
+ []
+
+<./images/res2.png, id=1001, 632.3625pt x 474.27188pt>
+File: ./images/res2.png Graphic file (type png)
+ <use ./images/res2.png>
+Package pdftex.def Info: ./images/res2.png used on input line 513.
+(pdftex.def)             Requested size: 398.33858pt x 298.75668pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+
+[86 <./images/res1.png (PNG copy)>] [87 <./images/res2.png (PNG copy)>]
+<./images/res3.png, id=1012, 632.3625pt x 474.27188pt>
+File: ./images/res3.png Graphic file (type png)
+ <use ./images/res3.png>
+Package pdftex.def Info: ./images/res3.png used on input line 532.
+(pdftex.def)             Requested size: 398.33858pt x 298.75668pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+
+[88 <./images/res3.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+[89] <./images/polezeromap.png, id=1029, 856.70062pt x 767.86874pt>
+File: ./images/polezeromap.png Graphic file (type png)
+
+<use ./images/polezeromap.png>
+Package pdftex.def Info: ./images/polezeromap.png used on input line 556.
+(pdftex.def)             Requested size: 398.33858pt x 357.03185pt.
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ˆ in font pplr7t!
+ [90 <./images/polezeromap.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+[91]) [92]
 \openout2 = `body/6_conclusion.aux'.
 
  (body/6_conclusion.tex
 Chapter 5.
-) [85
+) [93
 
 
 
@@ -1406,7 +1476,7 @@ Chapter 5.
 
  (body/7_futurework.tex
 Chapter 6.
-) [86
+) [94
 
 
 
@@ -1439,20 +1509,20 @@ Underfull \hbox (badness 7722) in paragraph at lines 23--31
 e-ment
  []
 
-[87
+[95
 
 
-] [88] [89]) [90]
+] [96] [97]) [98]
 \openout2 = `body/A_appendix.aux'.
 
  (body/A_appendix.tex
 Appendix A.
-[91
+[99
 
 
 ]
 Appendix B.
-<./images/2tecconv.png, id=1005, 792.71156pt x 321.45094pt>
+<./images/2tecconv.png, id=1078, 792.71156pt x 321.45094pt>
 File: ./images/2tecconv.png Graphic file (type png)
 
 <use ./images/2tecconv.png>
@@ -1460,9 +1530,9 @@ Package pdftex.def Info: ./images/2tecconv.png used on input line 19.
 (pdftex.def)             Requested size: 398.33858pt x 161.52948pt.
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ˆ in font pplr7t!
-) [92
+) [100
 
- <./images/2tecconv.png>]
+ <./images/2tecconv.png>] [101]
 \@syc=\write8
 \openout8 = `"z3460979 Thesis B.syc"'.
 
@@ -1481,20 +1551,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `"z3460979 Thesis B".out' has not changed.
-(rerunfilecheck)             Checksum: 4C1EE731C1BC3D055901207322D5C804;2797.
+(rerunfilecheck)             Checksum: 5CDEBAD057A8B6B4B44CBA7E554B8A9D;2865.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11060 strings out of 493335
- 163395 string characters out of 3139237
- 274838 words of memory out of 3000000
- 13929 multiletter control sequences out of 15000+200000
- 28012 words of font info for 77 fonts, out of 3000000 for 9000
+ 11146 strings out of 493335
+ 164716 string characters out of 3139237
+ 275417 words of memory out of 3000000
+ 13984 multiletter control sequences out of 15000+200000
+ 36870 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,53p,2520b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,14n,53p,2520b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -1504,9 +1574,9 @@ oaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on "z3460979 Thesis B.pdf" (101 pages, 29884726 bytes).
+Output written on "z3460979 Thesis B.pdf" (110 pages, 34393576 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1186 PDF objects out of 1200 (max. 8388607)
+ 311 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -30,8 +30,13 @@
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Full System Response to Step Input.}}{80}{figure.caption.45}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Plant Response to Step Input.}}{81}{figure.caption.46}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Plant validation simulation.}}{82}{figure.caption.47}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Controller Verification Experimental Setup.}}{85}{figure.caption.52}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Temperature Sensor Data - 60$\ensuremath {^\circ }$C Setpoint.}}{86}{figure.caption.53}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Temperature Sensor Data Key Values - 60$\ensuremath {^\circ }$C Setpoint.}}{87}{figure.caption.54}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Temperature Sensor Data Key Values - calibrated 63.2$\ensuremath {^\circ }$C Setpoint.}}{88}{figure.caption.57}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Discrete Plant Transfer Function Pole Zero Map.}}{90}{figure.caption.60}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{92}{figure.caption.55}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Convergence Plot for Refined Design CFD.}}{100}{figure.caption.65}

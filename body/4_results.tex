@@ -414,7 +414,7 @@ Finally, the circuit board cover may be fastened to the bottom of the module to 
 Following the completion of the Processor Module hardware design and assembly, the controller design process was commenced. The results given in the following section follow the methodology presented in Section \ref{Method_controller} to develop a PID controller along with a discrete time, Direct Designed controller.
 
 \subsubsection{Plant Identification}
-
+\label{sec:plantidentification}
 Using the experimental setup described in Section \ref{Method_controller}, a Processor Module was assembled for testing purposes, with the additional sensors as described. The full setup, including the Arduino interface with the thermistor sensors, is pictured in Figure \ref{fig:plantidentification]}.
 
 \begin{figure}[!htb]
@@ -481,15 +481,119 @@ Using the continuous time plant transfer function identified and the MATLAB PID 
 	\label{tab:PIDgains}
 \end{table}
 
-
-\subsubsection{PID Controller Validation}
-
 \subsubsection{PID Controller Verification}
 \label{sec:controller_verification}
 
+The designed controller was then implemented via the MTX Cycler software by modifying the C code and reprogramming the device. For the created C function which conducts the temperature control, see Appendix \ref{controllerimp}. To record the required data for validation, the sensor layout given in Methodology Section \ref{sec:expver} was implemented. The full experimental setup is displayed in Figure \ref{fig:controllertest]}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{controllertest.jpg}
+	\caption[Controller Verification Experimental Setup.]{The experimental setup utilized to experimentally verify the controller design and Processor Module.}
+	\label{fig:controllertest]}
+\end{figure} 
+\FloatBarrier
+
+ With the reference temperature set to 60$\degree$C, the following results were obtained as plotted in Figure \ref{fig:res1}. The legend tube locations correlate to those displayed in Section \ref{sec:expver}, Figure \ref{fig:measuredtubes}. 
+ 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{res1.png}
+	\caption[Temperature Sensor Data - 60$\degree$C Setpoint.]{The raw experimental data of the 60$\degree$C setpoint PID controller verification.}
+	\label{fig:res1}
+\end{figure} 
+\FloatBarrier
+
+To gain the required information from this experimental data, a number of features were extracted. Using the mean of the steady state portion of the response, the steady state error was found to be: 
+$$ SSE = 3.2085\degree C$$
+Further to this, the mean, maximum and minimum response values were extracted for the run to visualise the extreme temperatures experienced across the measured tubes. This data is plotted in Figure \ref{fig:res2}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{res2.png}
+	\caption[Temperature Sensor Data Key Values - 60$\degree$C Setpoint.]{Key experimental data of the 60$\degree$C setpoint PID controller verification.}
+	\label{fig:res2}
+\end{figure} 
+\FloatBarrier
+
 \subsubsection{Discussion}
 
--Plant identified as and correct
+The experimental results obtained show a number of key points regarding the controller designed. The controller response shows a time constant of 81.16 seconds, with a steady state error of 3.2085 $\degree$C. While the time constant achieved exceeds the system requirements, the systems steady state error does not fall within the acceptable range. As was noted earlier, this was an expected outcome due to the use of the internal Thermal Region sensor as the feedback value and controlled output variable. Therefore losses that occur as heat energy is transferred from the TEC modules, through the Thermal Region and cassette tubes and finally into the liquid are accumulated in the steady state error observed. This however has allowed for the high degree of stability observed. In order to rectify this error, a calibration process is used, where the error observed is applied directly to the system reference signal in order to achieve the steady state response required of the system. This calibration process allows for stable and consistent controller performance along with the ability to achieve the required steady state error of the system with minimal effects of system disturbances 
+
+%NEED to note the controller requirements
+%NOTE in design the placements of the sensor as close to the peltier as possible
+
+\subsubsection{Controller Calibration}
+
+With the previous results showing the transient response of the controller to meet system requirements yet an unacceptable steady state error, the observed error was used to offset the reference signal and the Processor Module reprogrammed. The results of this calibrated experiment are plotted in Figure \ref{fig:res3}. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{res3.png}
+	\caption[Temperature Sensor Data Key Values - calibrated 63.2$\degree$C Setpoint.]{Key experimental data of the calibrated 63.2$\degree$C setpoint PID controller verification.}
+	\label{fig:res3}
+\end{figure} 
+\FloatBarrier
+
+Once again using the mean of the steady state portion of the response, the steady state error was found to be: 
+$$ SSE = 0.083\degree C$$
+
+\subsubsection{Discussion}
+
+As was observed in Figure \ref{fig:res3}, the calibrated response of the controller corrects the steady state error issues observed in previous results. Furthermore, the time response along with the zero overshoot transient response has been maintained as required. Furthermore, the system has demonstrated a stable long term response, with the temperature reaching the controlled steady state value and remaining stable for a total period of 30 minutes. Not only does this verify the performance of the designed PID controller, it also verifies the success of the mechanical design. The ability of the system to reach and maintain a steady state temperature indicates the stability of the thermal design of the system. Therefore, the success of this experiment has allowed both the PID temperature controller along with the Processor Module design itself to be experimentally verified.
+%NEED to sort out method of verification - ie differing room temps
+
+\subsubsection{Discrete Time, Direct Method Controller Design}
+
+Following the successful design and verification of the PID controller and the Processor Modules thermal stability, the design of the discrete time controller was commenced. The following results follow the method described in Section \ref{Method_controller}.\\
+
+With the plant transfer function already identified and verified, the discrete time equivalent was found to be:
+$$ G_p(z) = \frac{0.01518 - 0.01457z^{-1}}{1 - 0.9981z^{-1}} $$
+This plant was derived from the plant identified in Section \ref{sec:plantidentification}, Plant Identification, and uses a sample time of $T=0.5s$. The pole zero map of this discrete time transfer function is plotted in Figure \ref{fig:polezeromap}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width = \textwidth]{polezeromap.png}
+	\caption[Discrete Plant Transfer Function Pole Zero Map.]{The pole zero map of the discrete transfer function of the Processor Module plant.}
+	\label{fig:polezeromap}
+\end{figure} 
+\FloatBarrier
+
+In order to form $F(z)$, the desired time response of the controller was then set as $\tau = 250s$. This gives an s-domain pole location of:
+$$s=-\frac{1}{250}$$
+
+Which corresponds to the z-domain pole of:
+$$z=0.9979$$
+
+Therefore, $F(z)$ becomes:
+
+$$F(z) = \frac{b_0}{z - 0.9979}$$
+
+Applying stability constraints 1 and 2, the Pole-Zero map in Figure \ref{fig:polezeromap}, it is seen that there are no unstable poles or zeros present in the system. Therefore, $F(z)$ does not require any additions to prevent unstable cancellations by the controller.\\
+
+Checking the causality constraint, $D(G_p(z)) = n = 0$ and $D(F(z)) = m = 1$. Since $m>n$, the controller is strictly proper and no time delays were required.
+
+Applying the steady state error requirement:
+$$F(z)|_{z=1} = F(1)$$
+$$b_0 = 0.0021$$
+Therefore, the final form of $F(z)$ is:
+$$F(z) = \frac{0.0021}{z-0.9979}$$
+
+This results in the following discrete controller transfer function:
+$$G_c(z) = \frac{0.0021z^{-1} - 0.004195z^{-2} + 0.002095z^{-3}}{0.01518 - 0.04495z^{-1} + 0.04436z^{-2} - 0.01459z^{-3}}$$
+
+And the final difference equation to be implemented of:
+\begin{equation}
+\begin{split}
+	m(k) =  2.9611m(k-1) - 2.9223m(k-2) + 0.9611m(k-3)\\ + 0.1383e(k-1) - 0.2764e(k-2) + 0.1380e(k-3)
+\end{split}
+\end{equation}
+
+\subsubsection{Discrete Time, Direct Method Controller Validation}
+
+\subsubsection{Discrete Time, Direct Method Controller Verification}
+
+\subsubsection{Discussion}
 
 \subsection{Magnetic Separation}
 
